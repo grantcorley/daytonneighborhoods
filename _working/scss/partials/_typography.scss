@@ -1,0 +1,26 @@
+h1, h2{
+  color: $primary;
+}
+
+
+.entry-content{
+    p, ol, ul, dl, dt{
+      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+      letter-spacing: normal;
+      font-size:14px;
+      color:#333333;
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+
+  .entry-content{
+      p, ol, ul, dl, dt{
+        font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+        letter-spacing: normal;
+        font-size:21px;
+    }
+  }
+
+}

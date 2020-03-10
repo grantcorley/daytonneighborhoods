@@ -1,0 +1,252 @@
+/* post-query-page.scss */
+
+//ANY PAGE THAT PULLS IN EXTERNAL POSTS BY CATEGORY
+
+//MOBILE SIZES
+body.singular{
+
+ main#site-content.post-query-page{
+
+   //border:4px dashed pink;
+
+  article.page{  //(top-level article)
+
+    .header-over-image{
+        position: relative;
+
+    header#entry-header{
+
+        position: absolute;
+        top: 40%;
+        width:100%;
+        color:white;
+        background-color: none !important;
+
+        .entry-header-inner.section-inner{
+
+          width:100%;
+
+          h1.entry-title,
+          h2.entry-title {
+            font-size:6em;
+            font-weight: bold;
+            font-family: Roboto, sans-serif;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,.85);          //text-shadow: 7px 8px 9px -5px rgba(0,0,0,0.78);
+          }
+
+        }//.entry-header-inner
+
+      }//header
+
+      figure.featured-media {
+        position: relative;
+      }
+
+      }//end header-over-image
+
+      h2.intro-text{
+        // border:1px dotted orange;
+        color: $accent;
+        font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-size:32px;
+        line-height: 36px;
+        text-align: center;
+        padding-bottom:.4em;
+      }
+
+
+      .post-inner.thin.slorg{
+        // border:2px solid purple;
+        padding-top:2.4em;
+      }
+
+      article.post{
+        border-bottom:1px solid #bdbbc8;
+        max-width: 100rem;
+        padding-bottom:4em;
+
+        div.featured-media-inner{
+          img {
+            display:none;
+          }
+        }
+
+        header#entry-header{
+          .entry-header-inner{
+            .entry-categories{
+              display:none;
+            }
+            h2.entry-title{
+              text-align: left;
+              margin-top:.75em;
+              margin-bottom:0;
+              font-weight: bold;
+              font-size:2.4em;
+              font-family: $headline;
+              font-weight: bold;
+
+              a {
+                  color: #605594;
+                &:visited{
+                  color: #605594;
+                }
+                &:hover {
+                  // color: #e76113; //orange
+                  color: #605594;
+                  text-decoration: none;
+                }
+                &:active {
+                // color: #e76113; //orange
+                color: #605594;
+                text-decoration: none !important;
+                }
+              }
+
+            }
+          }
+        }
+
+
+
+        .post-inner.thin{
+          margin-top:0;
+          padding-top:0em !important;
+          // border:3px solid red;
+        }
+
+      }//end article.post
+
+
+  }//article (top-level)
+
+}//main#site-content`
+
+}//body.singular
+
+//MEDIA QUERIES -----------
+//FULL SCREEN
+                            //was 768
+@media screen and (min-width: 700px) {
+
+  body.singular{
+
+   main#site-content.post-query-page{
+
+    article.page{  //(top-level article)
+
+      .header-over-image{
+          position: relative;
+
+      header#entry-header{
+
+          position: absolute;
+          top: 40%;
+          width:100%;
+          color:white;
+          background-color: none !important;
+
+          .entry-header-inner.section-inner{
+
+            width:100%;
+
+            h1.entry-title,
+            h2.entry-title {
+              font-size:10em;
+              font-weight: bold;
+              font-family: Roboto, sans-serif;
+              text-transform: uppercase;
+              text-shadow: 2px 2px 4px rgba(0,0,0,.85);          //text-shadow: 7px 8px 9px -5px rgba(0,0,0,0.78);
+            }
+
+          }//.entry-header-inner
+
+        }//header
+
+        figure.featured-media {
+          position: relative;
+        }
+
+        }//end header-over-image
+
+        h2.intro-text{
+          // border:1px dotted orange;
+          color: $accent;
+          font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+          font-size:2.8em;
+          line-height: 1em;
+          text-align: center;
+          padding-bottom:.4em;
+          max-width: 100%;
+        }
+
+
+        .post-inner.thin.slorg{
+          // border:2px solid purple;
+          padding-top:2.4em;
+        }
+
+        article.post{
+          border-bottom:1px solid #bdbbc8;
+          max-width: 100rem;
+          padding-bottom:4em;
+
+          div.featured-media-inner{
+            img {
+              display:none;
+            }
+          }
+
+          header#entry-header{
+            .entry-header-inner{
+              .entry-categories{
+                display:none;
+              }
+              h2.entry-title{
+                text-align: left;
+                margin-top:.75em;
+                margin-bottom:0;
+                font-weight: bold;
+                font-size:2em;
+                font-family: $headline;
+                font-weight: bold;
+
+                a {
+                    color: #605594;
+                  &:visited{
+                    color: #605594;
+                  }
+                  &:hover {
+                    // color: #e76113; //orange
+                    color: #605594;
+                    text-decoration: none;
+                  }
+                  &:active {
+                  // color: #e76113; //orange
+                  color: #605594;
+                  text-decoration: none !important;
+                  }
+                }
+
+              }
+            }
+          }
+
+
+
+          .post-inner.thin{
+            margin-top:0;
+            padding-top:0em !important;
+            // border:3px solid red;
+          }
+
+        }//end article.post
+
+
+    }//article (top-level)
+
+  }//main#site-content`
+
+  }//body.singular
+
+}//end media query

@@ -1,0 +1,31 @@
+/* components.scss */
+
+button:focus {
+  outline:none;
+}
+
+span.toggle-text{
+  display:none;
+}
+
+.nav-toggle .toggle-icon, .nav-toggle svg {
+    height: 2rem;
+    width: 2.6rem;
+}
+
+.menu-icon{
+  width:20px;
+  height:20px;
+  display: block;
+  background-image: url('images/menu-icon.svg');
+
+}
+
+button.toggle.nav-toggle{
+  margin-top:-4px;
+}
+
+input.search-submit{
+   background-color: $accent;
+  //background-color:violet
+}

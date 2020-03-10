@@ -1,0 +1,24 @@
+{
+  "name": "daytonneighborhoods",
+  "description": "website for Dayton Neighborhoods",
+  "main": "index.js",
+  "authors": [
+    "Grant Corley"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "^6.0.0",
+    "susy": "^3.0.5"
+  },
+  "dependencies": {
+    "normalize-css": "^8.0.1"
+  }
+}

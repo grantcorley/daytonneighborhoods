@@ -1,0 +1,32 @@
+/*
+ Theme Name:   Dayton Neighborhoods
+ Description:  Child of WP Twenty Twenty theme
+ Author:       Grant Corley
+ Template:     twentytwenty
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  twentytwentychild
+*/
+
+
+/* This is the master SCSS file
+* from which all other SCSS files will be called.
+* Examples taken from http://sass-lang.com/guide
+*/
+
+/*  March 6 2020; 8am */
+
+//@import url('../twentytwenty/style.css');
+
+@import 'bower_components/normalize-css/normalize';
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+@import 'partials/variables';
+@import 'partials/main';
+@import 'partials/typography';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/components';
+@import 'partials/homepage';
+@import 'partials/post-query-page';

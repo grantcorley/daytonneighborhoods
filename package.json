@@ -1,0 +1,25 @@
+{
+  "name": "daytonneighborhoods",
+  "version": "1.0.0",
+  "description": "website for Dayton Neighborhoods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grant Corley",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "css-minify": "^1.0.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1"
+  }
+}

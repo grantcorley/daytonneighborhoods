@@ -1,0 +1,83 @@
+
+
+
+
+/* _header.scss */
+header#site-header{
+  box-shadow: 2px 2px 2px rgba(0,0,0,.1)
+}
+
+//MOBILE DISPLAYS
+.main-logo{
+  width:220px;
+  height:70px;
+  display:block;
+  // border:1px dotted red;
+  background-image: url('images/DNLogo_main_purple.svg');
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+//TABLET
+@media screen and (min-width: 468px) {
+  .main-logo{
+    width:240px;
+    height:96px;
+    //border:1px dotted red;
+
+  }
+}
+
+
+//DESKTOP
+@media screen and (min-width: 768px) {
+  .main-logo{
+    width:276px;
+    height:96px;
+
+  }
+}
+
+
+.header-navigation-wrapper{
+
+    nav.primary-menu-wrapper{
+      ul.primary-menu{
+
+        /* --------------------- */
+
+        li.menu-item{
+
+          //font-weight: bold;
+
+          a {
+              color: #605594;
+            &:visited{
+              color: #605594;
+            }
+            &:hover {
+              // color: #e76113; //orange
+              color: $mouseover_color;
+              text-decoration: none;
+            }
+            &:active {
+            // color: #e76113; //orange
+            color: $mouseover_color;
+            text-decoration: none !important;
+            }
+          }
+
+        }//li.menu-item
+
+        li.menu-item.current-menu-item{
+            a{
+                text-decoration: none !important;
+            }
+        }
+
+      }//ul.primary-menu
+    }
+
+}//header-navigation-wrapper
