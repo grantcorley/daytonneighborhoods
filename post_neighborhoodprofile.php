@@ -6,8 +6,10 @@
 
  get_header();  ?>
 
-<main id="site-content" role="main">
+<main id="site-content" class="inside-post" role="main">
 
+
+<!-- <h1>post_neighborhoodprofile.php</h1> -->
 
 	<?php
 

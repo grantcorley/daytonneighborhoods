@@ -1,0 +1,41 @@
+
+
+#site-content.inside-post{
+
+  article.post{
+    // background-color: pink;
+
+    h1.entry-title{
+      // border:1px solid red;
+      font-family: $headline;
+      font-weight: bold;
+      font-size: 3.2em;
+    }
+
+  }//end article.post
+
+}
+
+//MEDIA QUERIES
+
+//full screen
+@media screen and (min-width: 768px) {
+
+  #site-content.inside-post{
+
+    article.post{
+      // background-color: pink;
+
+      h1.entry-title{
+        // border:1px solid red;
+        font-family: $headline;
+        font-weight: bold;
+        font-size: 6.4em;
+      }
+
+    }//end article.post
+
+  }
+
+
+}

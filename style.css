@@ -7503,6 +7503,17 @@ input.search-submit {
   body.singular main#site-content article .header-over-image figure.featured-media {
     position: relative; } }
 
+#site-content.inside-post article.post h1.entry-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 3.2em; }
+
+@media screen and (min-width: 768px) {
+  #site-content.inside-post article.post h1.entry-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 6.4em; } }
+
 h1, h2 {
   color: #605594; }
 
@@ -7610,6 +7621,97 @@ input.search-submit {
   background-color: #cc0000; }
 
 /* _homepage.scss */
+/* _neighborhood-profile.scss */
+.neighborhood-profile {
+  padding-top: 0; }
+  .neighborhood-profile .entry-content#full-width-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-top: 1em; }
+    .neighborhood-profile .entry-content#full-width-content .container {
+      width: 100% !important;
+      max-width: none !important; }
+      .neighborhood-profile .entry-content#full-width-content .container h3 {
+        margin-top: 0; }
+      .neighborhood-profile .entry-content#full-width-content .container section {
+        padding-top: 0;
+        padding-bottom: 0; }
+      .neighborhood-profile .entry-content#full-width-content .container section.walk-scores,
+      .neighborhood-profile .entry-content#full-width-content .container section.home-info {
+        background-color: white;
+        text-align: center;
+        display: block; }
+        .neighborhood-profile .entry-content#full-width-content .container section.walk-scores .box,
+        .neighborhood-profile .entry-content#full-width-content .container section.home-info .box {
+          border: 1px solid #cecece;
+          flex-grow: 1;
+          margin: 0 .5em .5em .5em;
+          padding: 1em; }
+          .neighborhood-profile .entry-content#full-width-content .container section.walk-scores .box h4,
+          .neighborhood-profile .entry-content#full-width-content .container section.home-info .box h4 {
+            margin-top: 0;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            margin-bottom: 1em; }
+      .neighborhood-profile .entry-content#full-width-content .container p.footnote {
+        font-size: .75em;
+        font-style: italic;
+        color: gray;
+        margin: .5em auto;
+        width: 100%;
+        text-align: center; }
+      .neighborhood-profile .entry-content#full-width-content .container section.quick-stats {
+        background-color: #d4d1e4; }
+      .neighborhood-profile .entry-content#full-width-content .container section.description {
+        background-color: white; }
+      .neighborhood-profile .entry-content#full-width-content .container section.neighborhood-assoc-info {
+        background-color: #b6b0d2; }
+
+@media screen and (min-width: 768px) {
+  .neighborhood-profile {
+    padding-top: 0; }
+    .neighborhood-profile .entry-content#full-width-content {
+      width: 100% !important;
+      max-width: 1000px !important;
+      padding-top: 1em;
+      margin: 0 auto; }
+      .neighborhood-profile .entry-content#full-width-content .container {
+        width: 100% !important;
+        max-width: none !important; }
+        .neighborhood-profile .entry-content#full-width-content .container h3 {
+          margin-top: 0; }
+        .neighborhood-profile .entry-content#full-width-content .container section {
+          padding-top: 0;
+          padding-bottom: 0; }
+        .neighborhood-profile .entry-content#full-width-content .container section.walk-scores,
+        .neighborhood-profile .entry-content#full-width-content .container section.home-info {
+          background-color: white;
+          text-align: center;
+          padding-top: .5em;
+          display: flex; }
+          .neighborhood-profile .entry-content#full-width-content .container section.walk-scores .box,
+          .neighborhood-profile .entry-content#full-width-content .container section.home-info .box {
+            border: 1px solid #cecece;
+            flex-grow: 1;
+            margin: 0 .5em 0 .5em;
+            padding: 1em; }
+            .neighborhood-profile .entry-content#full-width-content .container section.walk-scores .box h4,
+            .neighborhood-profile .entry-content#full-width-content .container section.home-info .box h4 {
+              margin-top: 0; }
+        .neighborhood-profile .entry-content#full-width-content .container p.footnote {
+          font-size: .75em;
+          font-style: italic;
+          color: gray;
+          margin: .5em auto;
+          width: 100%;
+          text-align: center; }
+        .neighborhood-profile .entry-content#full-width-content .container section.quick-stats {
+          background-color: #d4d1e4; }
+        .neighborhood-profile .entry-content#full-width-content .container section.description {
+          background-color: white; }
+        .neighborhood-profile .entry-content#full-width-content .container section.neighborhood-assoc-info {
+          background-color: #b6b0d2; } }
+
 /* post-query-page.scss */
 body.singular main#site-content.post-query-page article.page .header-over-image {
   position: relative; }

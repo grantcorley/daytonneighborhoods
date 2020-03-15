@@ -1,0 +1,175 @@
+/* _neighborhood-profile.scss */
+
+
+//MOBILE SIZE
+.neighborhood-profile{
+  // border: 2px dashed pink;
+  padding-top:0;
+
+  .entry-content#full-width-content{
+    // border: 1px dotted red;
+
+    width:100% !important;
+    max-width: 100% !important;
+    padding-top:1em;
+
+    .container{
+
+    width:100% !important;
+    max-width: none !important;
+
+    h3{
+      margin-top:0;
+    }
+
+      section{ //for all sections
+        padding-top:0;
+        padding-bottom:0;
+      }
+
+      section.walk-scores,
+      section.home-info{
+        background-color:white;
+        text-align: center;
+
+        display:block;
+        // border:1px solid green;
+
+        .box{
+          border:1px solid #cecece;
+          flex-grow: 1;
+          margin: 0 .5em .5em .5em;
+          padding: 1em;
+
+          h4{
+            margin-top:0;
+            font-family: $headline;
+            font-weight: bold;
+            margin-bottom: 1em;
+            //border:1px dotted pink;
+          }
+
+        }
+
+      } //end walk-scores
+
+      p.footnote{
+        font-size: .75em;
+        font-style: italic;
+        color:gray;
+        margin: .5em auto;
+        width:100%;
+        text-align: center;
+      }
+
+      // section.home-info{
+      //   border-top: 2px solid $primary;
+      //   background-color:white;
+      // }
+
+      section.quick-stats{
+        background-color: lighten($primary, 40%);
+      }
+
+      section.description{
+        background-color:white;
+      }
+
+      section.neighborhood-assoc-info{
+        background-color:lighten($primary, 30%);
+      }
+
+    }//end container
+
+    } //end entry-content
+
+} //end neighborhood-profile
+
+
+//MEDIA QUERIES -----------
+//FULL SCREEN / DESKTOP
+@media screen and (min-width: 768px) {
+
+  .neighborhood-profile{
+    // border: 2px dashed pink;
+    padding-top:0;
+
+    .entry-content#full-width-content{
+
+      // border: 1px dotted red;
+
+      width:100% !important;
+      max-width: 1000px !important;
+      padding-top:1em;
+      margin: 0 auto;
+
+      .container{
+
+      width:100% !important;
+      max-width: none !important;
+
+      h3{
+        margin-top:0;
+      }
+
+        section{ //for all sections
+          padding-top:0;
+          padding-bottom:0;
+        }
+
+        section.walk-scores,
+        section.home-info{
+          background-color:white;
+          text-align: center;
+          padding-top: .5em;
+
+          display:flex;
+          // border:1px solid green;
+
+          .box{
+            border:1px solid #cecece;
+            flex-grow: 1;
+            margin: 0 .5em 0 .5em;
+            padding: 1em;
+
+            h4{
+              margin-top:0;
+            }
+
+          }
+
+        } //end walk-scores
+
+        p.footnote{
+          font-size: .75em;
+          font-style: italic;
+          color:gray;
+          margin: .5em auto;
+          width:100%;
+          text-align: center;
+        }
+
+        section.home-info{
+          // border-top: 2px solid $primary;
+          // background-color:white;
+        }
+
+        section.quick-stats{
+          background-color: lighten($primary, 40%);
+        }
+
+        section.description{
+          background-color:white;
+        }
+
+        section.neighborhood-assoc-info{
+          background-color:lighten($primary, 30%);
+        }
+
+      }//end container
+
+      } //end entry-content
+
+  } //end neighborhood-profile
+
+}//END 768 MEDIA QUERY (DESKTOP)
