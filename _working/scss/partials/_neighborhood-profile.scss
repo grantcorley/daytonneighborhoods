@@ -3,11 +3,16 @@
 
 //MOBILE SIZE
 .neighborhood-profile{
-  // border: 2px dashed pink;
   padding-top:0;
 
+  h4{
+    margin-top:0;
+    font-family: $headline;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+
   .entry-content#full-width-content{
-    // border: 1px dotted red;
 
     width:100% !important;
     max-width: 100% !important;
@@ -33,21 +38,16 @@
         text-align: center;
 
         display:block;
-        // border:1px solid green;
 
         .box{
-          border:1px solid #cecece;
+          //border:1px solid #cecece;
           flex-grow: 1;
-          margin: 0 .5em .5em .5em;
+          margin: 0 0 .5em 0;
           padding: 1em;
 
-          h4{
-            margin-top:0;
-            font-family: $headline;
-            font-weight: bold;
-            margin-bottom: 1em;
-            //border:1px dotted pink;
-          }
+          h4{}
+
+
 
         }
 
@@ -62,21 +62,33 @@
         text-align: center;
       }
 
-      // section.home-info{
-      //   border-top: 2px solid $primary;
-      //   background-color:white;
-      // }
 
-      section.quick-stats{
-        background-color: lighten($primary, 40%);
-      }
 
-      section.description{
-        background-color:white;
-      }
+      section.description-quick-stats{
+        display: flex;
+        margin-top:2em;
+
+
+        .description{
+          flex-shrink: 1.4;
+          padding-right: 2em;
+        }
+
+        .quick-stats{
+          // border:2px solid red;
+          background-color: lighten($primary, 30%);
+          padding: 1em;
+          padding-bottom:2em;
+          border-top: $primary 3px solid;
+
+        }
+
+      }//end section.description-quick-stats
 
       section.neighborhood-assoc-info{
-        background-color:lighten($primary, 30%);
+        background-color: lighten($secondary, 50%);
+        margin-top: 1em;
+        padding:1em;
       }
 
     }//end container
@@ -124,16 +136,33 @@
           padding-top: .5em;
 
           display:flex;
-          // border:1px solid green;
+
 
           .box{
-            border:1px solid #cecece;
+
             flex-grow: 1;
             margin: 0 .5em 0 .5em;
             padding: 1em;
 
+            // &:nth-child(2) {
+            //   border-left:1px solid #cecece;
+            //   border-right:1px solid #cecece;
+            // }
+
+            img.icon{
+              max-width: 116px;
+              max-height: 116px;
+              margin:0 auto 1em auto;
+            }
+
             h4{
               margin-top:0;
+              margin-bottom:0;
+              font-size: 1.1em;
+            }
+
+            p{
+              font-size: 32px;
             }
 
           }
@@ -154,16 +183,62 @@
           // background-color:white;
         }
 
-        section.quick-stats{
-          background-color: lighten($primary, 40%);
-        }
+        section.description-quick-stats{
+          display: flex;
+          margin-top:2em;
 
-        section.description{
-          background-color:white;
-        }
+
+          .description{
+            padding-right: 2em;
+            flex-basis: 60%;
+
+            p:first-child:first-letter {
+              color: $accent;
+              float: left;
+              font-size: 75px;
+              line-height: 60px;
+              padding-top: 4px;
+              padding-right: 8px;
+              padding-left: 3px;
+            }
+
+          }
+
+          .quick-stats{
+
+            flex-grow: 1;
+
+            // .icon{
+            //   width:190px;
+            //   height:64px;
+            //   display:block;
+            //   background-image: url('images/DNLogo_white.svg');
+            //   background-repeat: no-repeat;
+            //   //border:1px solid white;
+            //   margin: 0 auto 1em auto;
+            // }
+
+            h4 {
+              font-size: 1.1em;
+            }
+
+            span.label{
+              display:block;
+              font-weight: bold;
+              color: $primary;
+            }
+
+          }//quick-stats
+
+        }//end section.description-quick-stats
+
 
         section.neighborhood-assoc-info{
-          background-color:lighten($primary, 30%);
+
+          h4 {
+            font-size: 1.1em;
+          }
+
         }
 
       }//end container

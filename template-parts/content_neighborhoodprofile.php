@@ -24,8 +24,7 @@
 	//if ( ! is_search() ) {
 		get_template_part( 'template-parts/featured-image' );
 	//}
-
-	get_template_part( 'template-parts/entry-header' );
+		get_template_part( 'template-parts/entry-header' );
 
 	?>
 
@@ -38,147 +37,88 @@
 
 			<div class="container">
 
+				<!-- FLEXBOX LAYOUT: WALK SCORES -->
 				<section class="walk-scores">
 							<div class="box">
+
+								<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon.svg" alt="">
+
 								<h4>Walk Score*</h4>
-									<p><?php the_field('walk_score');?></p>
+									<p><?php the_field('walk_score');?>/100</p>
 							</div>
 								<div class="box">
+									<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon.svg" alt="">
 								<h4>Bike Score*</h4>
-									<p><?php the_field('bike_score');?></p>
+									<p><?php the_field('bike_score');?>/100</p>
 							</div>
 								<div class="box">
+										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon.svg" alt="">
 								<h4>Transit Score*</h4>
-									<p><?php the_field('transit_score');?></p>
+									<p><?php the_field('transit_score');?>/100</p>
 							</div>
 				</section>
 
 				<p class="footnote">* All scores from <a href="https://www.walkscore.com/OH/Dayton">Walk Score</a></p>
 
 
-				<!-- FLEXBOX LAYOUT -->
+				<!-- FLEXBOX LAYOUT: HOME INFO -->
 				<section class="home-info">
 							<div class="box">
+									<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon.svg" alt="">
 								<h4>Average Home Value</h4>
-									<p><?php the_field('avg_home_value');?></p>
+									<p>$<?php the_field('avg_home_value');?></p>
 							</div>
 								<div class="box">
+										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon.svg" alt="">
 								<h4>Average House Size</h4>
-									<p><?php the_field('avg_house_size');?></p>
+									<p><?php the_field('avg_house_size');?> sq. ft.</p>
 							</div>
 								<div class="box">
+										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon.svg" alt="">
 								<h4>Average Lot Size</h4>
-									<p><?php the_field('avg_lot_size');?></p>
+									<p><?php the_field('avg_lot_size');?> sq. ft.</p>
 							</div>
 				</section>
 
 
+				<section class="description-quick-stats">
 
-				<section class="description">
-					<div class="row">
-						<div class="col-sm">
-						
-					</div>
-					</div>
-
-					<div class="row"> <!--row for home info-->
-						<div class="col-sm">
+						<div class="description">
 								<p><?php the_field('neighborhood_description');?></p>
-					</div>
-				</div>
-			</section> <!-- end description -->
+						</div>
 
+						<div class="quick-stats">
+							<h4>Quick Stats</h4>
 
+							<p><span class="label">Zip Code(s)</span>
+								<?php the_field('zip_codes');?></p>
 
+							<p><span class="label">Neighborhoods(s)</span>
+								<?php the_field('neighborhoods');?></p>
 
-			<section class="quick-stats">
+							<p><span class="label">Historic District(s)</span>
+							<?php the_field('historic_districts');?></p>
 
-				<div class="row">
-					<div class="col-sm">
-					<h3>Quick Stats</h3>
-				</div> <!--end col-->
-				</div> <!--end row-->
+							<p><span class="label">Housing Units Per Acre</span>
+							<?php the_field('housing_units_acre');?></p>
 
+							<p><span class="label">Known For</span>
+							<?php the_field('known_for');?></p>
+						</div>
 
-				<div class="row"> <!--Row: Zip Codes-->
-
-					<div class="col">
-						<p>Zip Codes: <?php the_field('zip_codes');?></p>
-					</div> <!--end col-->
-
-				</div> <!--end row-->
-
-
-
-				<div class="row"> <!--Row: Neighborhoods and Historic Districts-->
-
-					<div class="col">
-						<p>Neighborhoods: <?php the_field('neighborhoods');?></p>
-					</div> <!--end col-->
-
-					<div class="col">
-						<p>Historic Districts: <?php the_field('historic_districts');?></p>
-					</div> <!--end col-->
-
-				</div> <!--end row-->
-
-
-				<div class="row"> <!--Row: Housing Units per Acre, Known For -->
-
-					<div class="col">
-							<p>Housing Units Per Acre: <?php the_field('housing_units_acre');?></p>
-					</div> <!--end col-->
-
-					<div class="col">
-						<p>Known For: <?php the_field('known_for');?></p>
-					</div> <!--end col-->
-
-				</div> <!--end row-->
-
-			</section> <!-- end quick stats -->
-
-
+				</section> <!-- end description-quick-stats -->
 
 
 
 		<section class="neighborhood-assoc-info">
 
-			<div class="row">
-				<div class="col">
-					<h3>Neighborhood Association Info</h3>
-				</div>
-			</div>
-
-			<div class="row"> <!--row for home info-->
-				<div class="col">
-							<p><?php the_field('neighborhood_association');?></p>
-				</div>
-			</div>
-
-			<div class="row"> <!--row for home info-->
-				<div class="col">
-						<p><?php the_field('na_website');?></p>
-				</div>
-			</div>
-
-			<div class="row"> <!--row for home info-->
-				<div class="col">
-							<p>Contact: <?php the_field('contact_name');?></p>
-				</div>
-			</div>
-
-			<div class="row"> <!--row for home info-->
-				<div class="col">
-								<p><?php the_field('phone_number');?></p>
-				</div>
-			</div>
+					<h4>Neighborhood Association</h4>
+					<p><strong><?php the_field('neighborhood_association');?></strong><br/>
+					<?php the_field('na_website');?><br/>
+					Contact: <?php the_field('contact_name');?><br/>
+					<?php the_field('phone_number');?></p>
 
 	</section> <!-- end neighborhood-assoc-info -->
-
-
-
-
-
 
 
 
