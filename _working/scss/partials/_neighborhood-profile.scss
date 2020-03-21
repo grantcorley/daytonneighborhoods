@@ -3,6 +3,9 @@
 
 //MOBILE SIZE
 .neighborhood-profile{
+
+
+
   padding-top:0;
 
   h4{
@@ -30,6 +33,11 @@
       section{ //for all sections
         padding-top:0;
         padding-bottom:0;
+      }
+
+      .row.pictures{
+        // border:2px dotted pink !important;
+        margin-top:1em;
       }
 
       section.walk-scores,
@@ -149,6 +157,8 @@
             //   border-right:1px solid #cecece;
             // }
 
+
+
             img.icon{
               max-width: 116px;
               max-height: 116px;
@@ -161,8 +171,9 @@
               font-size: 1.1em;
             }
 
-            p{
-              font-size: 32px;
+            p.icon-stat{
+              font-size: 36px;
+              color: $primary;
             }
 
           }

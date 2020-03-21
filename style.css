@@ -7503,16 +7503,20 @@ input.search-submit {
   body.singular main#site-content article .header-over-image figure.featured-media {
     position: relative; } }
 
-#site-content.inside-post article.post h1.entry-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 3.2em; }
-
-@media screen and (min-width: 768px) {
-  #site-content.inside-post article.post h1.entry-title {
+#site-content.inside-post article.post header#entry-header {
+  padding-top: 1.2em; }
+  #site-content.inside-post article.post header#entry-header h1.entry-title {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    font-size: 6.4em; } }
+    font-size: 3.2em; }
+
+@media screen and (min-width: 768px) {
+  #site-content.inside-post article.post header#entry-header {
+    padding-top: 3.6em; }
+    #site-content.inside-post article.post header#entry-header h1.entry-title {
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      font-size: 6.4em; } }
 
 h1, h2 {
   color: #605594; }
@@ -7641,6 +7645,8 @@ input.search-submit {
       .neighborhood-profile .entry-content#full-width-content .container section {
         padding-top: 0;
         padding-bottom: 0; }
+      .neighborhood-profile .entry-content#full-width-content .container .row.pictures {
+        margin-top: 1em; }
       .neighborhood-profile .entry-content#full-width-content .container section.walk-scores,
       .neighborhood-profile .entry-content#full-width-content .container section.home-info {
         background-color: white;
@@ -7711,9 +7717,10 @@ input.search-submit {
               margin-top: 0;
               margin-bottom: 0;
               font-size: 1.1em; }
-            .neighborhood-profile .entry-content#full-width-content .container section.walk-scores .box p,
-            .neighborhood-profile .entry-content#full-width-content .container section.home-info .box p {
-              font-size: 32px; }
+            .neighborhood-profile .entry-content#full-width-content .container section.walk-scores .box p.icon-stat,
+            .neighborhood-profile .entry-content#full-width-content .container section.home-info .box p.icon-stat {
+              font-size: 36px;
+              color: #605594; }
         .neighborhood-profile .entry-content#full-width-content .container p.footnote {
           font-size: .75em;
           font-style: italic;

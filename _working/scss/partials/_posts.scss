@@ -5,12 +5,20 @@
   article.post{
     // background-color: pink;
 
+header#entry-header{
+
+    //border: 4px dashed pink;
+
+    padding-top:1.2em;
+
     h1.entry-title{
       // border:1px solid red;
       font-family: $headline;
       font-weight: bold;
       font-size: 3.2em;
     }
+
+}  //end header #entry-header
 
   }//end article.post
 
@@ -26,12 +34,18 @@
     article.post{
       // background-color: pink;
 
+  header#entry-header{
+
+            padding-top:3.6em;
+
       h1.entry-title{
         // border:1px solid red;
         font-family: $headline;
         font-weight: bold;
         font-size: 6.4em;
       }
+
+  }//end header#entry-header
 
     }//end article.post
 

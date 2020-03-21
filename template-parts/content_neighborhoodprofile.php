@@ -17,11 +17,16 @@
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
+
+
 	<!-- <p>content.php</p> -->
 
 	<?php
 
 	//if ( ! is_search() ) {
+
+
+
 		get_template_part( 'template-parts/featured-image' );
 	//}
 		get_template_part( 'template-parts/entry-header' );
@@ -41,20 +46,20 @@
 				<section class="walk-scores">
 							<div class="box">
 
-								<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon.svg" alt="">
+								<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_pedestrian.svg" alt="walk score icon">
 
 								<h4>Walk Score*</h4>
-									<p><?php the_field('walk_score');?>/100</p>
+									<p class="icon-stat"><?php the_field('walk_score');?>/100</p>
 							</div>
 								<div class="box">
-									<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon.svg" alt="">
+									<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_bicycle.svg" alt="bike score icon">
 								<h4>Bike Score*</h4>
-									<p><?php the_field('bike_score');?>/100</p>
+									<p class="icon-stat"><?php the_field('bike_score');?>/100</p>
 							</div>
 								<div class="box">
-										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon.svg" alt="">
+										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_transit.svg" alt="transit score icon">
 								<h4>Transit Score*</h4>
-									<p><?php the_field('transit_score');?>/100</p>
+									<p class="icon-stat"><?php the_field('transit_score');?>/100</p>
 							</div>
 				</section>
 
@@ -64,21 +69,37 @@
 				<!-- FLEXBOX LAYOUT: HOME INFO -->
 				<section class="home-info">
 							<div class="box">
-									<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon.svg" alt="">
+									<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_money.svg" alt="House value icon">
 								<h4>Average Home Value</h4>
-									<p>$<?php the_field('avg_home_value');?></p>
+									<p class="icon-stat">$<?php the_field('avg_home_value');?></p>
 							</div>
 								<div class="box">
-										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon.svg" alt="">
+										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_house.svg" alt="House size icon">
 								<h4>Average House Size</h4>
-									<p><?php the_field('avg_house_size');?> sq. ft.</p>
+									<p class="icon-stat"><?php the_field('avg_house_size');?> sq. ft.</p>
 							</div>
 								<div class="box">
-										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon.svg" alt="">
+										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_tree.svg" alt="Lot size icon">
 								<h4>Average Lot Size</h4>
-									<p><?php the_field('avg_lot_size');?> sq. ft.</p>
+									<p class="icon-stat"><?php the_field('avg_lot_size');?> sq. ft.</p>
 							</div>
 				</section>
+
+
+				<!--pics row 1-->
+				<div class="row pictures">
+					<div class="col-sm">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_01');?>" class="img-fluid" alt="<?php the_field('photo_01_description');?>">
+					</div>
+					<div class="col-sm">
+						<!--flag-->
+							<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_02');?>" class="img-fluid" alt="<?php the_field('photo_02_description');?>">
+					</div>
+					<div class="col-sm">
+						<!--donuts-->
+							<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_03');?>" class="img-fluid" alt="<?php the_field('photo_03_description');?>">
+					</div>
+				</div>
 
 
 				<section class="description-quick-stats">
@@ -110,6 +131,22 @@
 
 
 
+					<!--pics row 2-->
+					<div class="row pictures">
+						<div class="col-sm">
+							<!-- <img src="< ?php echo get_stylesheet_directory_uri(); ?>/images/OND_library.jpg" class="img-fluid" alt="Kayak shop"> -->
+								<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_04');?>" class="img-fluid" alt="<?php the_field('photo_04_description');?>">
+						</div>
+						<div class="col-sm">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_05');?>" class="img-fluid" alt="<?php the_field('photo_05_description');?>">
+						</div>
+						<div class="col-sm">
+							<!--church-->
+						<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_06');?>" class="img-fluid" alt="<?php the_field('photo_06_description');?>">
+						</div>
+					</div>
+
+
 		<section class="neighborhood-assoc-info">
 
 					<h4>Neighborhood Association</h4>
@@ -123,7 +160,16 @@
 
 
 
+
+
 	</div><!--end container -->
+
+
+
+
+
+
+
 
 
 		</div><!-- .entry-content -->
