@@ -110,7 +110,7 @@
 						</div>
 
 						<div class="quick-stats">
-							<h4>Quick Stats</h4>
+							<h4><span class="q-stats">Quick Stats:</span> <br/> <?php the_field('neighborhood');?></h4>
 
 							<p><span class="label">Zip Code(s):</span>
 								<?php the_field('zip_codes');?></p>
