@@ -18,9 +18,6 @@
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 
-
-	<!-- <p>content.php</p> -->
-
 	<?php
 
 	//if ( ! is_search() ) {
@@ -44,38 +41,78 @@
 
 				<!-- FLEXBOX LAYOUT: WALK SCORES -->
 				<section class="walk-scores">
-							<div class="box">
 
+					<!-- WALK SCORE -->
+					<?php
+						$walk_score =  get_field('walk_score');
+						if($walk_score != "" ){?>
+							<!-- SHOW THE WALK SCORE IF IT EXISTS -->
+							<div class="box"><!-- ============== -->
 								<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_pedestrian.svg" alt="walk score icon">
+								<h4>Walk Score *</h4>
+									<p class="icon-stat"><?php the_field('walk_score');?> / 100</p>
+							</div><!-- ============== -->
+						<?php } ?>
 
-								<h4>Walk Score*</h4>
-									<p class="icon-stat"><?php the_field('walk_score');?>/100</p>
-							</div>
-								<div class="box">
+						<!-- BIKE SCORE -->
+						<?php
+							$bike_score =  get_field('bike_score');
+							if($bike_score != "" ){?>
+								<!-- SHOW THE BIKE SCORE IF IT EXISTS -->
+								<div class="box"><!-- ============== -->
 									<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_bicycle.svg" alt="bike score icon">
-								<h4>Bike Score*</h4>
-									<p class="icon-stat"><?php the_field('bike_score');?>/100</p>
-							</div>
-								<div class="box">
+									<h4>Bike Score *</h4>
+										<p class="icon-stat"><?php the_field('bike_score');?> / 100</p>
+								</div><!-- ============== -->
+							<?php } ?>
+
+
+							<!-- TRANSIT SCORE -->
+							<?php
+								$transit_score =  get_field('transit_score');
+								if($transit_score != "" ){?>
+									<!-- SHOW THE TRANSIT SCORE IF IT EXISTS -->
+									<div class="box"><!-- ============== -->
 										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_transit.svg" alt="transit score icon">
-								<h4>Transit Score*</h4>
-									<p class="icon-stat"><?php the_field('transit_score');?>/100</p>
-							</div>
+										<h4>Transit Score *</h4>
+											<p class="icon-stat"><?php the_field('transit_score');?> / 100</p>
+									</div><!-- ============== -->
+								<?php } ?>
+
 				</section>
 
 
 				<!-- FLEXBOX LAYOUT: HOME INFO -->
 				<section class="home-info">
-							<div class="box">
-									<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_money.svg" alt="House value icon">
+
+
+
+					<!-- AVG HOME VALUES -->
+					<?php
+						$home_value =  get_field('avg_home_value');
+						if($home_value != "" ){?>
+							<!-- SHOW THE HOME VALUES IF THEY EXISTS -->
+							<div class="box"><!-- ============== -->
+								<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_money.svg" alt="House value icon">
 								<h4>Average Home Value</h4>
-									<p class="icon-stat">$<?php the_field('avg_home_value');?></p>
-							</div>
-								<div class="box">
-										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_house.svg" alt="House size icon">
-								<h4>Average House Size</h4>
-									<p class="icon-stat"><?php the_field('avg_house_size');?> sq. ft.</p>
-							</div>
+								<p class="icon-stat">$<?php the_field('avg_home_value');?></p>
+							</div><!-- ============== -->
+						<?php } ?>
+
+
+						<!-- AVG HOUSE SIZE -->
+						<?php
+							$house_size =  get_field('avg_house_size');
+							if($house_size != "" ){?>
+								<!-- SHOW THE HOME VALUES IF THEY EXISTS -->
+								<div class="box"><!-- ============== -->
+									<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_house.svg" alt="House size icon">
+									<h4>Average House Size</h4>
+								<p class="icon-stat"><?php the_field('avg_house_size');?> sq. ft.</p>
+								</div><!-- ============== -->
+							<?php } ?>
+
+
 								<div class="box">
 										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_tree.svg" alt="Lot size icon">
 								<h4>Average Lot Size</h4>
@@ -115,17 +152,44 @@
 							<p><span class="label">Zip Code(s):</span>
 								<?php the_field('zip_codes');?></p>
 
-							<p><span class="label">Neighborhoods(s):</span>
-								<?php the_field('neighborhoods');?></p>
+							<!--Show Neighborhood(s) if exists-->
+							<?php
+									$neighborhoods =  get_field('neighborhoods');
+									if($neighborhoods != "" ){?>
+											<p><span class="label">Neighborhoods(s):</span>
+											<?php the_field('neighborhoods');?></p>
+							<?php } ?>
 
-							<p><span class="label">Historic District(s):</span>
-							<?php the_field('historic_districts');?></p>
 
-							<p><span class="label">Housing Units Per Acre:</span>
-							<?php the_field('housing_units_acre');?></p>
+							<!--Show Historic District(s) if exists-->
+							<?php
+									$historic_districts =  get_field('historic_districts');
+									if($historic_districts != "" ){?>
+											<p><span class="label">Historic District(s):</span>
+											<?php the_field('historic_districts');?></p>
+							<?php } ?>
 
-							<p><span class="label">Known For:</span>
-							<?php the_field('known_for');?></p>
+
+
+							<!--Show Housing Units Per Acre if exists-->
+							<?php
+									$units_per_acre =  get_field('housing_units_acre');
+									if($units_per_acre != "" ){?>
+										<p><span class="label">Housing Units Per Acre:</span>
+										<?php the_field('housing_units_acre');?></p>
+							<?php } ?>
+
+
+							<!--Show Known For if exists-->
+							<?php
+									$known_for =  get_field('known_for');
+									if($known_for != "" ){?>
+										<p><span class="label">Known For:</span>
+										<?php the_field('known_for');?></p>
+							<?php } ?>
+
+
+
 						</div>
 
 				</section> <!-- end description-quick-stats -->
@@ -147,16 +211,42 @@
 						</div>
 					</div>
 
+			<!-- Check if Neighborhood Association exists -->
+			<?php
+					$neighborhood_assoc =  get_field('neighborhood_association');
+					if($neighborhood_assoc != "" ){?>
 
-		<section class="neighborhood-assoc-info">
+								<section class="neighborhood-assoc-info">
 
-					<h4>Neighborhood Association</h4>
-					<p><strong><?php the_field('neighborhood_association');?></strong><br/>
-					<?php the_field('na_website');?><br/>
-					Contact: <?php the_field('contact_name');?><br/>
-					<?php the_field('phone_number');?></p>
+											<h4>Neighborhood Association</h4>
+											<p><strong><?php the_field('neighborhood_association');?></strong><br/>
 
-	</section> <!-- end neighborhood-assoc-info -->
+												<!--show Website if exists-->
+												<?php
+														$website =  get_field('na_website');
+														if($website != "" ){ ?>
+															<?php the_field('na_website');?><br/>
+												<?php } ?>
+
+												<!--show Contact if exists-->
+												<?php
+														$the_contact =  get_field('contact_name');
+														if($the_contact != "" ){ ?>
+														Contact: <?php the_field('contact_name');?><br/>
+												<?php } ?>
+
+
+												<!--show Phone Number if exists-->
+												<?php
+														$phone_number =  get_field('phone_number');
+														if($phone_number != "" ){ ?>
+														<?php the_field('phone_number');?><br/>
+												<?php } ?>
+
+
+							</section> <!-- end neighborhood-assoc-info -->
+
+						<?php } ?>
 
 
 	<p class="footnote">* All scores with asterisk are from <a href="https://www.walkscore.com/OH/Dayton">Walk Score</a></p>
