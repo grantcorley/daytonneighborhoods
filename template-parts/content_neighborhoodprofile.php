@@ -63,8 +63,6 @@
 							</div>
 				</section>
 
-				<p class="footnote">* All scores from <a href="https://www.walkscore.com/OH/Dayton">Walk Score</a></p>
-
 
 				<!-- FLEXBOX LAYOUT: HOME INFO -->
 				<section class="home-info">
@@ -84,6 +82,9 @@
 									<p class="icon-stat"><?php the_field('avg_lot_size');?> sq. ft.</p>
 							</div>
 				</section>
+
+
+
 
 
 				<!--pics row 1-->
@@ -111,19 +112,19 @@
 						<div class="quick-stats">
 							<h4>Quick Stats</h4>
 
-							<p><span class="label">Zip Code(s)</span>
+							<p><span class="label">Zip Code(s):</span>
 								<?php the_field('zip_codes');?></p>
 
-							<p><span class="label">Neighborhoods(s)</span>
+							<p><span class="label">Neighborhoods(s):</span>
 								<?php the_field('neighborhoods');?></p>
 
-							<p><span class="label">Historic District(s)</span>
+							<p><span class="label">Historic District(s):</span>
 							<?php the_field('historic_districts');?></p>
 
-							<p><span class="label">Housing Units Per Acre</span>
+							<p><span class="label">Housing Units Per Acre:</span>
 							<?php the_field('housing_units_acre');?></p>
 
-							<p><span class="label">Known For</span>
+							<p><span class="label">Known For:</span>
 							<?php the_field('known_for');?></p>
 						</div>
 
@@ -158,6 +159,7 @@
 	</section> <!-- end neighborhood-assoc-info -->
 
 
+	<p class="footnote">* All scores with asterisk are from <a href="https://www.walkscore.com/OH/Dayton">Walk Score</a></p>
 
 
 

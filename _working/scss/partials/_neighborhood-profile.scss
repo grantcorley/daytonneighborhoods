@@ -4,7 +4,7 @@
 //MOBILE SIZE
 .neighborhood-profile{
 
-
+  // border: 2px dotted green;
 
   padding-top:0;
 
@@ -12,7 +12,13 @@
     margin-top:0;
     font-family: $headline;
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-bottom: 0;
+    font-size: x-large;
+  }
+
+  p.icon-stat{
+    font-size: 36px;
+    color: $primary;
   }
 
   .entry-content#full-width-content{
@@ -36,33 +42,42 @@
       }
 
       .row.pictures{
-        // border:2px dotted pink !important;
         margin-top:1em;
+
+        img{
+          margin: 1em auto;
+        }
+
       }
 
       section.walk-scores,
       section.home-info{
         background-color:white;
         text-align: center;
+        // border:1px dotted #d4d4d4;
+
 
         display:block;
 
         .box{
-          //border:1px solid #cecece;
           flex-grow: 1;
           margin: 0 0 .5em 0;
           padding: 1em;
 
+          img.icon{
+            max-width: 120px;
+            max-height: 120px;
+            margin:1em auto 1em auto;
+          }
+
           h4{}
 
-
-
-        }
+        }//end box
 
       } //end walk-scores
 
       p.footnote{
-        font-size: .75em;
+        font-size: 1.5em;
         font-style: italic;
         color:gray;
         margin: .5em auto;
@@ -73,30 +88,63 @@
 
 
       section.description-quick-stats{
-        display: flex;
-        margin-top:2em;
+        display: block;
+        margin-top:.85em;
 
 
         .description{
           flex-shrink: 1.4;
-          padding-right: 2em;
+          // padding-right: 2em;
+          border-top: 2px dotted $primary;
+
+          p{
+
+            font-size: 18px;
+            //text-align: center;
+            padding-top: .5em;
+            padding-bottom: 1em;
+
+          }
+
         }
 
         .quick-stats{
-          // border:2px solid red;
           background-color: lighten($primary, 30%);
-          padding: 1em;
-          padding-bottom:2em;
+          padding: 2em;
+          padding-bottom:2.4em;
           border-top: $primary 3px solid;
 
-        }
+          h4{
+            margin-bottom:.5em;
+          }
+
+          p{
+            font-size:1.6em;
+          }
+
+          span.label{
+            display:block;
+            font-weight: bold;
+            color: $primary;
+          }
+
+        }//end quick-stats
 
       }//end section.description-quick-stats
+
+
+
+
 
       section.neighborhood-assoc-info{
         background-color: lighten($secondary, 50%);
         margin-top: 1em;
-        padding:1em;
+        padding:2em;
+
+        p{
+          font-size:1.6em;
+        }
+
       }
 
     }//end container
@@ -107,11 +155,44 @@
 
 
 //MEDIA QUERIES -----------
-//FULL SCREEN / DESKTOP
+
+@media screen and (min-width: 576px) {
+
+.row.pictures{
+  margin-top:.5em;
+
+  img{
+    margin: 0 !important;
+  }
+
+}
+}
+
+
+@media screen and (min-width: 601px) {
+
+
+  .neighborhood-profile{
+
+    border: 2px dashed aqua;
+
+  }
+
+
+}//end min-width 601px
+
+
+
+
+
+
+//TABLET
 @media screen and (min-width: 768px) {
 
   .neighborhood-profile{
-    // border: 2px dashed pink;
+
+    border: 2px solid orange;
+
     padding-top:0;
 
     .entry-content#full-width-content{
@@ -144,6 +225,7 @@
           padding-top: .5em;
 
           display:flex;
+          //flex-wrap: wrap;
 
 
           .box{
@@ -152,16 +234,9 @@
             margin: 0 .5em 0 .5em;
             padding: 1em;
 
-            // &:nth-child(2) {
-            //   border-left:1px solid #cecece;
-            //   border-right:1px solid #cecece;
-            // }
-
-
-
             img.icon{
-              max-width: 116px;
-              max-height: 116px;
+              max-width: 114px;
+              max-height: 114px;
               margin:0 auto 1em auto;
             }
 
@@ -219,16 +294,6 @@
 
             flex-grow: 1;
 
-            // .icon{
-            //   width:190px;
-            //   height:64px;
-            //   display:block;
-            //   background-image: url('images/DNLogo_white.svg');
-            //   background-repeat: no-repeat;
-            //   //border:1px solid white;
-            //   margin: 0 auto 1em auto;
-            // }
-
             h4 {
               font-size: 1.1em;
             }
@@ -259,3 +324,16 @@
   } //end neighborhood-profile
 
 }//END 768 MEDIA QUERY (DESKTOP)
+
+
+
+//FULL-SCREEN DEVICES (LAPTOPS, MONITORS, ETC.) --------
+@media screen and (min-width: 992px) {
+
+  .neighborhood-profile{
+
+    border: 2px solid red;
+
+  }
+
+}
