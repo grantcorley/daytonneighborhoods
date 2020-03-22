@@ -126,17 +126,36 @@
 
 				<!--pics row 1-->
 				<div class="row pictures">
-					<div class="col-sm">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_01');?>" class="img-fluid" alt="<?php the_field('photo_01_description');?>">
-					</div>
-					<div class="col-sm">
-						<!--flag-->
-							<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_02');?>" class="img-fluid" alt="<?php the_field('photo_02_description');?>">
-					</div>
-					<div class="col-sm">
-						<!--donuts-->
-							<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_03');?>" class="img-fluid" alt="<?php the_field('photo_03_description');?>">
-					</div>
+
+
+					<!--show first column/photo if exists-->
+					<?php
+							$photo_01 =  get_field('photo_01');
+							if($photo_01 != "" ){ ?>
+								<div class="col-sm">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_01');?>" class="img-fluid" alt="<?php the_field('photo_01_description');?>">
+								</div>
+					<?php } ?>
+
+
+					<!--show second column/photo if exists-->
+					<?php
+							$photo_02 =  get_field('photo_02');
+							if($photo_02 != "" ){ ?>
+								<div class="col-sm">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_02');?>" class="img-fluid" alt="<?php the_field('photo_02_description');?>">
+								</div>
+					<?php } ?>
+
+
+					<!--show third column/photo if exists-->
+					<?php
+							$photo_03 =  get_field('photo_03');
+							if($photo_03 != "" ){ ?>
+								<div class="col-sm">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_03');?>" class="img-fluid" alt="<?php the_field('photo_03_description');?>">
+								</div>
+					<?php } ?>
 				</div>
 
 
@@ -188,35 +207,59 @@
 										<?php the_field('known_for');?></p>
 							<?php } ?>
 
-
-
 						</div>
 
 				</section> <!-- end description-quick-stats -->
 
 
-
 					<!--pics row 2-->
 					<div class="row pictures">
-						<div class="col-sm">
-							<!-- <img src="< ?php echo get_stylesheet_directory_uri(); ?>/images/OND_library.jpg" class="img-fluid" alt="Kayak shop"> -->
-								<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_04');?>" class="img-fluid" alt="<?php the_field('photo_04_description');?>">
-						</div>
-						<div class="col-sm">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_05');?>" class="img-fluid" alt="<?php the_field('photo_05_description');?>">
-						</div>
-						<div class="col-sm">
-							<!--church-->
-						<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_06');?>" class="img-fluid" alt="<?php the_field('photo_06_description');?>">
-						</div>
+
+						<!--show first column/photo if exists-->
+						<?php
+								$photo_04 =  get_field('photo_04');
+								if($photo_04 != "" ){ ?>
+									<div class="col-sm">
+											<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_04');?>" class="img-fluid" alt="<?php the_field('photo_04_description');?>">
+									</div>
+						<?php } ?>
+
+
+						<?php
+								$photo_05 =  get_field('photo_05');
+								if($photo_05 != "" ){ ?>
+									<div class="col-sm">
+											<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_05');?>" class="img-fluid" alt="<?php the_field('photo_05_description');?>">
+									</div>
+						<?php } ?>
+
+
+						<!-- =========== -->
+
+						<?php
+								$photo_06 =  get_field('photo_06');
+								if($photo_06 != "" ){ ?>
+									<div class="col-sm">
+											<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('photo_06');?>" class="img-fluid" alt="<?php the_field('photo_06_description');?>">
+									</div>
+						<?php } ?>
+
+						<!-- =========== -->
+
+
+
+
+
 					</div>
 
-			<!-- Check if Neighborhood Association exists -->
-			<?php
-					$neighborhood_assoc =  get_field('neighborhood_association');
-					if($neighborhood_assoc != "" ){?>
+
 
 								<section class="neighborhood-assoc-info">
+
+									<!-- Check if Neighborhood Association exists -->
+									<?php
+											$neighborhood_assoc =  get_field('neighborhood_association');
+											if($neighborhood_assoc != "" ){?>
 
 											<h4>Neighborhood Association</h4>
 											<p><strong><?php the_field('neighborhood_association');?></strong><br/>
@@ -243,10 +286,25 @@
 														<?php the_field('phone_number');?><br/>
 												<?php } ?>
 
+												<!--show Phone Number if exists-->
+												<?php
+														$contact_email =  get_field('contact_email');
+														if($contact_email != "" ){ ?>
+														<?php the_field('contact_email');?><br/>
+												<?php } ?>
+
+											</p>
+
+											<?php }
+
+											else { ?>
+													<p>Contact the City of Dayton for more neighborhood information, or for help starting a neighborhood association.<p>
+											<?php } ?>
+
 
 							</section> <!-- end neighborhood-assoc-info -->
 
-						<?php } ?>
+
 
 
 	<p class="footnote">* All scores with asterisk are from <a href="https://www.walkscore.com/OH/Dayton">Walk Score</a></p>
