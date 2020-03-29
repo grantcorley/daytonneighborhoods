@@ -1,6 +1,6 @@
 <?php
  /**
- * Template Name: City Living
+ * Template Name: Events
  *
 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -39,7 +39,7 @@ get_header();
 
 <div class="entry-header-inner section-inner medium">
 
-	<h1 class="entry-title">City Living</h1>
+	<h1 class="entry-title">Events</h1>
 	<p></p>
 
 
@@ -60,7 +60,7 @@ get_header();
 
 		<div class="entry-content">
 
-			<h2 class="intro-text">Essential resources for living in Dayton</h2>
+			<!-- <h2 class="intro-text">Incentives subhead</h2> -->
 
 
 			<!--============//? >===============-->
@@ -70,7 +70,7 @@ get_header();
 			// $the_query = new WP_Query( array( 'category_name' => 'city-living-essentials' ) );
 
 			$the_query = new WP_Query( array(
-									'category_name' => 'city-living-essentials',
+									'category_name' => 'events',
 									'orderby' => 'title',
     							'order'   => 'ASC',
 								));

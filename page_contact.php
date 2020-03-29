@@ -1,6 +1,6 @@
 <?php
  /**
- * Template Name: City Living
+ * Template Name: Contact
  *
 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -26,7 +26,7 @@ get_header();
 
 	<div class="featured-media-inner section-inner">
 
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/WestwoodMural_1980x1000.jpg" width="1980" height="1000" alt="Westwood mural, Dayton OH" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/fiveOaks.jpg" width="1980" height="1000" alt="Westwood mural, Dayton OH" />
 
 	</div><!-- .featured-media-inner -->
 
@@ -39,7 +39,7 @@ get_header();
 
 <div class="entry-header-inner section-inner medium">
 
-	<h1 class="entry-title">City Living</h1>
+	<h1 class="entry-title">Contact</h1>
 	<p></p>
 
 
@@ -60,31 +60,21 @@ get_header();
 
 		<div class="entry-content">
 
-			<h2 class="intro-text">Essential resources for living in Dayton</h2>
+			<!-- <h2 class="intro-text">Incentives subhead</h2> -->
 
 
 			<!--============//? >===============-->
 
 			<?php
 
-			// $the_query = new WP_Query( array( 'category_name' => 'city-living-essentials' ) );
+			if ( have_posts() ) {
 
-			$the_query = new WP_Query( array(
-									'category_name' => 'city-living-essentials',
-									'orderby' => 'title',
-    							'order'   => 'ASC',
-								));
-
-			//if ( have_posts() ) {
-			if ( $the_query->have_posts() ) {
-				//query_posts('posts_per_page=3');
-
-				while ( $the_query->have_posts() ) {
-					$the_query->the_post();
-					get_template_part( 'template-parts/content', get_post_type() );
-					//the_excerpt();
+				while ( have_posts() ) {
+					the_post();
+					get_template_part( 'template-parts/content-page-template', get_post_type() );
 				}
 			}
+
 			?>
 
 

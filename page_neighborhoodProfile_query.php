@@ -1,6 +1,6 @@
 <?php
  /**
- * Template Name: City Living
+ * Template Name: No Edit!: Neighborhood Profile Query
  *
 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -26,7 +26,7 @@ get_header();
 
 	<div class="featured-media-inner section-inner">
 
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/WestwoodMural_1980x1000.jpg" width="1980" height="1000" alt="Westwood mural, Dayton OH" />
+		<img src=" <?php echo get_stylesheet_directory_uri(); ?>/images/BelmontHomes.jpg" width="1980" height="1000" alt="Homes in Belmont, Dayton OH"/>
 
 	</div><!-- .featured-media-inner -->
 
@@ -39,8 +39,7 @@ get_header();
 
 <div class="entry-header-inner section-inner medium">
 
-	<h1 class="entry-title">City Living</h1>
-	<p></p>
+	<h1 class="entry-title">Neighborhood Profiles</h1>
 
 
 	<!-- that was twentytwenty_the_post_meta -->
@@ -60,7 +59,7 @@ get_header();
 
 		<div class="entry-content">
 
-			<h2 class="intro-text">Essential resources for living in Dayton</h2>
+			<h2 class="intro-text">Explore Dayton's neighborhoods</h2>
 
 
 			<!--============//? >===============-->
@@ -70,7 +69,7 @@ get_header();
 			// $the_query = new WP_Query( array( 'category_name' => 'city-living-essentials' ) );
 
 			$the_query = new WP_Query( array(
-									'category_name' => 'city-living-essentials',
+									'category_name' => 'neighborhood-profile',
 									'orderby' => 'title',
     							'order'   => 'ASC',
 								));
@@ -82,7 +81,7 @@ get_header();
 				while ( $the_query->have_posts() ) {
 					$the_query->the_post();
 					get_template_part( 'template-parts/content', get_post_type() );
-					//the_excerpt();
+					the_excerpt();
 				}
 			}
 			?>
