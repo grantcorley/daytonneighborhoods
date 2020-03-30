@@ -13,7 +13,6 @@
 get_header();
 ?>
 
-
 <main id="site-content" role="main" class="post-query-page">
 
 <article class="page">
@@ -26,7 +25,7 @@ get_header();
 
 	<div class="featured-media-inner section-inner">
 
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/onThePorch.jpg" width="1980" height="1000" alt="Westwood mural, Dayton OH" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/onThePorch.jpg" width="1980" height="1000" alt="Couple relaxing on front porch in Dayton, OH" />
 
 	</div><!-- .featured-media-inner -->
 
@@ -43,7 +42,6 @@ get_header();
 	<p></p>
 
 
-	<!-- that was twentytwenty_the_post_meta -->
 
 </div><!-- .entry-header-inner -->
 
@@ -56,11 +54,11 @@ get_header();
 
 
 
-	<div class="post-inner thin slorg">
+	<div class="post-inner thin top-level">
 
 		<div class="entry-content">
 
-			<h2 class="intro-text">Incentives subhead</h2>
+			<h2 class="intro-text">Explore the many financial incentives available to Dayton homebuyers and tenants.</h2>
 
 
 			<!--============//? >===============-->

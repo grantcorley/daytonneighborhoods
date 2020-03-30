@@ -56,7 +56,7 @@ get_header();
 
 
 
-	<div class="post-inner thin slorg">
+	<div class="post-inner thin top-level">
 
 		<div class="entry-content">
 

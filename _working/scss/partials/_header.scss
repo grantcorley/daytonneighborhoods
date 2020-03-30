@@ -1,32 +1,77 @@
-
-
-
-
 /* _header.scss */
+
 header#site-header{
   box-shadow: 2px 2px 2px rgba(0,0,0,.1)
 }
+
+//hide the carrot at the top of the submenus
+// .primary-menu ul::before {
+//      //content: "";
+//     //content: none !important;
+//     content:normal;
+//     //content: url(images/downArrow.svg) !important;
+//     display: block;
+//     position: absolute;
+//     bottom: 100%;
+//     //color:red !important;
+//     border:1px solid red;
+//
+// }
+
+.primary-menu ul.sub-menu::before{
+
+    //content: "before";
+    //content: normal;
+    content: url(images/downArrow.svg) !important;
+    display: block;
+    position: absolute;
+    bottom: 100%;
+
+}
+
+.primary-menu ul.sub-menu::after{
+
+    //content: "after";
+    content: normal;
+    //content: url(images/downArrow.svg) !important;
+    display: block;
+    position: absolute;
+    bottom: 100%;
+
+}
+
+
+
+
+
+// p::before {
+//   content: url(w3css.gif);
+// }
 
 //MOBILE DISPLAYS
 .main-logo{
   width:220px;
   height:70px;
   display:block;
-  // border:1px dotted red;
   background-image: url('images/DNLogo_main_purple.svg');
   background-repeat: no-repeat;
   text-align: center;
   margin-left: auto;
   margin-right:auto;
+  border:1px dashed green;
 }
 
+
+
+
+
+//MEDIA QUERIES -----------------------------------
 //TABLET
 @media screen and (min-width: 468px) {
   .main-logo{
     width:240px;
     height:96px;
-    //border:1px dotted red;
-
+    border:1px dotted orange;
   }
 }
 
@@ -36,21 +81,149 @@ header#site-header{
   .main-logo{
     width:276px;
     height:96px;
+    border:1px dotted red;
 
   }
 }
 
 
+@media screen and (min-width: 1000px) {
+  .main-logo{
+    border:none;
+  }
+
+  .primary-menu > li{
+    margin: 0;
+    padding:0;
+
+
+  }//end primary-menu >li
+
+  .primary-menu > li.menu-item-has-children > a {
+      padding-right: 0;
+  }
+
+  .primary-menu > li.menu-item-has-children{
+      span.icon{
+        display:none;
+      }
+  }
+
+  //get rid of underline on current nav item
+  .primary-menu a:hover, .primary-menu a:focus, .primary-menu .current_page_ancestor {
+      text-decoration: none;
+  }
+
+
+  .header-navigation-wrapper{
+
+      // border: 10px solid purple;
+
+      nav.primary-menu-wrapper{
+
+        ul.primary-menu > li.menu-item > a{
+
+          color: #605594;
+
+          margin: 1em 0;
+          //border:1px dotted red;
+          padding: .5em 1em;
+          //text-transform: uppercase;
+
+        &:visited{
+          color: #605594;
+        }
+        &:hover {
+          // color: #e76113; //orange
+          //color: $mouseover_color;
+          color: white !important;
+          text-decoration: none;
+          background-color: lighten($primary, 10%);
+        }
+
+        &:active {
+        // color: #e76113; //orange
+        color: $mouseover_color;
+        text-decoration: none !important;
+        background-color: $primary;
+        }
+
+
+        }//end li.menu-item > a
+
+
+
+        //-----------
+        ul.primary-menu{
+
+
+
+          li.menu-item {
+
+            // a {
+            //
+            // }
+
+            ul.sub-menu{
+              //border: 2px solid red;
+               background-color:$primary;
+               top: calc(100% + 1rem);
+              //background-color: $accent;
+
+              li{
+
+                a{
+                    color:white;
+
+                  &:visited{}
+
+                  &:hover,
+                  &:active{
+                    background-color:white;
+                    color: $secondary;
+                  }
+
+                }//end a
+
+              }
+
+            }//end ul.sub-menu
+
+
+          }//li.menu-item
+
+
+
+          li.menu-item.current-menu-item{
+              a{
+                  text-decoration: none !important;
+              }
+          }
+
+        }//ul.primary-menu
+      }
+
+  }//header-navigation-wrapper
+
+
+}//end min-width: 1000px
+
+
+
+
+
+
+
+
+
 .header-navigation-wrapper{
+
+    // border: 10px solid purple;
 
     nav.primary-menu-wrapper{
       ul.primary-menu{
 
-        /* --------------------- */
-
         li.menu-item{
-
-          //font-weight: bold;
 
           a {
               color: #605594;
@@ -68,6 +241,26 @@ header#site-header{
             text-decoration: none !important;
             }
           }
+
+          ul.sub-menu{
+            //border: 2px solid red;
+            //background-color:$primary;
+
+
+
+            li{
+
+              a{
+                  color:white;
+              }
+
+            }
+
+
+
+          }//end ul.sub-menu
+
+
 
         }//li.menu-item
 

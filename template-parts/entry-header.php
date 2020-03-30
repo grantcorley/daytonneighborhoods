@@ -15,11 +15,13 @@ if ( is_singular() ) {
 
 ?>
 
-<header id="entry-header" class="has-text-align-center<?php echo esc_attr( $entry_header_classes ); ?>">
+<!-- <header id="entry-header" class="has-text-align-center< ?php echo esc_attr( $entry_header_classes ); ?>"> -->
+	<header id="entry-header">
 
 
+	<!-- <div class="entry-header-inner section-inner medium"> -->
+	<div class="entry-header-inner">
 
-	<div class="entry-header-inner section-inner medium">
 
 		<?php
 			/**
