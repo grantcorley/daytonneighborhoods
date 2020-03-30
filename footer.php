@@ -15,8 +15,11 @@
 			<footer id="site-footer" role="contentinfo" class="header-footer-group">
 
 
-				<div class="logo-footer"></div>
+				<!-- <div class="logo-footer"></div> -->
 
+				<a href="<?php echo home_url( '/' ); ?>">
+				<img class="logo-footer" src="<?php echo get_stylesheet_directory_uri(); ?>/images/DNLogo_white.svg"  alt="Dayton Neighborhoods logo" />
+				</a>
 
 				<?php
 					wp_nav_menu();

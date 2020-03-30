@@ -7634,13 +7634,12 @@ footer#site-footer {
     width: 190px;
     height: 64px;
     display: block;
-    background-image: url("images/DNLogo_white.svg");
-    background-repeat: no-repeat;
     margin: 0 auto 1em auto; }
   footer#site-footer .menu-main-container ul.menu {
     margin: 0 0 0 0;
     list-style-type: none;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    text-align: center; }
     footer#site-footer .menu-main-container ul.menu li a, footer#site-footer .menu-main-container ul.menu li a:active, footer#site-footer .menu-main-container ul.menu li a:hover, footer#site-footer .menu-main-container ul.menu li a:visited {
       color: white; }
     footer#site-footer .menu-main-container ul.menu li ul.sub-menu {
@@ -7953,7 +7952,7 @@ body.singular main#site-content.post-query-page article.page .header-over-image 
       width: 100%; }
       body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
       body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
-        font-size: 6em;
+        font-size: 4em;
         font-weight: bold;
         font-family: Roboto, sans-serif;
         text-transform: uppercase;
@@ -7961,47 +7960,39 @@ body.singular main#site-content.post-query-page article.page .header-over-image 
   body.singular main#site-content.post-query-page article.page .header-over-image figure.featured-media {
     position: relative; }
 
-body.singular main#site-content.post-query-page article.page h2.intro-text {
-  color: #cc0000;
-  font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-size: 32px;
-  line-height: 36px;
-  text-align: center;
-  padding-bottom: .4em; }
-
-body.singular main#site-content.post-query-page article.page .post-inner.thin .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-  max-width: 100%;
-  width: calc(100% - 4rem); }
-
-body.singular main#site-content.post-query-page article.page article.post {
-  border-bottom: 1px solid #bdbbc8;
-  max-width: 100rem;
-  padding-bottom: 4em; }
-  body.singular main#site-content.post-query-page article.page article.post div.featured-media-inner img {
-    display: none; }
-  body.singular main#site-content.post-query-page article.page article.post header#entry-header .entry-header-inner .entry-categories {
-    display: none; }
-  body.singular main#site-content.post-query-page article.page article.post header#entry-header .entry-header-inner h2.entry-title {
-    text-align: left;
-    margin-top: .75em;
-    margin-bottom: 0;
-    font-weight: bold;
-    font-size: 2.4em;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold; }
-    body.singular main#site-content.post-query-page article.page article.post header#entry-header .entry-header-inner h2.entry-title a {
-      color: #605594; }
-      body.singular main#site-content.post-query-page article.page article.post header#entry-header .entry-header-inner h2.entry-title a:visited {
-        color: #605594; }
-      body.singular main#site-content.post-query-page article.page article.post header#entry-header .entry-header-inner h2.entry-title a:hover {
-        color: #605594;
-        text-decoration: none; }
-      body.singular main#site-content.post-query-page article.page article.post header#entry-header .entry-header-inner h2.entry-title a:active {
-        color: #605594;
-        text-decoration: none !important; }
-  body.singular main#site-content.post-query-page article.page article.post .post-inner.thin {
-    margin-top: 0;
-    padding-top: 0em !important; }
+body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level {
+  padding-top: 1rem; }
+  body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content h2.intro-text {
+    color: #cc0000;
+    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    padding-bottom: .4em; }
+  body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post {
+    border-bottom: 1px solid #bdbbc8;
+    max-width: 100rem;
+    padding-bottom: 4em; }
+    body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
+      padding-top: 0; }
+      body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
+        display: none; }
+      body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
+        text-align: left;
+        margin-top: .75em;
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 2.4em;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold; }
+        body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
+          color: #605594; }
+          body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
+            color: #605594; }
+          body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
+            color: #8980b6; }
+          body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
+            color: #8980b6; }
 
 @media screen and (min-width: 700px) {
   body.singular main#site-content.post-query-page article.page .header-over-image {
@@ -8016,7 +8007,7 @@ body.singular main#site-content.post-query-page article.page article.post {
         width: 100%; }
         body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
         body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
-          font-size: 14em;
+          font-size: 11em;
           line-height: 1em;
           font-weight: bold;
           font-family: Roboto, sans-serif;
@@ -8037,36 +8028,34 @@ body.singular main#site-content.post-query-page article.page article.post {
       margin-bottom: 1.25em; }
     body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post {
       border-bottom: 1px solid #dbdbde;
-      max-width: 100rem;
       padding-bottom: 4em; }
-      body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post div.featured-media-inner img {
-        display: none; }
       body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
         margin-top: 0;
         padding-top: 0em !important;
-        width: 800px;
+        max-width: 800px;
         margin: 0 auto; }
-        body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header {
-          margin-left: 0; }
-          body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
-            display: none; }
-          body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
-            text-align: left;
-            margin-top: 0;
-            margin-bottom: 0;
-            font-weight: bold;
-            font-size: 2em;
-            font-family: "Roboto", sans-serif;
-            font-weight: bold; }
-            body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
-              color: #605594; }
-              body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
+        body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content {
+          max-width: 600px;
+          margin: 0 auto; }
+          body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header {
+            margin-left: 0; }
+            body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
+              display: none; }
+            body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
+              text-align: left;
+              margin-top: 0;
+              margin-bottom: 0;
+              font-weight: bold;
+              font-size: 2em;
+              font-family: "Roboto", sans-serif;
+              font-weight: bold; }
+              body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
                 color: #605594; }
-              body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
-                color: #605594;
-                text-decoration: none; }
-              body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
-                color: #605594;
-                text-decoration: none !important; } }
+                body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
+                  color: #605594; }
+                body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
+                  color: #8980b6; }
+                body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
+                  color: #8980b6; } }
 
 /*# sourceMappingURL=style.css.map */
