@@ -1,6 +1,9 @@
+/* _posts.scss */
 
+// #site-content.inside-post{
+#site-content.singular{
 
-#site-content.inside-post{
+  // border:3px solid green;
 
   article.post{
     // background-color: pink;
@@ -29,7 +32,7 @@ header#entry-header{
 //full screen
 @media screen and (min-width: 768px) {
 
-  #site-content.inside-post{
+  #site-content.singular{
 
     article.post{
       // background-color: pink;
@@ -42,7 +45,7 @@ header#entry-header{
         // border:1px solid red;
         font-family: $headline;
         font-weight: bold;
-        font-size: 6.4em;
+        font-size: 3em;
       }
 
   }//end header#entry-header
