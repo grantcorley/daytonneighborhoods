@@ -170,12 +170,18 @@ body.singular{
 
             h1.entry-title,
             h2.entry-title {
-              font-size:11em;
+              font-size:9em;
               line-height: 1em;
               font-weight: bold;
               font-family: Roboto, sans-serif;
               text-transform: uppercase;
-              text-shadow: 2px 2px 4px rgba(0,0,0,.75);          //text-shadow: 7px 8px 9px -5px rgba(0,0,0,0.78);
+              //text-shadow: 2px 2px 4px rgba(0,0,0,.75);          //text-shadow: 7px 8px 9px -5px rgba(0,0,0,0.78);
+              text-shadow: none;
+              background-color: rgba(96,85,148, .3);
+              //background-color: rgba(204,0,0,.3);
+              border-top:1px solid rgba(255, 255, 255, .3);
+              border-bottom:1px solid rgba(255, 255, 255, .3);
+              padding: .25em 0;
             }
 
           }

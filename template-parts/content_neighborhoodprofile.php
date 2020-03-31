@@ -18,22 +18,21 @@
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 
-	<?php
-
-	//if ( ! is_search() ) {
-
-
-
-		get_template_part( 'template-parts/featured-image' );
-	//}
-		get_template_part( 'template-parts/entry-header' );
-
-	?>
+<!-- stuff went here -->
 
 
 	<div class="post-inner neighborhood-profile <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
 		<div class="entry-content" id="full-width-content">
+
+			<?php
+
+			if ( ! is_search() ) {
+				get_template_part( 'template-parts/featured-image' );
+			}
+				get_template_part( 'template-parts/entry-header' );
+
+			?>
 
 	<!-- <div id="full-width-content"> -->
 
@@ -353,9 +352,47 @@
 
 	if ( is_single() ) {
 
-		get_template_part( 'template-parts/navigation' );
+			// get_template_part( 'template-parts/navigation' );
+		//get_template_part( 'template-parts/navigation-neighborhoodProfile' );
+		//get_template_part( 'template-parts/navigation-neighborhoodProfile', get_post_type() );
 
-	}
+		//<?php
+
+		// $the_query = new WP_Query( array( 'category_name' => 'city-living-essentials' ) );
+
+		$the_query = new WP_Query( array(
+								'category_name' => 'neighborhood-profile',
+								'orderby' => 'title',
+								'order'   => 'ASC',
+							));
+
+		//if ( have_posts() ) {
+		if ( $the_query->have_posts() ) {
+			//query_posts('posts_per_page=3');
+
+			?>
+
+			<h3 class="explore">Explore Dayton's Neighborhoods</h3>
+			<ul class="neighborhood-profile-links"><?php
+
+			while ( $the_query->have_posts() ) {
+				$the_query->the_post();
+				//get_template_part( 'template-parts/content', get_post_type() );
+				//the_excerpt();
+				//get_template_part('template-parts/post-name-link');
+				//get_template_part( 'template-parts/post-name-link' );
+				//the_title( '<h4 class="entry-title">', '</h4>' );
+				the_title( '<li class="entry-title"><a href="' . esc_url( get_permalink() ) . '">', '</a></li>' );
+			}//end while
+
+				?></ul><?php
+
+		}//end if
+		//? >
+
+
+
+	}//end is_single
 
 
 	?>

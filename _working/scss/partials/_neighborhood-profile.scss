@@ -4,33 +4,74 @@
 //MOBILE SIZE
 .neighborhood-profile{
 
-  // border: 2px dotted green;
-
+  //border: 2px dotted green;
   padding-top:0;
-
-  h4{
-    margin-top:0;
-    font-family: $headline;
-    font-weight: bold;
-    margin-bottom: 0;
-    font-size: x-large;
-  }
-
-  p.icon-stat{
-    font-size: 36px;
-    color: $primary;
-  }
 
   .entry-content#full-width-content{
 
     width:100% !important;
     max-width: 100% !important;
-    padding-top:1em;
+    //padding-top:1em;
+
+
+    header#entry-header{
+      text-align: center;
+
+      .entry-categories{
+
+           margin-bottom:1rem;
+
+        .entry-categories-inner{
+          a{
+            font-size:1.25em;
+            border-bottom: none;
+
+            &:visited{
+
+            }
+
+            &:hover,
+            &:active{
+              text-decoration: underline;
+            }
+
+          }
+        }
+      }
+
+      h1.entry-title{
+        font-family: $headline;
+        font-weight: bold;
+        font-size: 4.2em;
+        margin-top: .0;
+      }
+
+      .intro-text.section-inner{
+        display:none;
+      }
+
+    }
 
     .container{
 
-    width:100% !important;
-    max-width: none !important;
+      //border:2px dotted blue;
+      width:100% !important;
+      max-width: none !important;
+
+
+    h4{
+      margin-top:0;
+      font-family: $headline;
+      font-weight: bold;
+      margin-bottom: 0;
+      font-size: x-large;
+    }
+
+    p.icon-stat{
+      font-size: 36px;
+      color: $primary;
+    }
+
 
     h3{
       margin-top:0;
@@ -54,7 +95,7 @@
       section.home-info{
         background-color:white;
         text-align: center;
-        // border:1px dotted #d4d4d4;
+        //border:1px dotted #d4d4d4;
 
 
         display:block;
@@ -138,9 +179,6 @@
       }//end section.description-quick-stats
 
 
-
-
-
       section.neighborhood-assoc-info{
         background-color: lighten($secondary, 50%);
         margin-top: 1em;
@@ -157,6 +195,34 @@
     } //end entry-content
 
 } //end neighborhood-profile
+
+h3.explore { //Explore Dayton's Neighborhoods
+  font-size: 2.8rem;
+  color:$accent;
+  text-align: center;
+  font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+  padding-top:1em;
+}
+
+ul.neighborhood-profile-links{
+  //border:1px dotted gray;
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  list-style: none;
+  justify-content: center;
+
+  li{
+    a{
+      font-size:2em;
+      color: gray;
+      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+
+
+    }
+  }
+
+}
 
 
 //MEDIA QUERIES -----------
@@ -206,8 +272,50 @@
 
       width:100% !important;
       max-width: 1000px !important;
-      padding-top:1em;
+      //padding-top:1em;
       margin: 0 auto;
+
+
+      header#entry-header{
+        //border:2px solid red;
+        text-align: center;
+
+        .entry-categories{
+
+             margin-bottom:1rem;
+
+          .entry-categories-inner{
+            a{
+              font-size:1em;
+              border-bottom: none;
+
+              &:visited{
+
+              }
+
+              &:hover,
+              &:active{
+                text-decoration: underline;
+              }
+
+            }
+          }
+        }
+
+        h1.entry-title{
+          font-family: $headline;
+          font-weight: bold;
+          font-size: 4.2em;
+          margin-top: .0;
+        }
+
+        .intro-text.section-inner{
+          display:none;
+        }
+
+      }
+
+
 
       .container{
 
@@ -356,7 +464,6 @@
 
   .neighborhood-profile{
 
-    // border: 4px solid red;
 
     padding-top:0;
 
@@ -365,7 +472,7 @@
 
       width:100% !important;
       max-width: 1000px !important;
-      padding-top:1em;
+      //padding-top:1em;
       margin: 0 auto;
 
       .container{

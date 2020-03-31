@@ -7684,22 +7684,37 @@ input.search-submit {
 /* _neighborhood-profile.scss */
 .neighborhood-profile {
   padding-top: 0; }
-  .neighborhood-profile h4 {
-    margin-top: 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    margin-bottom: 0;
-    font-size: x-large; }
-  .neighborhood-profile p.icon-stat {
-    font-size: 36px;
-    color: #605594; }
   .neighborhood-profile .entry-content#full-width-content {
     width: 100% !important;
-    max-width: 100% !important;
-    padding-top: 1em; }
+    max-width: 100% !important; }
+    .neighborhood-profile .entry-content#full-width-content header#entry-header {
+      text-align: center; }
+      .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories {
+        margin-bottom: 1rem; }
+        .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories .entry-categories-inner a {
+          font-size: 1.25em;
+          border-bottom: none; }
+          .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories .entry-categories-inner a:hover, .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories .entry-categories-inner a:active {
+            text-decoration: underline; }
+      .neighborhood-profile .entry-content#full-width-content header#entry-header h1.entry-title {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 4.2em;
+        margin-top: .0; }
+      .neighborhood-profile .entry-content#full-width-content header#entry-header .intro-text.section-inner {
+        display: none; }
     .neighborhood-profile .entry-content#full-width-content .container {
       width: 100% !important;
       max-width: none !important; }
+      .neighborhood-profile .entry-content#full-width-content .container h4 {
+        margin-top: 0;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        margin-bottom: 0;
+        font-size: x-large; }
+      .neighborhood-profile .entry-content#full-width-content .container p.icon-stat {
+        font-size: 36px;
+        color: #605594; }
       .neighborhood-profile .entry-content#full-width-content .container h3 {
         margin-top: 0; }
       .neighborhood-profile .entry-content#full-width-content .container section {
@@ -7765,6 +7780,24 @@ input.search-submit {
         .neighborhood-profile .entry-content#full-width-content .container section.neighborhood-assoc-info p {
           font-size: 1.6em; }
 
+h3.explore {
+  font-size: 2.8rem;
+  color: #cc0000;
+  text-align: center;
+  font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+  padding-top: 1em; }
+
+ul.neighborhood-profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  list-style: none;
+  justify-content: center; }
+  ul.neighborhood-profile-links li a {
+    font-size: 2em;
+    color: gray;
+    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
+
 @media screen and (min-width: 576px) {
   .row.pictures {
     margin-top: .5em; }
@@ -7777,8 +7810,23 @@ input.search-submit {
     .neighborhood-profile .entry-content#full-width-content {
       width: 100% !important;
       max-width: 1000px !important;
-      padding-top: 1em;
       margin: 0 auto; }
+      .neighborhood-profile .entry-content#full-width-content header#entry-header {
+        text-align: center; }
+        .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories {
+          margin-bottom: 1rem; }
+          .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories .entry-categories-inner a {
+            font-size: 1em;
+            border-bottom: none; }
+            .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories .entry-categories-inner a:hover, .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories .entry-categories-inner a:active {
+              text-decoration: underline; }
+        .neighborhood-profile .entry-content#full-width-content header#entry-header h1.entry-title {
+          font-family: "Roboto", sans-serif;
+          font-weight: bold;
+          font-size: 4.2em;
+          margin-top: .0; }
+        .neighborhood-profile .entry-content#full-width-content header#entry-header .intro-text.section-inner {
+          display: none; }
       .neighborhood-profile .entry-content#full-width-content .container {
         width: 100% !important;
         max-width: none !important; }
@@ -7858,7 +7906,6 @@ input.search-submit {
     .neighborhood-profile .entry-content#full-width-content {
       width: 100% !important;
       max-width: 1000px !important;
-      padding-top: 1em;
       margin: 0 auto; }
       .neighborhood-profile .entry-content#full-width-content .container {
         width: 100% !important;
@@ -8008,12 +8055,16 @@ body.singular main#site-content.post-query-page article.page .post-inner.thin.to
         width: 100%; }
         body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
         body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
-          font-size: 11em;
+          font-size: 9em;
           line-height: 1em;
           font-weight: bold;
           font-family: Roboto, sans-serif;
           text-transform: uppercase;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75); }
+          text-shadow: none;
+          background-color: rgba(96, 85, 148, 0.3);
+          border-top: 1px solid rgba(255, 255, 255, 0.3);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+          padding: .25em 0; }
     body.singular main#site-content.post-query-page article.page .header-over-image figure.featured-media {
       position: relative; }
   body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level {
