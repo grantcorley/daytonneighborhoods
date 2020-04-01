@@ -7984,9 +7984,9 @@ ul.neighborhood-profile-links {
             font-size: 1.1em; } }
 
 /* post-query-page.scss */
-body.singular main#site-content.post-query-page article.page .header-over-image {
+body.singular main#site-content article.page .header-over-image {
   position: relative; }
-  body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header {
+  body.singular main#site-content article.page .header-over-image header#entry-header {
     position: absolute;
     top: 0;
     width: 100%;
@@ -7996,36 +7996,36 @@ body.singular main#site-content.post-query-page article.page .header-over-image 
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header .entry-header-inner.section-inner {
+    body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner {
       width: 100%; }
-      body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
-      body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
+      body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
+      body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
         font-size: 4em;
         font-weight: bold;
         font-family: Roboto, sans-serif;
         text-transform: uppercase;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85); }
-  body.singular main#site-content.post-query-page article.page .header-over-image figure.featured-media {
+  body.singular main#site-content article.page .header-over-image figure.featured-media {
     position: relative; }
 
-body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level {
+body.singular main#site-content article.page .post-inner.thin.top-level {
   padding-top: 1rem; }
-  body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content h2.intro-text {
+  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content h2.intro-text {
     color: #cc0000;
     font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
     font-size: 32px;
     line-height: 36px;
     text-align: center;
     padding-bottom: .4em; }
-  body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post {
+  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post {
     border-bottom: 1px solid #bdbbc8;
     max-width: 100rem;
     padding-bottom: 4em; }
-    body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
       padding-top: 0; }
-      body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
+      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
         display: none; }
-      body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
+      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
         text-align: left;
         margin-top: .75em;
         margin-bottom: 0;
@@ -8033,28 +8033,28 @@ body.singular main#site-content.post-query-page article.page .post-inner.thin.to
         font-size: 2.4em;
         font-family: "Roboto", sans-serif;
         font-weight: bold; }
-        body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
+        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
           color: #605594; }
-          body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
             color: #605594; }
-          body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
             color: #8980b6; }
-          body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
             color: #8980b6; }
 
 @media screen and (min-width: 700px) {
-  body.singular main#site-content.post-query-page article.page .header-over-image {
+  body.singular main#site-content article.page .header-over-image {
     position: relative; }
-    body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header {
+    body.singular main#site-content article.page .header-over-image header#entry-header {
       position: absolute;
       top: 0;
       width: 100%;
       color: white;
       background-color: none !important; }
-      body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header .entry-header-inner.section-inner {
+      body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner {
         width: 100%; }
-        body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
-        body.singular main#site-content.post-query-page article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
+        body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
+        body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
           font-size: 9em;
           line-height: 1em;
           font-weight: bold;
@@ -8065,11 +8065,11 @@ body.singular main#site-content.post-query-page article.page .post-inner.thin.to
           border-top: 1px solid rgba(255, 255, 255, 0.3);
           border-bottom: 1px solid rgba(255, 255, 255, 0.3);
           padding: .25em 0; }
-    body.singular main#site-content.post-query-page article.page .header-over-image figure.featured-media {
+    body.singular main#site-content article.page .header-over-image figure.featured-media {
       position: relative; }
-  body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level {
+  body.singular main#site-content article.page .post-inner.thin.top-level {
     padding-top: 3rem; }
-    body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content h2.intro-text {
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content h2.intro-text {
       color: #cc0000;
       font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
       font-size: 2.8em;
@@ -8078,22 +8078,22 @@ body.singular main#site-content.post-query-page article.page .post-inner.thin.to
       padding-bottom: .4em;
       max-width: 1200px !important;
       margin-bottom: 1.25em; }
-    body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post {
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post {
       border-bottom: 1px solid #dbdbde;
       padding-bottom: 4em; }
-      body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
+      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
         margin-top: 0;
         padding-top: 0em !important;
         max-width: 800px;
         margin: 0 auto; }
-        body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content {
+        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content {
           max-width: 600px;
           margin: 0 auto; }
-          body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header {
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header {
             margin-left: 0; }
-            body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
               display: none; }
-            body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
               text-align: left;
               margin-top: 0;
               margin-bottom: 0;
@@ -8101,13 +8101,91 @@ body.singular main#site-content.post-query-page article.page .post-inner.thin.to
               font-size: 2em;
               font-family: "Roboto", sans-serif;
               font-weight: bold; }
-              body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
                 color: #605594; }
-                body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
                   color: #605594; }
-                body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
                   color: #8980b6; }
-                body.singular main#site-content.post-query-page article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
                   color: #8980b6; } }
+
+/* category.scss */
+/* post-query-page.scss */
+body.category main#site-content header.archive-header {
+  background-color: #cc0000; }
+  body.category main#site-content header.archive-header .archive-header-inner h1.archive-title {
+    font-size: 1.6rem;
+    color: white !important; }
+    body.category main#site-content header.archive-header .archive-header-inner h1.archive-title span.color-accent {
+      color: #efc443; }
+
+body.category main#site-content article.post {
+  border: 1px solid #ececec;
+  padding: 3em 0 5em 0; }
+  body.category main#site-content article.post .post-inner {
+    padding-top: 1em; }
+    body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner .entry-categories .entry-categories-inner a {
+      font-size: 1.2rem;
+      border-bottom: none;
+      color: #cc0000; }
+      body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner .entry-categories .entry-categories-inner a:visited {
+        color: #cc0000; }
+      body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner .entry-categories .entry-categories-inner a:hover {
+        color: #e60000;
+        text-decoration: underline; }
+      body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner .entry-categories .entry-categories-inner a:active {
+        color: #e60000; }
+    body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner h2.entry-title {
+      font-family: "Roboto", sans-serif; }
+      body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner h2.entry-title a {
+        color: #605594; }
+        body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
+          color: #605594; }
+        body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
+          color: #8980b6; }
+        body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
+          color: #8980b6; }
+
+body.category main#site-content hr.post-separator {
+  display: none; }
+
+@media screen and (min-width: 700px) {
+  body.category main#site-content header.archive-header {
+    padding: 2.4em;
+    background-color: #cc0000; }
+    body.category main#site-content header.archive-header .archive-header-inner h1.archive-title {
+      font-size: 3rem;
+      color: white !important; }
+      body.category main#site-content header.archive-header .archive-header-inner h1.archive-title span.color-accent {
+        color: #efc443; }
+  body.category main#site-content article.post {
+    border: 1px solid #ececec;
+    padding: 3em 0 5em 0; }
+    body.category main#site-content article.post .post-inner {
+      padding-top: 1em; }
+      body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner .entry-categories .entry-categories-inner a {
+        border-bottom: none;
+        font-size: 1.8rem;
+        color: #cc0000; }
+        body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner .entry-categories .entry-categories-inner a:visited {
+          color: #cc0000; }
+        body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner .entry-categories .entry-categories-inner a:hover {
+          color: #e60000;
+          text-decoration: underline; }
+        body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner .entry-categories .entry-categories-inner a:active {
+          color: #e60000; }
+      body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner h2.entry-title {
+        font-family: "Roboto", sans-serif; }
+        body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner h2.entry-title a {
+          color: #605594; }
+          body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
+            color: #605594; }
+          body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
+            color: #8980b6; }
+          body.category main#site-content article.post .post-inner .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
+            color: #8980b6; }
+  body.category main#site-content hr.post-separator {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

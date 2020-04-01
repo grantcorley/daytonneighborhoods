@@ -5,7 +5,9 @@
 //MOBILE SIZES
 body.singular{
 
- main#site-content.post-query-page{
+ //main#site-content.post-query-page{
+ main#site-content{
+
 
   article.page{  //(top-level article)
 
@@ -76,7 +78,6 @@ body.singular{
 
             .post-inner.thin{
 
-              //border:1px solid red;
               padding-top:0;
 
               .entry-content{
@@ -105,11 +106,9 @@ body.singular{
                       }
                       &:hover {
                         color: lighten($primary, 15%);
-                        // text-decoration: none;
                       }
                       &:active {
                         color: lighten($primary, 15%);
-                      // text-decoration: none !important;
                       }
 
                   }//end a
@@ -144,11 +143,11 @@ body.singular{
                             //was 768
 @media screen and (min-width: 700px) {
 
+  //body.singular{
   body.singular{
 
-   main#site-content.post-query-page{
-
-      // border:6px dashed green;
+   //main#site-content.post-query-page{
+   main#site-content{
 
     article.page{  //(top-level article)
 
