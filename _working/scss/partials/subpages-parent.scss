@@ -1,0 +1,79 @@
+/* _subpages-parent.scss */
+//this is the top-page that contains subpages: Live in Dayton and News & Events
+
+//MOBILE LAYOUT
+main.subpages-parent{
+  //border:8px dashed orange;
+  padding-top:2.4em;
+
+  h1{
+    text-align: center;
+    font-family: $headline;
+    font-weight: bold;
+    font-size: 5em;
+    margin-bottom:.5em;
+  }
+
+a{
+  section{
+      //position: relative;
+      border:1px solid #e3e3e3;
+      text-align: center;
+      width:100%;
+      padding:1.5em;
+
+      img{
+        margin-bottom: .5em;
+      }
+
+      h2{
+        font-family: $copy;
+        font-size:3.2em;
+      }
+
+
+  // header#entry-header{
+  //
+  //     position: absolute;
+  //     top: 0;
+  //     width:100%;
+  //     height:100%;
+  //     color:white;
+  //     background-color: none !important;
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //
+  //     .entry-header-inner.section-inner{
+  //
+  //       width:100%;
+  //
+  //       h1.entry-title,
+  //       h2.entry-title {
+  //         font-size:4em;
+  //         font-weight: bold;
+  //         font-family: Roboto, sans-serif;
+  //         text-transform: uppercase;
+  //         text-shadow: 2px 2px 4px rgba(0,0,0,.85);          //text-shadow: 7px 8px 9px -5px rgba(0,0,0,0.78);
+  //         color:white;
+  //       }
+  //
+  //     }
+  //
+  //   }
+
+        figure.featured-media {
+          position: relative;
+          text-align: center;
+
+          .featured-media-inner{
+
+          }
+
+        }
+
+    }//section
+
+}//end a
+
+}//end main.subpages-parent
