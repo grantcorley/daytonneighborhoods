@@ -4,49 +4,22 @@ header#site-header{
   box-shadow: 2px 2px 2px rgba(0,0,0,.1)
 }
 
-//hide the carrot at the top of the submenus
-// .primary-menu ul::before {
-//      //content: "";
-//     //content: none !important;
-//     content:normal;
-//     //content: url(images/downArrow.svg) !important;
-//     display: block;
-//     position: absolute;
-//     bottom: 100%;
-//     //color:red !important;
-//     border:1px solid red;
-//
-// }
-
 .primary-menu ul.sub-menu::before{
-
-    //content: "before";
-    //content: normal;
     content: url(images/downArrow.svg) !important;
     display: block;
     position: absolute;
     bottom: 100%;
-
 }
 
 .primary-menu ul.sub-menu::after{
-
-    //content: "after";
     content: normal;
-    //content: url(images/downArrow.svg) !important;
     display: block;
     position: absolute;
     bottom: 100%;
-
 }
 
 
 
-
-
-// p::before {
-//   content: url(w3css.gif);
-// }
 
 //MOBILE DISPLAYS
 .main-logo{
@@ -58,8 +31,142 @@ header#site-header{
   text-align: center;
   margin-left: auto;
   margin-right:auto;
-  border:1px dashed green;
+  //border:1px dashed pink;
 }
+
+
+//.header-navigation-wrapper{
+
+    //border: 10px solid purple !important;
+
+    nav.mobile-menu{
+      //border:4px solid red;
+
+      ul.modal-menu > li.menu-item > .ancestor-wrapper > a{
+        //border:1px dotted gray;
+        color: #605594;
+        //color:pink;
+        margin: 1em 0;
+        //border:1px dotted red;
+        padding: .5em 1em;
+
+      &:visited{
+        color: #605594;
+      }
+      &:hover {
+        color: white !important;
+        text-decoration: none;
+        background-color: lighten($primary, 10%);
+      }
+
+      &:active {
+      // color: #e76113; //orange
+      color: $mouseover_color;
+      text-decoration: none !important;
+      background-color: $primary;
+      }
+
+
+    }//end ul.modal-menu > li.menu-item > .ancestor-wrapper > a
+
+
+    // .modal-menu li.current_page_ancestor > .ancestor-wrapper > a{
+    //   text-decoration: none;
+    // }
+
+    .modal-menu a:focus,
+    .modal-menu a:hover,
+    .modal-menu li.current-menu-item > .ancestor-wrapper > a,
+    .modal-menu li.current_page_ancestor > .ancestor-wrapper > a{
+      text-decoration: none;
+    }
+
+
+    ul.modal-menu > li.menu-item > .sub-menu{
+
+        li.menu-item{
+
+          border-color:none;
+          border-left-width:0;
+          border-color: lighten($primary, 20%);
+
+
+          .ancestor-wrapper{
+
+            a{
+              font-size: 2rem;
+              background-color: lighten($primary, 10%);
+              color:white;
+              padding-left:4rem;
+
+            }
+
+          }
+
+        }
+
+    }
+
+
+      //-----------
+      ul.primary-menu{
+
+        // border: 3px solid red;
+
+        li.menu-item {
+
+          // a {
+          //
+          // }
+
+          ul.sub-menu.active{
+            border: 2px solid red !important;
+             background-color:$primary;
+             top: calc(100% + 1rem);
+            //background-color: $accent;
+
+            li{
+
+              a{
+                  color:white;
+
+                &:visited{}
+
+                &:hover,
+                &:active{
+                  background-color:white;
+                  color: $secondary;
+                }
+
+              }//end a
+
+            }
+
+          }//end ul.sub-menu
+
+
+        }//li.menu-item
+
+
+        li.menu-item.menu-item-has-children {
+
+            border:2px solid green;
+
+        }
+
+
+
+        li.menu-item.current-menu-item{
+            a{
+                text-decoration: none !important;
+            }
+        }
+
+      }//ul.mobile-menu
+    }
+
+//}//header-navigation-wrapper
+
 
 
 
@@ -121,7 +228,11 @@ header#site-header{
 
       nav.primary-menu-wrapper{
 
+        border:4px solid red;
+
         ul.primary-menu > li.menu-item > a{
+
+          border:2px solid blue;
 
           color: #605594;
 
@@ -156,7 +267,7 @@ header#site-header{
         //-----------
         ul.primary-menu{
 
-
+          // border: 3px solid red;
 
           li.menu-item {
 
@@ -191,6 +302,13 @@ header#site-header{
 
 
           }//li.menu-item
+
+
+          li.menu-item.menu-item-has-children {
+
+              border:2px solid green;
+
+          }
 
 
 
