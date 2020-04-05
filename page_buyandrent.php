@@ -60,7 +60,7 @@ get_header();
 
 		<div class="entry-content">
 
-			<h2 class="intro-text">Buy &amp; Rent subhead</h2>
+			<h2 class="intro-text">Dayton has a wide variety of resources to help get you into a home or apartment.</h2>
 
 
 			<!--============//? >===============-->

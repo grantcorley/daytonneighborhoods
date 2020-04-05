@@ -1,6 +1,6 @@
 <?php
  /**
- * Template Name: Live in Dayton
+ * Template Name: News and Events
  *
 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -21,45 +21,45 @@ get_header();
 
 <div class="container">
 
-		<h1>Live in Dayton</h1>
+		<h1>News &amp; Events</h1>
   <div class="row">
 
-    <!-- link #1: Buy & Rent -->
-		<a href="<?php echo home_url( '/buying-renting/' ); ?>">
+    <!-- link #1: Events -->
+		<a href="<?php echo home_url( '/events/' ); ?>">
 
 				<section>
 
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/belmontHome_featuredImg.jpg" width="1980" height="1000" alt="Belmont home, Dayton OH" />
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wrightDunbar_featuredImg.jpg" width="1980" height="1000" alt="Wright Dunbar neighborhood, Dayton OH" />
 
-					<h2>Buy &amp; Rent</h2>
+					<h2>Events</h2>
 
 				</section><!--end header-over-image-->
 
 		</a>
 
 
-		<!-- link #2: City Living -->
-		<a href="<?php echo home_url( '/city-living-essentials/' ); ?>">
+		<!-- link #2: News -->
+		<a href="<?php echo home_url( '/news/' ); ?>">
 
 				<section>
 
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/WestwoodMural_1980x1000.jpg" width="1980" height="1000" alt="Westwood mural, Dayton OH" />
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/grafton.jpg" width="1980" height="1000" alt="Grafton neighborhood, Dayton OH" />
 
-					<h2>City Living Essentials</h2>
+					<h2>News</h2>
 
 				</section><!--end header-over-image-->
 
 		</a>
 
 
-		<!-- link #3: Incentives -->
-		<a href="<?php echo home_url( '/financial-incentives/' ); ?>">
+		<!-- link #3: Podcasts -->
+		<a href="<?php echo home_url( '/podcasts/' ); ?>">
 
 				<section>
 
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/onThePorch.jpg" width="1980" height="1000" alt="Couple relaxing on front porch, Dayton OH" />
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/podcast_featuredImg.jpg" width="1980" height="1000" alt="Screenshot of Dayton podcast webpage" />
 
-					<h2>Financial Incentives</h2>
+					<h2>Podcasts</h2>
 
 				</section><!--end header-over-image-->
 

@@ -7662,14 +7662,12 @@ nav.expanded-menu ul.modal-menu > li.menu-item > .sub-menu li.menu-item {
 @media screen and (min-width: 468px) {
   .main-logo {
     width: 240px;
-    height: 96px;
-    border: 1px dotted orange; } }
+    height: 96px; } }
 
 @media screen and (min-width: 768px) {
   .main-logo {
     width: 276px;
-    height: 96px;
-    border: 1px dotted red; } }
+    height: 96px; } }
 
 @media screen and (min-width: 1000px) {
   .main-logo {
@@ -8297,9 +8295,13 @@ main.subpages-parent {
     margin-bottom: .5em; }
   main.subpages-parent a section {
     border: 1px solid #e3e3e3;
+    border-top: none;
     text-align: center;
     width: 100%;
-    padding: 1.5em; }
+    padding: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+    margin-bottom: 3em; }
     main.subpages-parent a section img {
       margin-bottom: .5em; }
     main.subpages-parent a section h2 {
@@ -8308,5 +8310,66 @@ main.subpages-parent {
     main.subpages-parent a section figure.featured-media {
       position: relative;
       text-align: center; }
+  main.subpages-parent a:hover {
+    text-decoration: none; }
+    main.subpages-parent a:hover h2 {
+      color: #7a6fad; }
+
+@media screen and (min-width: 700px) {
+  main.subpages-parent {
+    padding-top: 2.4em; }
+    main.subpages-parent h1 {
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      font-size: 5em;
+      margin-bottom: .5em; }
+    main.subpages-parent a section {
+      border: 1px solid #e3e3e3;
+      text-align: center;
+      width: 100%;
+      padding: 1.5em;
+      padding-top: 2em;
+      padding-bottom: 2.5em;
+      margin-bottom: 3em; }
+      main.subpages-parent a section img {
+        margin-bottom: .5em; }
+      main.subpages-parent a section h2 {
+        font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-size: 4.2em; }
+      main.subpages-parent a section figure.featured-media {
+        position: relative;
+        text-align: center; } }
+
+@media screen and (min-width: 992px) {
+  main.subpages-parent {
+    padding-top: 2.4em; }
+    main.subpages-parent h1 {
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      font-size: 7em;
+      margin-bottom: .5em; }
+    main.subpages-parent a:hover {
+      text-decoration: none; }
+      main.subpages-parent a:hover h2 {
+        color: #7a6fad; }
+    main.subpages-parent a section {
+      border: 1px solid #e3e3e3;
+      text-align: center;
+      width: 100%;
+      padding: 1.5em;
+      padding-top: 2em;
+      padding-bottom: 2.5em;
+      margin-bottom: 3em; }
+      main.subpages-parent a section img {
+        margin-bottom: .5em; }
+      main.subpages-parent a section h2 {
+        font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-size: 6em;
+        padding-top: 1rem; }
+      main.subpages-parent a section figure.featured-media {
+        position: relative;
+        text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
