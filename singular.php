@@ -14,7 +14,7 @@ get_header();
 
 <main id="site-content" class="singular" role="main">
 
-	<h1>singular.php</h1>
+	<!-- <h1>singular.php</h1> -->
 
 	<?php
 

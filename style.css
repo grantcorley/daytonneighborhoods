@@ -7466,6 +7466,20 @@ body {
     background-color: white;
     padding-bottom: 12.5em;
     min-height: 1000px; }
+  body .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+    max-width: 58rem;
+    width: calc(100% - 2rem) !important; }
+  body .entry-content p,
+  body .entry-content ol,
+  body .entry-content ul,
+  body .entry-content dl,
+  body .entry-content dt {
+    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+    letter-spacing: normal;
+    font-size: 16px;
+    color: #333333; }
+  body .entry-categories-inner {
+    font-family: Arial, sans-serif; }
 
 body.singular main#site-content article .header-over-image {
   position: relative; }
@@ -7492,6 +7506,12 @@ input.search-submit {
   background-color: #cc0000; }
 
 @media screen and (min-width: 768px) {
+  body .entry-content p,
+  body .entry-content ol,
+  body .entry-content ul,
+  body .entry-content dl,
+  body .entry-content dt {
+    font-size: 19px; }
   body.singular main#site-content article .header-over-image header#entry-header {
     position: absolute;
     top: 32%; }
@@ -7777,6 +7797,49 @@ input.search-submit {
   background-color: #cc0000; }
 
 /* _homepage.scss */
+main.homepage {
+  border: 4px solid green; }
+  main.homepage .container .welcome-message {
+    padding: 1.25em;
+    text-align: center;
+    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
+    main.homepage .container .welcome-message h2 {
+      text-align: center;
+      color: #cc0000;
+      font-size: 3.2em; }
+    main.homepage .container .welcome-message p {
+      text-align: center;
+      font-size: 1.85em; }
+
+@media screen and (min-width: 768px) {
+  main.homepage {
+    border: 4px solid blue; }
+    main.homepage .container .welcome-message {
+      text-align: center;
+      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
+      main.homepage .container .welcome-message h2 {
+        text-align: center;
+        color: #cc0000;
+        font-size: 5.4em; }
+      main.homepage .container .welcome-message p {
+        text-align: center;
+        font-size: 2.1em; } }
+
+@media screen and (min-width: 992px) {
+  main.homepage {
+    border: 4px solid red; }
+    main.homepage .container .welcome-message {
+      text-align: center;
+      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
+      main.homepage .container .welcome-message h2 {
+        text-align: center;
+        color: #cc0000;
+        font-size: 9em;
+        letter-spacing: .015rem; }
+      main.homepage .container .welcome-message p {
+        text-align: center;
+        font-size: 3em; } }
+
 /* _neighborhood-profile.scss */
 .neighborhood-profile {
   padding-top: 0; }
@@ -8371,5 +8434,49 @@ main.subpages-parent {
       main.subpages-parent a section figure.featured-media {
         position: relative;
         text-align: center; } }
+
+/* _homepage.scss */
+main.homepage {
+  border: 4px solid green; }
+  main.homepage .container .welcome-message {
+    padding: 1.25em;
+    text-align: center;
+    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
+    main.homepage .container .welcome-message h2 {
+      text-align: center;
+      color: #cc0000;
+      font-size: 3.2em; }
+    main.homepage .container .welcome-message p {
+      text-align: center;
+      font-size: 1.85em; }
+
+@media screen and (min-width: 768px) {
+  main.homepage {
+    border: 4px solid blue; }
+    main.homepage .container .welcome-message {
+      text-align: center;
+      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
+      main.homepage .container .welcome-message h2 {
+        text-align: center;
+        color: #cc0000;
+        font-size: 5.4em; }
+      main.homepage .container .welcome-message p {
+        text-align: center;
+        font-size: 2.1em; } }
+
+@media screen and (min-width: 992px) {
+  main.homepage {
+    border: 4px solid red; }
+    main.homepage .container .welcome-message {
+      text-align: center;
+      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
+      main.homepage .container .welcome-message h2 {
+        text-align: center;
+        color: #cc0000;
+        font-size: 9em;
+        letter-spacing: .015rem; }
+      main.homepage .container .welcome-message p {
+        text-align: center;
+        font-size: 3em; } }
 
 /*# sourceMappingURL=style.css.map */

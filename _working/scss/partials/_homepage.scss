@@ -1,1 +1,114 @@
 /* _homepage.scss */
+
+main.homepage{
+
+  border:4px solid green;
+
+.container{
+
+    .welcome-message{
+
+      padding: 1.25em;
+      text-align: center;
+      font-family: $copy;
+
+      h2{
+        text-align: center;
+        color: $accent;
+        font-size: 3.2em;
+
+      }
+
+      p{
+        text-align: center;
+        font-size: 1.85em;
+      }
+
+    }//end welcome-message
+
+
+}//end container
+
+
+}//main._homepage
+
+
+
+
+//MEDIA QUERIES ---------
+//TABLET/IPAD
+@media screen and (min-width: 768px) {
+
+
+  main.homepage{
+
+    border:4px solid blue;
+
+  .container{
+
+      .welcome-message{
+
+        // padding: .5em 1.25em;
+        text-align: center;
+        font-family: $copy;
+
+        h2{
+          text-align: center;
+          color: $accent;
+          font-size: 5.4em;
+        }
+
+        p{
+          text-align: center;
+          font-size: 2.1em;
+        }
+
+      }//end welcome-message
+
+
+  }//end container
+
+
+  }//main._homepage
+
+
+}//end media query 768px;
+
+
+//FULL-SCREEN DEVICES (LAPTOPS, MONITORS, ETC.) --------
+@media screen and (min-width: 992px) {
+
+  main.homepage{
+
+    border:4px solid red;
+
+  .container{
+
+      .welcome-message{
+
+        // padding: .5em 1.25em;
+        text-align: center;
+        font-family: $copy;
+
+        h2{
+          text-align: center;
+          color: $accent;
+          font-size: 9em;
+          letter-spacing: .015rem;
+        }
+
+        p{
+          text-align: center;
+          font-size: 3em;
+        }
+
+      }//end welcome-message
+
+
+  }//end container
+
+
+  }//main._homepage
+
+
+}//end media query 992px

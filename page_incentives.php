@@ -58,7 +58,7 @@ get_header();
 
 		<div class="entry-content">
 
-			<h2 class="intro-text">Explore the many financial incentives available to Dayton homebuyers and tenants.</h2>
+			<h2 class="intro-text">Explore financial incentives available to Dayton homebuyers &amp; tenants.</h2>
 
 
 			<!--============//? >===============-->
