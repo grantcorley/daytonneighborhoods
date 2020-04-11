@@ -71,8 +71,8 @@ get_header();
 
 			$the_query = new WP_Query( array(
 									'category_name' => 'news',
-									'orderby' => 'title',
-    							'order'   => 'ASC',
+									'orderby' => 'date',
+    							'order'   => 'DESC',
 								));
 
 			//if ( have_posts() ) {

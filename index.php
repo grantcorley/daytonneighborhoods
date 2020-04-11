@@ -65,28 +65,66 @@ get_header();
 	<!-- END SLIDESHOW -->
 
 	<div class="container">
-	  <!-- <div class="row"> -->
-
 			<div  class="welcome-message">
-
 				<h2>Home, Sweet Home</h2>
 				<p>Affordable. Friendly. Convenient. Options for every budget. See why Dayton is the smart choice for your new home.</p>
-
 			</div>
-
-	    <!-- <div class="col-sm">
-	      One of three columns
-	    </div>
-	    <div class="col-sm">
-	      One of three columns
-	    </div>
-	    <div class="col-sm">
-	      One of three columns
-	    </div> -->
-	  <!-- </div> end row -->
 	</div>
 
 
+	<!-- FEATURED POST: NEIGHBORHOOD PROFILE -->
+	<?php
+
+	$args = array(
+    'orderby'        => 'rand',
+    'posts_per_page' => '1',
+		'category_name' => 'neighborhood-profile',
+	);
+
+	$query = new WP_Query( $args );
+	$query->the_post();
+	get_template_part( 'template-parts/content', get_post_type() );
+
+	?>
+
+
+	<!-- FEATURED POST: NEWS ITEM -->
+	<?php
+
+	$args = array(
+		'orderby'        => 'date',
+		'posts_per_page' => '1',
+		'category_name' => 'news',
+	);
+
+	$query = new WP_Query( $args );
+
+	$query->the_post();
+	get_template_part( 'template-parts/content', get_post_type() );
+
+	?>
+
+
+	<!-- FEATURED POST: EVENTS ITEM -->
+	<?php
+
+	$args = array(
+		'orderby'        => 'date',
+		'posts_per_page' => '1',
+		'category_name' => 'events',
+	);
+
+	$query = new WP_Query( $args );
+
+	$query->the_post();
+	get_template_part( 'template-parts/content', get_post_type() );
+
+	?>
+
+
+
+
+	<!--============//? >===============-->
 
 </main><!-- #site-content -->
 

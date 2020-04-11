@@ -7757,21 +7757,36 @@ footer#site-footer {
     list-style-type: none;
     padding-bottom: 2rem;
     text-align: center; }
-    footer#site-footer .menu-main-container ul.menu li a, footer#site-footer .menu-main-container ul.menu li a:active, footer#site-footer .menu-main-container ul.menu li a:hover, footer#site-footer .menu-main-container ul.menu li a:visited {
-      color: white; }
-    footer#site-footer .menu-main-container ul.menu li ul.sub-menu {
-      display: none; }
+    footer#site-footer .menu-main-container ul.menu li {
+      margin-left: 0; }
+      footer#site-footer .menu-main-container ul.menu li a, footer#site-footer .menu-main-container ul.menu li a:active, footer#site-footer .menu-main-container ul.menu li a:hover, footer#site-footer .menu-main-container ul.menu li a:visited {
+        color: white; }
+      footer#site-footer .menu-main-container ul.menu li ul.sub-menu {
+        display: none; }
   footer#site-footer .section-inner {
     justify-content: center; }
     footer#site-footer .section-inner .footer-credits p.footer-copyright {
       font-weight: 100;
       font-size: small; }
 
-@media screen and (min-width: 480px) {
-  .menu-main-container ul.menu {
+@media screen and (min-width: 768px) {
+  footer#site-footer .menu-main-container ul.menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; } }
+    justify-content: center;
+    margin: 0 0 0 0;
+    list-style-type: none;
+    padding-bottom: 2rem;
+    text-align: center; }
+    footer#site-footer .menu-main-container ul.menu li {
+      margin-left: 1em;
+      font-size: .85em; }
+      footer#site-footer .menu-main-container ul.menu li a, footer#site-footer .menu-main-container ul.menu li a:active, footer#site-footer .menu-main-container ul.menu li a:hover, footer#site-footer .menu-main-container ul.menu li a:visited {
+        color: white; }
+      footer#site-footer .menu-main-container ul.menu li ul.sub-menu {
+        display: none; }
+    footer#site-footer .menu-main-container ul.menu li:first-child {
+      margin-left: 0; } }
 
 /* components.scss */
 button:focus {

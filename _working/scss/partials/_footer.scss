@@ -23,6 +23,8 @@ footer#site-footer{
       padding-bottom:2rem;
       text-align: center;
       li{
+        //border:1px solid red;
+        margin-left: 0;
         #{$a-tags}{
           color:white;
         }
@@ -51,17 +53,44 @@ footer#site-footer{
 }//end site-footer
 
 //MEDIA QUERIES -----------
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+
+  footer#site-footer{
 
   .menu-main-container{
     ul.menu{
       display:flex;
       flex-wrap: wrap;
       justify-content: center;
-      // border:1px solid red;
+      //border:1px solid blue;
+      margin:0 0 0 0;
+      list-style-type: none;
+      padding-bottom:2rem;
+      text-align: center;
 
+      li{
 
-    }
-  }
+        //border:1px solid green;
+        margin-left: 1em;
+        font-size: .85em;
+
+        #{$a-tags}{
+          color:white;
+        }
+
+        ul.sub-menu{
+          display:none;
+        }//ul.sub-menu
+
+      }//li
+
+      li:first-child {
+        margin-left:0;
+      }
+
+    }//ul.menu
+  }//menu-main-container
+
+}//footer#site-footer
 
 }//end media query

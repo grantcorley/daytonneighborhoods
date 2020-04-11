@@ -7,7 +7,6 @@
   var el = document.querySelector('body');
   console.log(el);
 
-  
 
 
 })();
