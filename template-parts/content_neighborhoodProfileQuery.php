@@ -39,14 +39,30 @@
 				//get_template_part( 'template-parts/featured-image' );
 
 				if ( has_post_thumbnail() ){
-				get_template_part( 'template-parts/featured-image' );
+					get_template_part( 'template-parts/featured-image' );
 				}
 
-		
+				else{
+					?>
+
+					<figure class="featured-media">
+							<div class="featured-media-inner ">
+									<img width="1200" height="500" src="<?php echo get_stylesheet_directory_uri();?>/images/logo_1980x1000_alt.gif" class="attachment-featured size-featured wp-post-image" alt="Dayton Neighborhoods logo">
+							</div><!-- .featured-media-inner -->
+					</figure>
+
+					<?php
+				}
 
 			}//end if !is_search
+
+			?>
+			<div class="article-name-description">
+			<?php
+
 			get_template_part( 'template-parts/entry-header' );
-				?>
+
+			?>
 
 			<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
@@ -54,7 +70,9 @@
 			} else {
 				the_content( __( 'Continue reading', 'twentytwenty' ) );
 			}
-?>
+			?>
+		</div><!--end article-name-description-->
+
 
 		</div><!-- .entry-content -->
 

@@ -1,7 +1,16 @@
 h1, h2{
   color: $primary;
+
+  //disable disable on headlines
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;      
+  user-select: none;
 }
 
+// .disable-select {
+//
+// }
 
 .entry-content{
     p, ol, ul, dl, dt{

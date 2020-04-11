@@ -7540,7 +7540,11 @@ input.search-submit {
       font-size: 3em; } }
 
 h1, h2 {
-  color: #605594; }
+  color: #605594;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 .entry-content p, .entry-content ol, .entry-content ul, .entry-content dl, .entry-content dt {
   font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
@@ -7812,48 +7816,68 @@ input.search-submit {
   background-color: #cc0000; }
 
 /* _homepage.scss */
-main.homepage {
-  border: 4px solid green; }
+main.homepage .container .welcome-message {
+  padding: 1.25em;
+  text-align: center;
+  font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
+  main.homepage .container .welcome-message h2 {
+    text-align: center;
+    color: #cc0000;
+    font-size: 3.2em; }
+  main.homepage .container .welcome-message p {
+    text-align: center;
+    font-size: 1.85em; }
+
+main.homepage article.neighborhood_profile {
+  padding-bottom: 6em !important;
+  border-bottom: 1px solid #cccccc;
+  padding-top: .5em !important; }
+
+main.homepage .features article h2 {
+  font-family: "Roboto", sans-serif; }
+
+@media screen and (min-width: 768px) {
   main.homepage .container .welcome-message {
-    padding: 1.25em;
     text-align: center;
     font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
     main.homepage .container .welcome-message h2 {
       text-align: center;
       color: #cc0000;
-      font-size: 3.2em; }
+      font-size: 5.4em; }
     main.homepage .container .welcome-message p {
       text-align: center;
-      font-size: 1.85em; }
-
-@media screen and (min-width: 768px) {
-  main.homepage {
-    border: 4px solid blue; }
-    main.homepage .container .welcome-message {
-      text-align: center;
-      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
-      main.homepage .container .welcome-message h2 {
-        text-align: center;
-        color: #cc0000;
-        font-size: 5.4em; }
-      main.homepage .container .welcome-message p {
-        text-align: center;
-        font-size: 2.1em; } }
+      font-size: 2.1em; }
+  main.homepage article.neighborhood_profile {
+    padding-top: 2.4em !important; }
+    main.homepage article.neighborhood_profile h2 {
+      font-family: "Roboto", sans-serif; } }
 
 @media screen and (min-width: 992px) {
-  main.homepage {
-    border: 4px solid red; }
-    main.homepage .container .welcome-message {
+  main.homepage .container .welcome-message {
+    text-align: center;
+    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
+    main.homepage .container .welcome-message h2 {
       text-align: center;
-      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
-      main.homepage .container .welcome-message h2 {
-        text-align: center;
-        color: #cc0000;
-        font-size: 9em;
-        letter-spacing: .015rem; }
-      main.homepage .container .welcome-message p {
-        text-align: center;
-        font-size: 3em; } }
+      color: #cc0000;
+      font-size: 9em;
+      letter-spacing: .015rem; }
+    main.homepage .container .welcome-message p {
+      text-align: center;
+      font-size: 3em; }
+  main.homepage article.neighborhood_profile {
+    padding-top: 4em !important; }
+    main.homepage article.neighborhood_profile h2 {
+      font-family: "Roboto", sans-serif; }
+  main.homepage .features {
+    display: flex; }
+    main.homepage .features article {
+      border: none;
+      flex-grow: 1;
+      padding-bottom: 10em; }
+      main.homepage .features article h2 {
+        font-family: "Roboto", sans-serif; }
+    main.homepage .features article:nth-child(2) {
+      border-left: 1px solid #cccccc; } }
 
 /* _neighborhood-profile.scss */
 .neighborhood-profile {
@@ -8258,7 +8282,6 @@ body.singular main#site-content article.page .post-inner.thin.top-level {
       body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
         margin-top: 0;
         padding-top: 0em !important;
-        max-width: 800px;
         margin: 0 auto; }
         body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content {
           max-width: 600px;
@@ -8282,7 +8305,48 @@ body.singular main#site-content article.page .post-inner.thin.top-level {
                 body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
                   color: #8980b6; }
                 body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
-                  color: #8980b6; } }
+                  color: #8980b6; }
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile {
+      display: block;
+      max-width: 1224px;
+      padding-bottom: 0;
+      border-bottom: 0; }
+      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin {
+        width: 100%;
+        max-width: 100%; }
+        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content {
+          display: flex;
+          width: 100%;
+          max-width: 100% !important; }
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content figure.featured-media {
+            left: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            display: inline-block;
+            width: 50%;
+            flex-grow: 1; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content figure.featured-media .featured-media-inner {
+              left: 0;
+              width: 100%;
+              height: auto; }
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content figure.featured-media .featured-media-inner img {
+                width: 100%;
+                height: auto; }
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description {
+            padding-left: .25em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header {
+              margin-top: -1.2em; }
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner {
+                text-align: left; }
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text {
+                  margin-top: 0; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description p {
+              text-align: left !important; }
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description > p {
+            display: none; } }
 
 /* category.scss */
 /* post-query-page.scss */
@@ -8451,47 +8515,67 @@ main.subpages-parent {
         text-align: center; } }
 
 /* _homepage.scss */
-main.homepage {
-  border: 4px solid green; }
+main.homepage .container .welcome-message {
+  padding: 1.25em;
+  text-align: center;
+  font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
+  main.homepage .container .welcome-message h2 {
+    text-align: center;
+    color: #cc0000;
+    font-size: 3.2em; }
+  main.homepage .container .welcome-message p {
+    text-align: center;
+    font-size: 1.85em; }
+
+main.homepage article.neighborhood_profile {
+  padding-bottom: 6em !important;
+  border-bottom: 1px solid #cccccc;
+  padding-top: .5em !important; }
+
+main.homepage .features article h2 {
+  font-family: "Roboto", sans-serif; }
+
+@media screen and (min-width: 768px) {
   main.homepage .container .welcome-message {
-    padding: 1.25em;
     text-align: center;
     font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
     main.homepage .container .welcome-message h2 {
       text-align: center;
       color: #cc0000;
-      font-size: 3.2em; }
+      font-size: 5.4em; }
     main.homepage .container .welcome-message p {
       text-align: center;
-      font-size: 1.85em; }
-
-@media screen and (min-width: 768px) {
-  main.homepage {
-    border: 4px solid blue; }
-    main.homepage .container .welcome-message {
-      text-align: center;
-      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
-      main.homepage .container .welcome-message h2 {
-        text-align: center;
-        color: #cc0000;
-        font-size: 5.4em; }
-      main.homepage .container .welcome-message p {
-        text-align: center;
-        font-size: 2.1em; } }
+      font-size: 2.1em; }
+  main.homepage article.neighborhood_profile {
+    padding-top: 2.4em !important; }
+    main.homepage article.neighborhood_profile h2 {
+      font-family: "Roboto", sans-serif; } }
 
 @media screen and (min-width: 992px) {
-  main.homepage {
-    border: 4px solid red; }
-    main.homepage .container .welcome-message {
+  main.homepage .container .welcome-message {
+    text-align: center;
+    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
+    main.homepage .container .welcome-message h2 {
       text-align: center;
-      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
-      main.homepage .container .welcome-message h2 {
-        text-align: center;
-        color: #cc0000;
-        font-size: 9em;
-        letter-spacing: .015rem; }
-      main.homepage .container .welcome-message p {
-        text-align: center;
-        font-size: 3em; } }
+      color: #cc0000;
+      font-size: 9em;
+      letter-spacing: .015rem; }
+    main.homepage .container .welcome-message p {
+      text-align: center;
+      font-size: 3em; }
+  main.homepage article.neighborhood_profile {
+    padding-top: 4em !important; }
+    main.homepage article.neighborhood_profile h2 {
+      font-family: "Roboto", sans-serif; }
+  main.homepage .features {
+    display: flex; }
+    main.homepage .features article {
+      border: none;
+      flex-grow: 1;
+      padding-bottom: 10em; }
+      main.homepage .features article h2 {
+        font-family: "Roboto", sans-serif; }
+    main.homepage .features article:nth-child(2) {
+      border-left: 1px solid #cccccc; } }
 
 /*# sourceMappingURL=style.css.map */

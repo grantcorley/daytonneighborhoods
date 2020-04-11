@@ -14,11 +14,7 @@
 ?>
 
 
-
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
-
-<!-- stuff went here -->
 
 
 	<div class="post-inner neighborhood-profile <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
@@ -28,7 +24,23 @@
 			<?php
 
 			if ( ! is_search() ) {
+
+				if ( has_post_thumbnail() ){
 				get_template_part( 'template-parts/featured-image' );
+				}
+
+				else{
+					?>
+
+					<figure class="featured-media">
+							<div class="featured-media-inner ">
+									<img width="1200" height="500" src="<?php echo get_stylesheet_directory_uri();?>/images/logo_1980x1000_alt.gif" class="attachment-featured size-featured wp-post-image" alt="Dayton Neighborhoods logo">
+							</div><!-- .featured-media-inner -->
+					</figure>
+
+					<?php
+				}
+
 			}
 				get_template_part( 'template-parts/entry-header' );
 
@@ -103,7 +115,7 @@
 						<?php
 							$house_size =  get_field('avg_house_size');
 							if($house_size != "" ){?>
-								<!-- SHOW THE HOME VALUES IF THEY EXISTS -->
+								<!-- SHOW THE HOME SIZE IF THEY EXISTS -->
 								<div class="box"><!-- ============== -->
 									<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_house.svg" alt="House size icon">
 									<h4>Average House Size</h4>
@@ -112,11 +124,20 @@
 							<?php } ?>
 
 
-								<div class="box">
+							<!-- AVG LOT SIZE -->
+							<?php
+								$lot_size =  get_field('avg_lot_size');
+								if($lot_size != "" ){?>
+									<!-- SHOW THE LOT SIZE IF IT EXISTS -->
+									<div class="box"><!-- ============== -->
 										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_tree.svg" alt="Lot size icon">
-								<h4>Average Lot Size</h4>
+										<h4>Average Lot Size</h4>
 									<p class="icon-stat"><?php the_field('avg_lot_size');?> sq. ft.</p>
-							</div>
+									</div><!-- ============== -->
+								<?php } ?>
+
+
+
 				</section>
 
 
@@ -165,10 +186,17 @@
 						</div>
 
 						<div class="quick-stats">
-							<h4><span class="q-stats">Quick Stats:</span> <br/> <?php the_field('neighborhood');?></h4>
+							<h4><span class="q-stats">Quick Stats</span> <br/> <?php the_field('neighborhood');?></h4>
 
-							<p><span class="label">Zip Code(s):</span>
-								<?php the_field('zip_codes');?></p>
+
+								<!--Show Zip Code(s) if exists-->
+								<?php
+										$zip_codes =  get_field('zip_codes');
+										if($zip_codes != "" ){?>
+												<p><span class="label">Zip Code(s):</span>
+													<?php the_field('zip_codes');?></p>
+								<?php } ?>
+
 
 							<!--Show Neighborhood(s) if exists-->
 							<?php

@@ -72,23 +72,34 @@ get_header();
 	</div>
 
 
+
+
 	<!-- FEATURED POST: NEIGHBORHOOD PROFILE -->
-	<?php
+	<article class="neighborhood_profile">
+		<?php
 
-	$args = array(
-    'orderby'        => 'rand',
-    'posts_per_page' => '1',
-		'category_name' => 'neighborhood-profile',
-	);
+		$args = array(
+			'orderby'        => 'rand',
+			'posts_per_page' => '1',
+			'category_name' => 'neighborhood-profile',
+		);
 
-	$query = new WP_Query( $args );
-	$query->the_post();
-	get_template_part( 'template-parts/content', get_post_type() );
+		$query = new WP_Query( $args );
+		$query->the_post();
+		// get_template_part( 'template-parts/content', get_post_type() );
+		get_template_part( 'template-parts/content_neighborhoodprofile', get_post_type() );
 
-	?>
+		?>
+	</article>
 
 
+
+<!-- FEATURES SECTION -> Fall below the Featured Neighborhood -->
+<!-- 2-up at large screen sizes -->
+
+<div class="features">
 	<!-- FEATURED POST: NEWS ITEM -->
+
 	<?php
 
 	$args = array(
@@ -101,8 +112,11 @@ get_header();
 
 	$query->the_post();
 	get_template_part( 'template-parts/content', get_post_type() );
+	//get_template_part( 'template-parts/content_neighborhoodprofile', get_post_type() );
 
 	?>
+
+
 
 
 	<!-- FEATURED POST: EVENTS ITEM -->
@@ -121,16 +135,13 @@ get_header();
 
 	?>
 
-
-
-
-	<!--============//? >===============-->
+</div><!--end features-->
 
 </main><!-- #site-content -->
 
-<?php //remove footer widgets for now
-	//get_template_part( 'template-parts/footer-menus-widgets' );
-	?>
+<!-- remove footer widgets for now
+< ? php ////get_template_part( 'template-parts/footer-menus-widgets' ); ? >
+-->
 
 <?php
 get_footer();

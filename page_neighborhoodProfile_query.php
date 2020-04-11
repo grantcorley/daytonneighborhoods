@@ -80,7 +80,8 @@ get_header();
 
 				while ( $the_query->have_posts() ) {
 					$the_query->the_post();
-					get_template_part( 'template-parts/content', get_post_type() );
+					// get_template_part( 'template-parts/content', get_post_type() );
+					get_template_part( 'template-parts/content_neighborhoodProfileQuery', get_post_type() );
 					the_excerpt();
 				}
 			}

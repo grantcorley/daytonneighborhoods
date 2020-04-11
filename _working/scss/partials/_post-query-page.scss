@@ -5,11 +5,11 @@
 //MOBILE SIZES
 body.singular{
 
- //main#site-content.post-query-page{
  main#site-content{
 
-
   article.page{  //(top-level article)
+
+    //text-align: center;
 
     .header-over-image{
         position: relative;
@@ -56,7 +56,6 @@ body.singular{
               .entry-content{
 
                   h2.intro-text{
-                    //border:1px dotted orange;
                     color: $accent;
                     font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
                     font-size:32px;
@@ -69,12 +68,6 @@ body.singular{
             border-bottom:1px solid #bdbbc8;
             max-width: 100rem;
             padding-bottom:4em;
-
-            // div.featured-media-inner{
-            //   img {
-            //     display:none;
-            //   }
-            // }
 
             .post-inner.thin{
 
@@ -117,12 +110,15 @@ body.singular{
               }//end .entry-header-inner
             }//end header#entry-header
 
-
             }//end .entry-content
 
         }//end post-inner.thin
 
       }//end article.post
+
+      article.post.category-neighborhood-profile{
+        //-------------
+      }
 
     }//end .entry-content
 
@@ -219,7 +215,6 @@ body.singular{
 
               article.post{
                 border-bottom:1px solid #dbdbde;
-                //max-width: 100rem;
                 padding-bottom:4em;
 
                 // div.featured-media-inner{
@@ -232,7 +227,7 @@ body.singular{
                 margin-top:0;
                 padding-top:0em !important;
                 //border:2px dotted chartreuse;
-                max-width:800px;
+                //max-width:800px;
                 margin:0 auto;
                 //border:2px solid purple;
                 //background-color: gray;
@@ -283,11 +278,106 @@ body.singular{
                     }
                   }//end header#entry-header
 
+
+
                 }//end .entry-content
 
               }//end post-inner.thin
 
             }//end article.post
+
+
+            article.post.category-neighborhood-profile{
+
+              // border: 2px solid red;
+              display:block;
+              // margin:0 auto;
+              max-width: 1224px;
+              padding-bottom:0;
+              border-bottom:0;
+
+              .post-inner.thin{
+                width:100%;
+                max-width:100%;
+                // border:1px dotted orange;
+
+                //display:flex;
+
+                .entry-content{
+                  // border:10px solid yellow;
+                  display:flex;
+                  width:100%;
+                  max-width: 100% !important;
+
+                  figure.featured-media{
+                    //order:3px solid green;
+                    left:0;
+                    margin-bottom: 0;
+                    margin-left:0;
+                    display: inline-block;
+                    width:50%;
+                    flex-grow: 1;
+
+                    .featured-media-inner{
+
+                        left:0;
+                        width: 100%;
+                        height: auto;
+                        //display:inline-block;
+
+                        img{
+                          width: 100%;
+                          height: auto;
+                          //min-width:500px;
+                          //display:inline-block;
+                        }
+
+                    }//featured-media-inner
+
+                  }
+
+                  .article-name-description{
+                    // border:1px solid orange;
+                    padding-left:.25em;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                        header#entry-header{
+                          //.entry-header-inner{
+                              // border:1px dotted red;
+                              // text-align: left;
+                              margin-top: -1.2em;
+
+                                .entry-header-inner{
+                                  // border:2px dotted yellow;
+                                  text-align: left;
+
+                                  .intro-text{
+                                    margin-top:0;
+                                  }
+
+                                }//entry-header-inner
+                        }//end header#entry-header
+
+                        p{ //hide any paragraphs accidentally entered outside Fields template
+                          text-align: left !important;
+                          //display:none;
+                        }
+
+                  }//.article-name-description
+
+                  .article-name-description > p{
+                    display:none;
+                  }
+
+                }//end entry-content
+
+            }//end post-inner.thin
+
+          }//end article.category-neighborhood-profile
+
+
 
           }//end .entry-content
 
