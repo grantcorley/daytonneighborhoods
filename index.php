@@ -22,6 +22,12 @@ get_header();
 
 <!-- SLIDESHOW -->
 
+<div class="slideshow-holder">
+
+	<div class="message-holder">
+		<h1>Home, Sweet Home.</h1>
+	</div>
+
 	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -32,22 +38,22 @@ get_header();
     <div class="carousel-item active">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/WestwoodMural_1980x1000.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <!-- <h5>First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
       </div>
     </div>
     <div class="carousel-item">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/onThePorch.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <!-- <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
       </div>
     </div>
     <div class="carousel-item">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/belmontHome_featuredImg.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <!-- <h5>Third slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
       </div>
     </div>
   </div>
@@ -61,15 +67,19 @@ get_header();
   </a>
 </div>
 
+</div> <!--end slideshow-holder-->
+
 
 	<!-- END SLIDESHOW -->
 
-	<div class="container">
-			<div  class="welcome-message">
-				<h2>Home, Sweet Home</h2>
-				<p>Affordable. Friendly. Convenient. Options for every budget. See why Dayton is the smart choice for your new home.</p>
+	<!-- <div class="container"> -->
+			<div class="welcome-message">
+				<!-- <h2>Home, Sweet Home</h2> -->
+				<p>Affordable. Convenient. Friendly.<br/>
+				<span class="line-2">You'll be proud to come home to Dayton.</span>
+				</p>
 			</div>
-	</div>
+	<!-- </div> -->
 
 
 

@@ -38,19 +38,22 @@
 
 				//get_template_part( 'template-parts/featured-image' );
 
+				//the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
+
 				if ( has_post_thumbnail() ){
+					?><a class="img-link" href="<?php echo esc_url( get_permalink( ) ); ?>"><?php
 					get_template_part( 'template-parts/featured-image' );
+					?></a><?php
 				}
 
 				else{
-					?>
-
-					<figure class="featured-media">
-							<div class="featured-media-inner ">
-									<img width="1200" height="500" src="<?php echo get_stylesheet_directory_uri();?>/images/logo_1980x1000_alt.gif" class="attachment-featured size-featured wp-post-image" alt="Dayton Neighborhoods logo">
-							</div><!-- .featured-media-inner -->
-					</figure>
-
+					?><a class="img-link" href="<?php echo esc_url( get_permalink( ) ); ?>">
+						<figure class="featured-media">
+								<div class="featured-media-inner ">
+										<img width="1200" height="500" src="<?php echo get_stylesheet_directory_uri();?>/images/logo_1980x1000_alt.gif" class="attachment-featured size-featured wp-post-image" alt="Dayton Neighborhoods logo">
+								</div><!-- .featured-media-inner -->
+						</figure>
+					</a>
 					<?php
 				}
 
@@ -72,7 +75,6 @@
 			}
 			?>
 		</div><!--end article-name-description-->
-
 
 		</div><!-- .entry-content -->
 
