@@ -2,10 +2,8 @@
 
 main.homepage{
 
-  //border:4px solid green;
-
 .slideshow-holder{
-  //border:3px solid red;
+
   position: relative;
 
     .message-holder{
@@ -19,18 +17,28 @@ main.homepage{
       justify-content: center;
       pointer-events: none; //so arrows underneath can be access for clicks
 
+
+
       h1{
         text-align: center;
         color:white;
         font-family: $copy;
         font-size: 3rem;
+        //border:2px solid pink;
+
+        span.home{
+          background-color: $accent;
+
+          padding: 0 .75rem;
+
+        }
+
       }
+
 
     }
 
 }
-
-
 
     .welcome-message{
 
@@ -43,7 +51,6 @@ main.homepage{
         text-align: center;
         color: $accent;
         font-size: 3.2em;
-
       }
 
       p{
@@ -63,24 +70,27 @@ main.homepage{
 
 
 article.neighborhood_profile{
-//article.post.category-neighborhood-profile{
   padding-bottom:6em !important;
   border-bottom:1px solid $gray;
   padding-top:.5em !important;
-  //border:2px solid orange !important;
+
+  h2{
+    font-family: $headline;
+    margin-top:1rem;
+  }
+
 }
 
 
 .features{
 
-  //border: 1px solid red;
-
   article{
-    //border: 2px dashed orange;
+
     h2{
       font-family: $headline;
     }
-  }
+
+  }//article
 
 }//end features
 
@@ -101,26 +111,24 @@ article.neighborhood_profile{
 
   main.homepage{
 
-    //border:4px solid blue;
-
-
     .slideshow-holder{
 
         .message-holder{
 
           h1{
             font-size: 6rem;
+            span.home{
+               padding: 0 1.6rem;
+            }
           }
-        }
-    }
+
+        }//message-holder
+    }//slideshow-holder
 
 
-
-  //.container{
 
       .welcome-message{
 
-        // padding: .5em 1.25em;
         padding-top:2em;
         text-align: center;
         font-family: $copy;
@@ -148,23 +156,35 @@ article.neighborhood_profile{
       }//end welcome-message
 
 
-  //}//end container
+
 
   article.neighborhood_profile{
-    //border:4px solid green;
+
     padding-top:2.4em !important;
+
+    .entry-content{
+
+      figure.featured-media {
+        // border:4px solid violet;
+        max-width: 72rem !important;
+        width: calc(100% - 2rem);
+      }
+
+      header#entry-header .entry-categories .entry-categories-inner a{
+        font-size: 1.5rem !important;
+        border-bottom: none;
+      }
+
+
+    }
 
     h2{
       font-family: $headline;
     }
 
-  }
-
-
-
+  }//article.neighborhood_profile
 
   }//main._homepage
-
 
 }//end media query 768px;
 
@@ -174,23 +194,25 @@ article.neighborhood_profile{
 
   main.homepage{
 
-    //border:4px solid red;
-
     .slideshow-holder{
 
         .message-holder{
 
           h1{
             font-size: 8rem;
-          }
-        }
-    }
 
-  //.container{
+            span.home{
+              padding: 0 2.4rem;
+            }
+
+          }
+
+        }
+
+    }
 
       .welcome-message{
 
-        // padding: .5em 1.25em;
         padding-top:3.6em;
         text-align: center;
         font-family: $copy;
@@ -213,31 +235,43 @@ article.neighborhood_profile{
           }
 
         }//p
+
       }//end welcome-message
 
 
-  //}//end container
-
-
   article.neighborhood_profile{
-    //border:4px solid green;
     padding-top:4em !important;
     border:none;
     border-bottom:1px solid $gray;
 
+    .entry-content{
+
+      figure.featured-media {
+        max-width: 90rem !important;
+        width: calc(100% - 2rem);
+      }
+
+      header#entry-header .entry-categories .entry-categories-inner a{
+        font-size: 1.5rem !important;
+        border-bottom: none;
+      }
+
+    }//end entry-content
+
+
     h2{
       font-family: $headline;
+      margin-top:3rem;
     }
 
-  }
+  }//article.neighborhood-profile
+
 
   .features{
 
-    //border: 1px solid red;
     display: flex;
 
     article{
-      //border: 1px dotted orange;
       border:none;
 
       flex-grow: 1;

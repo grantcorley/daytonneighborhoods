@@ -1,7 +1,12 @@
 /* _header.scss */
 
 header#site-header{
-  box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+  border-bottom:2px solid $accent;
+  box-shadow: 3px 3px 3px rgba(0,0,0,.1);
+
+  .header-inner{
+        padding: 1rem 0 1rem 0;
+  }
 
 }
 
@@ -34,28 +39,20 @@ header#site-header{
 }
 
 
-
-
-
     //MOBILE MODAL MENU
     nav.mobile-menu{
       //border:4px solid red;
 
       ul.modal-menu > li.menu-item > .ancestor-wrapper > a{
-        //border:1px dotted gray;
         color: #605594;
-        //color:pink;
         margin: 1em 0;
-        //border:1px dotted red;
         padding: .5em 1em;
 
       &:visited{
         color: #605594;
       }
       &:hover {
-        //color: white !important;
         text-decoration: none;
-        //background-color: lighten($primary, 10%);
       }
 
       &:active {
@@ -69,9 +66,6 @@ header#site-header{
     }//end ul.modal-menu > li.menu-item > .ancestor-wrapper > a
 
 
-    // .modal-menu li.current_page_ancestor > .ancestor-wrapper > a{
-    //   text-decoration: none;
-    // }
 
     .modal-menu a:focus,
     .modal-menu a:hover,
@@ -110,19 +104,13 @@ header#site-header{
       //-----------
       ul.primary-menu{
 
-        // border: 3px solid red;
-
         li.menu-item {
 
-          // a {
-          //
-          // }
 
           ul.sub-menu.active{
             border: 2px solid red !important;
              background-color:$primary;
              top: calc(100% + 1rem);
-            //background-color: $accent;
 
             li{
 
@@ -172,29 +160,21 @@ header#site-header{
     //FULL-SIZE MODAL MENU
     nav.expanded-menu{
 
-      //border:4px solid brown;
-
       ul.modal-menu > li.menu-item > .ancestor-wrapper > a{
         //border:1px dotted gray;
         color: #605594;
-        //color:pink;
         margin: 1em 0;
-        //border:1px dotted red;
         padding: .5em 1em;
 
       &:visited{
         color: #605594;
       }
       &:hover {
-        //color: white !important;
         text-decoration: none;
-        // background-color: lighten($primary, 10%);
-        //color:lighten($purple, 10%);
         color: $accent;
       }
 
       &:active {
-      // color: #e76113; //orange
       color: $mouseover_color;
       text-decoration: none !important;
       background-color: $primary;
@@ -203,10 +183,6 @@ header#site-header{
 
     }//end ul.modal-menu > li.menu-item > .ancestor-wrapper > a
 
-
-    // .modal-menu li.current_page_ancestor > .ancestor-wrapper > a{
-    //   text-decoration: none;
-    // }
 
     .modal-menu a:focus,
     .modal-menu a:hover,

@@ -39,7 +39,7 @@ get_header();
 
 <div class="entry-header-inner section-inner medium">
 
-	<h1 class="entry-title">News</h1>
+	<h1 class="entry-title fade-in">News</h1>
 	<p></p>
 
 

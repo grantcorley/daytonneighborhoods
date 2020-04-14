@@ -38,7 +38,7 @@ get_header();
 
 <div class="entry-header-inner section-inner medium">
 
-	<h1 class="entry-title">Incentives</h1>
+	<h1 class="entry-title fade-in">Incentives</h1>
 	<p></p>
 
 

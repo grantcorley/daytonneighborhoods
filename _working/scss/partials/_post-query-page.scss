@@ -120,8 +120,11 @@ body.singular{
 
         article.post.category-neighborhood-profile{
 
+          // background-color:lighten(purple, 25%);
+            //background-color:red;
 
           border-bottom:none;
+          //background-color:white;
 
           .post-inner.thin{
             width:100%;
@@ -251,6 +254,9 @@ body.singular{
    //main#site-content.post-query-page{
    main#site-content{
 
+     padding-bottom: 0;
+
+
     article.page{  //(top-level article)
 
       //-------------------------------------
@@ -309,7 +315,7 @@ body.singular{
                 font-size:2.8em;
                 line-height: 1em;
                 text-align: center;
-                padding-bottom:.4em;
+                padding-bottom:.5em;
                 max-width: 1200px !important;
                 margin-bottom:.25em;
               }
@@ -381,24 +387,23 @@ body.singular{
           #the-posts{
 
             margin: auto;
+            padding-bottom: 6em;
             display:flex;
             flex-wrap: wrap;
-            // justify-content: space-between;
             justify-content: center;
             //border:2px solid red;
             max-width:100%;
             width:100% !important;
-
+            background-color: lighten($primary, 35%);
+            padding-top:1em;
 
                   article.post.category-neighborhood-profile{
 
+                    box-shadow: 3px 3px 3px rgba(0,0,0,.1);
+                    background-color:white;
                     border: 1px solid $gray;
-                    //border-bottom:1px solid $gray;
                     display:block;
-                    //background-color:aqua;
-                    border-radius: 4px;;
-                    // margin:0 auto;
-                    //max-width: 1224px;
+                    border-radius: 6px;
                     max-width:30%;
                     padding:.5em;
                     padding-bottom:1.6em;;
@@ -407,7 +412,6 @@ body.singular{
                     .post-inner.thin{
                       width:100%;
                       max-width:100%;
-                      // border:1px dotted orange;
 
                       //display:flex;
 
@@ -585,7 +589,7 @@ body.singular{
                 font-size:2.8em;
                 line-height: 1em;
                 text-align: center;
-                padding-bottom:.4em;
+                padding-bottom:.5em;
                 max-width: 1200px !important;
                 margin-bottom:.25em;
               }
@@ -659,7 +663,8 @@ body.singular{
             margin: auto;
             display:flex;
             flex-wrap: wrap;
-            // justify-content: space-between;
+            border-top:2px solid $accent;
+
             justify-content: center;
             //border:2px solid red;
             max-width:100%;
@@ -670,7 +675,7 @@ body.singular{
 
                     border: 1px solid $gray;
                     display:block;
-                    border-radius: 4px;;
+                    border-radius: 6px;
                     max-width:30%;
                     padding:.5em;
                     padding-bottom:1.6em;;

@@ -26,7 +26,7 @@ get_header();
 
 	<div class="featured-media-inner section-inner">
 
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/WestwoodMural_1980x1000.jpg" width="1980" height="1000" alt="Westwood mural, Dayton OH" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kayaks_1980x1000.jpg" width="1980" height="1000" alt="Sporting good shop, Dayton OH" />
 
 	</div><!-- .featured-media-inner -->
 
@@ -39,7 +39,7 @@ get_header();
 
 <div class="entry-header-inner section-inner medium">
 
-	<h1 class="entry-title">Events</h1>
+	<h1 class="entry-title fade-in">Events</h1>
 	<p></p>
 
 
