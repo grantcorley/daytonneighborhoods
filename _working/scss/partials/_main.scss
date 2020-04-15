@@ -10,6 +10,11 @@ body{
       min-height: 1000px;
    }
 
+   .post-inner{
+     padding-top:1em;
+   }
+
+
    .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
        max-width: 58rem;
        width: calc(100% - 2rem) !important;
@@ -22,7 +27,7 @@ body{
    .entry-content dt {
     font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
     letter-spacing: normal;
-    font-size: 16px;
+    font-size: 19px;
     color: #333333;
 }
 
@@ -63,7 +68,7 @@ body.singular{
             font-family: Roboto, sans-serif;
             color:white;
             text-transform: uppercase;
-            text-shadow: 2px 2px 4px rgba(0,0,0,.85);          //text-shadow: 7px 8px 9px -5px rgba(0,0,0,0.78);
+            text-shadow: 2px 2px 2px rgba(0,0,0,.5);          //text-shadow: 7px 8px 9px -5px rgba(0,0,0,0.78);
           }
 
         }//.entry-header-inner
@@ -93,6 +98,14 @@ input.search-submit{
 
 
 //MEDIA QUERIES -----------
+
+@media (min-width: 700px){
+  .post-inner {
+      padding-top: 1em;
+  }
+}
+
+
 
 @media screen and (min-width: 768px) {
 

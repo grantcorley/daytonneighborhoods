@@ -7505,6 +7505,8 @@ body {
     background-color: white;
     padding-bottom: 12.5em;
     min-height: 1000px; }
+  body .post-inner {
+    padding-top: 1em; }
   body .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
     max-width: 58rem;
     width: calc(100% - 2rem) !important; }
@@ -7515,7 +7517,7 @@ body {
   body .entry-content dt {
     font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
     letter-spacing: normal;
-    font-size: 16px;
+    font-size: 19px;
     color: #333333; }
   body .entry-categories-inner {
     font-family: Arial, sans-serif; }
@@ -7537,12 +7539,16 @@ body.singular main#site-content article .header-over-image {
         font-family: Roboto, sans-serif;
         color: white;
         text-transform: uppercase;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85); }
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
   body.singular main#site-content article .header-over-image figure.featured-media {
     position: relative; }
 
 input.search-submit {
   background-color: #cc0000; }
+
+@media (min-width: 700px) {
+  .post-inner {
+    padding-top: 1em; } }
 
 @media screen and (min-width: 768px) {
   body .entry-content p,
@@ -7572,7 +7578,7 @@ input.search-submit {
 
 @media screen and (min-width: 768px) {
   #site-content.singular article.post header#entry-header {
-    padding-top: 3.6em; }
+    padding-top: 1.4em; }
     #site-content.singular article.post header#entry-header h1.entry-title {
       font-family: "Roboto", sans-serif;
       font-weight: bold;
@@ -7815,13 +7821,28 @@ footer#site-footer {
       margin-left: 0; }
       footer#site-footer .menu-main-container ul.menu li a, footer#site-footer .menu-main-container ul.menu li a:active, footer#site-footer .menu-main-container ul.menu li a:hover, footer#site-footer .menu-main-container ul.menu li a:visited {
         color: white; }
+        footer#site-footer .menu-main-container ul.menu li a:visited, footer#site-footer .menu-main-container ul.menu li a:active:visited, footer#site-footer .menu-main-container ul.menu li a:hover:visited, footer#site-footer .menu-main-container ul.menu li a:visited:visited {
+          color: white; }
+        footer#site-footer .menu-main-container ul.menu li a:hover, footer#site-footer .menu-main-container ul.menu li a:active:hover, footer#site-footer .menu-main-container ul.menu li a:hover:hover, footer#site-footer .menu-main-container ul.menu li a:visited:hover {
+          color: white; }
+        footer#site-footer .menu-main-container ul.menu li a:active, footer#site-footer .menu-main-container ul.menu li a:active:active, footer#site-footer .menu-main-container ul.menu li a:hover:active, footer#site-footer .menu-main-container ul.menu li a:visited:active {
+          color: white; }
       footer#site-footer .menu-main-container ul.menu li ul.sub-menu {
         display: none; }
   footer#site-footer .section-inner {
     justify-content: center; }
     footer#site-footer .section-inner .footer-credits p.footer-copyright {
       font-weight: 100;
-      font-size: small; }
+      font-size: small;
+      font-family: Arial; }
+      footer#site-footer .section-inner .footer-credits p.footer-copyright a, footer#site-footer .section-inner .footer-credits p.footer-copyright a:active, footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover, footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited {
+        color: white; }
+        footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited, footer#site-footer .section-inner .footer-credits p.footer-copyright a:active:visited, footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover:visited, footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited:visited {
+          color: white; }
+        footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover, footer#site-footer .section-inner .footer-credits p.footer-copyright a:active:hover, footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover:hover, footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited:hover {
+          color: white; }
+        footer#site-footer .section-inner .footer-credits p.footer-copyright a:active, footer#site-footer .section-inner .footer-credits p.footer-copyright a:active:active, footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover:active, footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited:active {
+          color: white; }
 
 @media screen and (min-width: 768px) {
   footer#site-footer .menu-main-container ul.menu {
@@ -7849,15 +7870,25 @@ button:focus {
 span.toggle-text {
   display: none; }
 
+.header-inner .primary-menu-wrapper + .header-toggles .toggle-wrapper:first-child::before {
+  content: none; }
+
+.header-footer-group table caption, body:not(.overlay-header) .header-inner .toggle-wrapper::before {
+  content: none; }
+
 .nav-toggle .toggle-icon, .nav-toggle svg {
-  height: 2rem;
-  width: 2.6rem; }
+  width: 28px;
+  height: 28px; }
+
+.nav-toggle .toggle-inner {
+  padding-top: 0; }
 
 .menu-icon {
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   display: block;
-  background-image: url("images/menu-icon.svg"); }
+  background-image: url("images/menu-icon.svg");
+  background-repeat: no-repeat; }
 
 button.toggle.nav-toggle {
   margin-top: -4px; }
@@ -7911,8 +7942,14 @@ main.homepage article.neighborhood_profile {
     font-family: "Roboto", sans-serif;
     margin-top: 1rem; }
 
-main.homepage .features article h2 {
-  font-family: "Roboto", sans-serif; }
+main.homepage .features article {
+  padding-top: 2.4em; }
+  main.homepage .features article h2 {
+    font-family: "Roboto", sans-serif; }
+    main.homepage .features article h2 a:visited {
+      color: black; }
+    main.homepage .features article h2 a:hover, main.homepage .features article h2 a:active {
+      color: #605594; }
 
 @media screen and (min-width: 700px) {
   .features .entry-content {
@@ -7947,7 +7984,9 @@ main.homepage .features article h2 {
       font-size: 1.5rem !important;
       border-bottom: none; }
     main.homepage article.neighborhood_profile h2 {
-      font-family: "Roboto", sans-serif; } }
+      font-family: "Roboto", sans-serif; }
+  main.homepage .features article {
+    padding-top: 5em !important; } }
 
 @media screen and (min-width: 992px) {
   main.homepage .slideshow-holder .message-holder h1 {
@@ -7988,6 +8027,7 @@ main.homepage .features article h2 {
     main.homepage .features article {
       border: none;
       flex-grow: 1;
+      padding-top: 7em;
       padding-bottom: 10em; }
       main.homepage .features article h2 {
         font-family: "Roboto", sans-serif; }
@@ -8316,8 +8356,7 @@ body.singular main#site-content article.page .header-over-image {
         font-size: 4em;
         font-weight: bold;
         font-family: Roboto, sans-serif;
-        text-transform: uppercase;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85); }
+        text-transform: uppercase; }
   body.singular main#site-content article.page .header-over-image figure.featured-media {
     position: relative; }
 
@@ -8433,7 +8472,7 @@ body.singular main#site-content article.page .post-inner.thin.top-level {
         font-size: 2.8em;
         line-height: 1em;
         text-align: center;
-        padding-bottom: .5em;
+        padding-bottom: .85em;
         max-width: 1200px !important;
         margin-bottom: .25em; }
       body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post {
@@ -8563,7 +8602,7 @@ body.singular main#site-content article.page .post-inner.thin.top-level {
       font-size: 2.8em;
       line-height: 1em;
       text-align: center;
-      padding-bottom: .5em;
+      padding-bottom: 1em;
       max-width: 1200px !important;
       margin-bottom: .25em; }
     body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post {
@@ -8868,8 +8907,14 @@ main.homepage article.neighborhood_profile {
     font-family: "Roboto", sans-serif;
     margin-top: 1rem; }
 
-main.homepage .features article h2 {
-  font-family: "Roboto", sans-serif; }
+main.homepage .features article {
+  padding-top: 2.4em; }
+  main.homepage .features article h2 {
+    font-family: "Roboto", sans-serif; }
+    main.homepage .features article h2 a:visited {
+      color: black; }
+    main.homepage .features article h2 a:hover, main.homepage .features article h2 a:active {
+      color: #605594; }
 
 @media screen and (min-width: 700px) {
   .features .entry-content {
@@ -8904,7 +8949,9 @@ main.homepage .features article h2 {
       font-size: 1.5rem !important;
       border-bottom: none; }
     main.homepage article.neighborhood_profile h2 {
-      font-family: "Roboto", sans-serif; } }
+      font-family: "Roboto", sans-serif; }
+  main.homepage .features article {
+    padding-top: 5em !important; } }
 
 @media screen and (min-width: 992px) {
   main.homepage .slideshow-holder .message-holder h1 {
@@ -8945,6 +8992,7 @@ main.homepage .features article h2 {
     main.homepage .features article {
       border: none;
       flex-grow: 1;
+      padding-top: 7em;
       padding-bottom: 10em; }
       main.homepage .features article h2 {
         font-family: "Roboto", sans-serif; }

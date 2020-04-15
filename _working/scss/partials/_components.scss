@@ -8,17 +8,42 @@ span.toggle-text{
   display:none;
 }
 
+// @media (min-width: 1000px)
+.header-inner .primary-menu-wrapper + .header-toggles .toggle-wrapper:first-child::before {
+    content: none;
+}
+
+.header-footer-group table caption, body:not(.overlay-header) .header-inner .toggle-wrapper::before {
+    content:none;
+}
+
 .nav-toggle .toggle-icon, .nav-toggle svg {
-    height: 2rem;
-    width: 2.6rem;
+    // height: 2rem;
+    // width: 2.6rem;
+    // width:24px;
+    // height:36px;
+    width:28px;
+    height:28px;
+
+}
+
+
+
+.nav-toggle .toggle-inner{
+  padding-top:0;
 }
 
 .menu-icon{
-  width:20px;
-  height:20px;
+  // width:24px;
+  // height:36px;
+  // height: 2rem;
+  // width: 2.6rem;
+  width:26px;
+  height:26px;
   display: block;
   background-image: url('images/menu-icon.svg');
-
+  background-repeat: no-repeat;
+  //border:1px dotted pink;
 }
 
 button.toggle.nav-toggle{

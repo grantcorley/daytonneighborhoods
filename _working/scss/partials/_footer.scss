@@ -13,28 +13,36 @@ footer#site-footer{
     width:190px;
     height:64px;
     display:block;
-    //background-image: url('images/DNLogo_white.svg');
-    //background-repeat: no-repeat;
-    //border:1px solid white;
     margin: 0 auto 1em auto;
   }
 
   .menu-main-container{
     ul.menu{
-      // border: 1px solid red;
       margin:0 0 0 0;
       list-style-type: none;
       padding-bottom:2rem;
       text-align: center;
       li{
-        //border:1px solid red;
         margin-left: 0;
+        //border:1px solid red;
         #{$a-tags}{
           color:white;
+
+          &:visited{
+            color:white;
+          }
+
+          &:hover{
+            color:white;
+          }
+
+          &:active{
+            color:white;
+          }
+
         }
 
         ul.sub-menu{
-          // border: 1px solid red !important;
           display:none;
         }
 
@@ -49,6 +57,30 @@ footer#site-footer{
       p.footer-copyright{
         font-weight: 100;
         font-size:small;
+        font-family: Arial;
+
+        #{$a-tags}{
+          //color:red;
+
+
+          color:white;
+
+          &:visited{
+            color:white;
+          }
+
+          &:hover{
+            color:white;
+          }
+
+          &:active{
+            color:white;
+          }
+
+        }
+
+
+
       }
     }
 
