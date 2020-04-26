@@ -17,14 +17,11 @@ main.homepage{
       justify-content: center;
       pointer-events: none; //so arrows underneath can be access for clicks
 
-
-
       h1{
         text-align: center;
         color:white;
         font-family: $copy;
         font-size: 3rem;
-        //border:2px solid pink;
 
         span.home{
           background-color: $accent;
@@ -46,6 +43,7 @@ main.homepage{
       padding-top:2em;
       text-align: center;
       font-family: $copy;
+      //font-weight: bold;
 
       h2{
         text-align: center;
@@ -77,6 +75,18 @@ article.neighborhood_profile{
   h2{
     font-family: $headline;
     margin-top:1rem;
+    // border:1px solid red;
+
+    a{
+      &:link, &:visited{
+        color: black;
+      }
+
+      &:hover, &:active{
+        color: $primary;
+      }
+    }
+
   }
 
 }
@@ -188,6 +198,16 @@ article.neighborhood_profile{
       header#entry-header .entry-categories .entry-categories-inner a{
         font-size: 1.5rem !important;
         border-bottom: none;
+        //border:1px solid red;
+
+        &:link, a:visited{
+          color: $accent;
+        }
+
+        &:hover, a:active{
+          color: $primary;
+        }
+
       }
 
 
@@ -284,7 +304,7 @@ article.neighborhood_profile{
 
     h2{
       font-family: $headline;
-      margin-top:3rem;
+      margin-top:1rem;
     }
 
   }//article.neighborhood-profile
@@ -296,10 +316,10 @@ article.neighborhood_profile{
 
     article{
       border:none;
-
       flex-grow: 1;
-      padding-top:7em;
-      padding-bottom:10em;
+      // padding-top:7em;
+      // padding-bottom:10em;
+      padding: 7em 2em 10em 2em;
 
       h2{
         font-family: $headline;

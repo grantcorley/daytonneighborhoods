@@ -11,7 +11,7 @@
 
 ?><!DOCTYPE html>
 
-<html class="no-js" <?php language_attributes(); ?>>
+<html class="no-js" <?php language_attributes();?> >
 
 	<head>
 
@@ -19,9 +19,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
-		<link rel="shortcut icon"  type="image/png" href=<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png">
+		<link rel="shortcut icon"  type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.svg">
 
 		<?php wp_head(); ?>
+
+		<!-- social media links -->
+		<meta property="og:title" content="Dayton Neighborhoods">
+		<meta property="og:description" content="Tools and resources for making your home in Dayton OH">
+		<meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-social.jpg">
+		<meta property="og:url" content="http://www.daytonneighborhoods.org">
+		<meta name="twitter:card" content="summary_large_image">
+
+		<!--  non-essential, but recommended -->
+		<meta property="og:site_name" content="Dayton Neighborhoods">
+		<meta name="twitter:image:alt" content="Dayton Neighborhoods logo">
+
 
 	</head>
 

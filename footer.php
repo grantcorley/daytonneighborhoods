@@ -27,9 +27,8 @@
 
 				<div class="section-inner">
 
+
 					<div class="footer-credits">
-
-
 
 						<!--copyright--------->
 						<p class="footer-copyright">&copy;
@@ -44,6 +43,7 @@
 
 					</div><!-- .footer-credits -->
 
+					<p class="privacy-policy"><a href="<?php echo esc_url( home_url( '/privacy-policy' ) ); ?>">Privacy Policy</a></p>
 
 
 				</div><!-- .section-inner -->

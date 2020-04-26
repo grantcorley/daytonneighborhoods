@@ -55,7 +55,6 @@ a{
 
     &:hover{
       text-decoration: none;
-      // color: lighten($primary, 10%);
 
       h2{
         color: lighten($primary, 10%);
@@ -88,7 +87,6 @@ a{
   a{
     section{
         border: 1px solid #e3e3e3;
-        //border-top: none;
         text-align: center;
         width: 100%;
         padding: 1.5em;
@@ -149,7 +147,6 @@ a{
 
     &:hover{
       text-decoration: none;
-      // color: lighten($primary, 10%);
 
       h2{
         color: lighten($primary, 10%);

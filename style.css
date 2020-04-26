@@ -7505,8 +7505,8 @@ body {
     background-color: white;
     padding-bottom: 12.5em;
     min-height: 1000px; }
-  body .post-inner {
-    padding-top: 1em; }
+  body a:hover, body a:active {
+    color: #605594; }
   body .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
     max-width: 58rem;
     width: calc(100% - 2rem) !important; }
@@ -7536,7 +7536,7 @@ body.singular main#site-content article .header-over-image {
       body.singular main#site-content article .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
         font-size: 6em;
         font-weight: bold;
-        font-family: Roboto, sans-serif;
+        font-family: "Roboto", sans-serif;
         color: white;
         text-transform: uppercase;
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
@@ -7596,6 +7596,19 @@ h1, h2 {
   letter-spacing: normal;
   font-size: 14px;
   color: #333333; }
+
+.entry-categories-inner a {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 500 !important; }
+
+.entry-categories .entry-categories-inner a {
+  font-size: 1.5rem !important;
+  border-bottom: none; }
+  .entry-categories .entry-categories-inner a:link, .entry-categories .entry-categories-inner a a:visited {
+    color: #cc0000 !important; }
+  .entry-categories .entry-categories-inner a:hover, .entry-categories .entry-categories-inner a a:active {
+    color: #605594 !important;
+    text-decoration: underline; }
 
 @media screen and (min-width: 700px) {
   .entry-content p, .entry-content ol, .entry-content ul, .entry-content dl, .entry-content dt {
@@ -7830,19 +7843,32 @@ footer#site-footer {
       footer#site-footer .menu-main-container ul.menu li ul.sub-menu {
         display: none; }
   footer#site-footer .section-inner {
-    justify-content: center; }
-    footer#site-footer .section-inner .footer-credits p.footer-copyright {
-      font-weight: 100;
+    justify-content: center;
+    display: block;
+    text-align: center; }
+    footer#site-footer .section-inner p.privacy-policy a {
       font-size: small;
-      font-family: Arial; }
-      footer#site-footer .section-inner .footer-credits p.footer-copyright a, footer#site-footer .section-inner .footer-credits p.footer-copyright a:active, footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover, footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited {
+      color: white; }
+      footer#site-footer .section-inner p.privacy-policy a:visited {
         color: white; }
-        footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited, footer#site-footer .section-inner .footer-credits p.footer-copyright a:active:visited, footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover:visited, footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited:visited {
+      footer#site-footer .section-inner p.privacy-policy a:hover {
+        color: white; }
+      footer#site-footer .section-inner p.privacy-policy a:active {
+        color: white; }
+    footer#site-footer .section-inner .footer-credits {
+      display: block; }
+      footer#site-footer .section-inner .footer-credits p.footer-copyright {
+        font-weight: 100;
+        font-size: small;
+        font-family: Arial; }
+        footer#site-footer .section-inner .footer-credits p.footer-copyright a, footer#site-footer .section-inner .footer-credits p.footer-copyright a:active, footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover, footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited {
           color: white; }
-        footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover, footer#site-footer .section-inner .footer-credits p.footer-copyright a:active:hover, footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover:hover, footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited:hover {
-          color: white; }
-        footer#site-footer .section-inner .footer-credits p.footer-copyright a:active, footer#site-footer .section-inner .footer-credits p.footer-copyright a:active:active, footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover:active, footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited:active {
-          color: white; }
+          footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited, footer#site-footer .section-inner .footer-credits p.footer-copyright a:active:visited, footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover:visited, footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited:visited {
+            color: white; }
+          footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover, footer#site-footer .section-inner .footer-credits p.footer-copyright a:active:hover, footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover:hover, footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited:hover {
+            color: white; }
+          footer#site-footer .section-inner .footer-credits p.footer-copyright a:active, footer#site-footer .section-inner .footer-credits p.footer-copyright a:active:active, footer#site-footer .section-inner .footer-credits p.footer-copyright a:hover:active, footer#site-footer .section-inner .footer-credits p.footer-copyright a:visited:active {
+            color: white; }
 
 @media screen and (min-width: 768px) {
   footer#site-footer .menu-main-container ul.menu {
@@ -7851,7 +7877,7 @@ footer#site-footer {
     justify-content: center;
     margin: 0 0 0 0;
     list-style-type: none;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     text-align: center; }
     footer#site-footer .menu-main-container ul.menu li {
       margin-left: 1em;
@@ -7941,6 +7967,10 @@ main.homepage article.neighborhood_profile {
   main.homepage article.neighborhood_profile h2 {
     font-family: "Roboto", sans-serif;
     margin-top: 1rem; }
+    main.homepage article.neighborhood_profile h2 a:link, main.homepage article.neighborhood_profile h2 a:visited {
+      color: black; }
+    main.homepage article.neighborhood_profile h2 a:hover, main.homepage article.neighborhood_profile h2 a:active {
+      color: #605594; }
 
 main.homepage .features article {
   padding-top: 2.4em; }
@@ -7983,6 +8013,10 @@ main.homepage .features article {
     main.homepage article.neighborhood_profile .entry-content header#entry-header .entry-categories .entry-categories-inner a {
       font-size: 1.5rem !important;
       border-bottom: none; }
+      main.homepage article.neighborhood_profile .entry-content header#entry-header .entry-categories .entry-categories-inner a:link, main.homepage article.neighborhood_profile .entry-content header#entry-header .entry-categories .entry-categories-inner a a:visited {
+        color: #cc0000; }
+      main.homepage article.neighborhood_profile .entry-content header#entry-header .entry-categories .entry-categories-inner a:hover, main.homepage article.neighborhood_profile .entry-content header#entry-header .entry-categories .entry-categories-inner a a:active {
+        color: #605594; }
     main.homepage article.neighborhood_profile h2 {
       font-family: "Roboto", sans-serif; }
   main.homepage .features article {
@@ -8021,14 +8055,13 @@ main.homepage .features article {
       border-bottom: none; }
     main.homepage article.neighborhood_profile h2 {
       font-family: "Roboto", sans-serif;
-      margin-top: 3rem; }
+      margin-top: 1rem; }
   main.homepage .features {
     display: flex; }
     main.homepage .features article {
       border: none;
       flex-grow: 1;
-      padding-top: 7em;
-      padding-bottom: 10em; }
+      padding: 7em 2em 10em 2em; }
       main.homepage .features article h2 {
         font-family: "Roboto", sans-serif; }
     main.homepage .features article:nth-child(2) {
@@ -8165,7 +8198,8 @@ ul.neighborhood-profile-links {
       max-width: 1000px !important;
       margin: 0 auto; }
       .neighborhood-profile .entry-content#full-width-content header#entry-header {
-        text-align: center; }
+        text-align: center;
+        max-width: 100% !important; }
         .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories {
           margin-bottom: 1rem; }
           .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories .entry-categories-inner a {
@@ -8355,10 +8389,11 @@ body.singular main#site-content article.page .header-over-image {
       body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
         font-size: 4em;
         font-weight: bold;
-        font-family: Roboto, sans-serif;
+        font-family: "Roboto", sans-serif;
         text-transform: uppercase; }
   body.singular main#site-content article.page .header-over-image figure.featured-media {
-    position: relative; }
+    position: relative;
+    display: inline; }
 
 body.singular main#site-content article.page .post-inner.thin.top-level {
   padding-top: 1rem; }
@@ -8431,7 +8466,8 @@ body.singular main#site-content article.page .post-inner.thin.top-level {
             body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text {
               margin-top: 0; }
               body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text p {
-                font-size: 1.5rem; }
+                font-size: 1.5rem;
+                color: #626168; }
           body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description p {
             text-align: left !important; }
         body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description > p {
@@ -8455,7 +8491,7 @@ body.singular main#site-content article.page .post-inner.thin.top-level {
             font-size: 9em;
             line-height: 1em;
             font-weight: bold;
-            font-family: Roboto, sans-serif;
+            font-family: "Roboto", sans-serif;
             text-transform: uppercase;
             text-shadow: none;
             background-color: rgba(96, 85, 148, 0.3);
@@ -8585,7 +8621,7 @@ body.singular main#site-content article.page .post-inner.thin.top-level {
           font-size: 9em;
           line-height: 1em;
           font-weight: bold;
-          font-family: Roboto, sans-serif;
+          font-family: "Roboto", sans-serif;
           text-transform: uppercase;
           text-shadow: none;
           background-color: rgba(96, 85, 148, 0.3);
@@ -8906,6 +8942,10 @@ main.homepage article.neighborhood_profile {
   main.homepage article.neighborhood_profile h2 {
     font-family: "Roboto", sans-serif;
     margin-top: 1rem; }
+    main.homepage article.neighborhood_profile h2 a:link, main.homepage article.neighborhood_profile h2 a:visited {
+      color: black; }
+    main.homepage article.neighborhood_profile h2 a:hover, main.homepage article.neighborhood_profile h2 a:active {
+      color: #605594; }
 
 main.homepage .features article {
   padding-top: 2.4em; }
@@ -8948,6 +8988,10 @@ main.homepage .features article {
     main.homepage article.neighborhood_profile .entry-content header#entry-header .entry-categories .entry-categories-inner a {
       font-size: 1.5rem !important;
       border-bottom: none; }
+      main.homepage article.neighborhood_profile .entry-content header#entry-header .entry-categories .entry-categories-inner a:link, main.homepage article.neighborhood_profile .entry-content header#entry-header .entry-categories .entry-categories-inner a a:visited {
+        color: #cc0000; }
+      main.homepage article.neighborhood_profile .entry-content header#entry-header .entry-categories .entry-categories-inner a:hover, main.homepage article.neighborhood_profile .entry-content header#entry-header .entry-categories .entry-categories-inner a a:active {
+        color: #605594; }
     main.homepage article.neighborhood_profile h2 {
       font-family: "Roboto", sans-serif; }
   main.homepage .features article {
@@ -8986,14 +9030,13 @@ main.homepage .features article {
       border-bottom: none; }
     main.homepage article.neighborhood_profile h2 {
       font-family: "Roboto", sans-serif;
-      margin-top: 3rem; }
+      margin-top: 1rem; }
   main.homepage .features {
     display: flex; }
     main.homepage .features article {
       border: none;
       flex-grow: 1;
-      padding-top: 7em;
-      padding-bottom: 10em; }
+      padding: 7em 2em 10em 2em; }
       main.homepage .features article h2 {
         font-family: "Roboto", sans-serif; }
     main.homepage .features article:nth-child(2) {

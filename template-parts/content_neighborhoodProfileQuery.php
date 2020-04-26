@@ -17,7 +17,6 @@
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<!-- <p>content.php</p> -->
 
 	<?php
 
@@ -61,10 +60,9 @@
 
 			?>
 			<div class="article-name-description">
+
 			<?php
-
-			get_template_part( 'template-parts/entry-header' );
-
+				get_template_part( 'template-parts/entry-header' );
 			?>
 
 			<?php
@@ -106,11 +104,8 @@
 	<?php
 
 	if ( is_single() ) {
-
 		get_template_part( 'template-parts/navigation' );
-
 	}
-
 
 	?>
 

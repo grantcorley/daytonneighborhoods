@@ -4,7 +4,7 @@ h1, h2{
   //disable disable on headlines
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;      
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -14,11 +14,34 @@ h1, h2{
 
 .entry-content{
     p, ol, ul, dl, dt{
-      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+      font-family: $copy;
       letter-spacing: normal;
       font-size:14px;
       color:#333333;
   }
+}
+
+.entry-categories-inner{
+  a{
+    font-family: $slab !important;
+    font-weight: 500 !important;
+  }
+}
+
+.entry-categories .entry-categories-inner a{
+  font-size: 1.5rem !important;
+  border-bottom: none;
+  //border:1px solid red;
+
+  &:link, a:visited{
+    color: $accent !important;
+  }
+
+  &:hover, a:active{
+    color: $primary !important;
+    text-decoration: underline;
+  }
+
 }
 
 
@@ -26,7 +49,7 @@ h1, h2{
 
   .entry-content{
       p, ol, ul, dl, dt{
-        font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-family: $copy;
         letter-spacing: normal;
         font-size:21px;
     }

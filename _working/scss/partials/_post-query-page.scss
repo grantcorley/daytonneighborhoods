@@ -34,7 +34,7 @@ body.singular{
           h2.entry-title {
             font-size:4em;
             font-weight: bold;
-            font-family: Roboto, sans-serif;
+            font-family: $headline;
             text-transform: uppercase;
             //text-shadow: 2px 2px 4px rgba(0,0,0,.85);          //text-shadow: 7px 8px 9px -5px rgba(0,0,0,0.78);
           }
@@ -45,6 +45,7 @@ body.singular{
 
       figure.featured-media {
         position: relative;
+        display:inline;
       }
 
       }//end header-over-image
@@ -57,7 +58,7 @@ body.singular{
 
                   h2.intro-text{
                     color: $accent;
-                    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+                    font-family: $copy;
                     font-size:32px;
                     line-height: 36px;
                     text-align: center;
@@ -203,6 +204,7 @@ body.singular{
 
                                 p{
                                   font-size: 1.5rem;
+                                  color:#626168;
                                 }
 
                               }
@@ -280,12 +282,10 @@ body.singular{
               font-size:9em;
               line-height: 1em;
               font-weight: bold;
-              font-family: Roboto, sans-serif;
+              font-family: $headline;
               text-transform: uppercase;
-              //text-shadow: 2px 2px 4px rgba(0,0,0,.75);          //text-shadow: 7px 8px 9px -5px rgba(0,0,0,0.78);
               text-shadow: none;
               background-color: rgba(96,85,148, .3);
-              //background-color: rgba(204,0,0,.3);
               border-top:1px solid rgba(255, 255, 255, .3);
               border-bottom:1px solid rgba(255, 255, 255, .3);
               padding: .25em 0;
@@ -311,7 +311,7 @@ body.singular{
 
               h2.intro-text{
                 color: $accent;
-                font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+                font-family: $copy;
                 font-size:2.8em;
                 line-height: 1em;
                 text-align: center;
@@ -555,12 +555,10 @@ body.singular{
               font-size:9em;
               line-height: 1em;
               font-weight: bold;
-              font-family: Roboto, sans-serif;
+              font-family: $headline;
               text-transform: uppercase;
-              //text-shadow: 2px 2px 4px rgba(0,0,0,.75);          //text-shadow: 7px 8px 9px -5px rgba(0,0,0,0.78);
               text-shadow: none;
               background-color: rgba(96,85,148, .3);
-              //background-color: rgba(204,0,0,.3);
               border-top:1px solid rgba(255, 255, 255, .3);
               border-bottom:1px solid rgba(255, 255, 255, .3);
               padding: .25em 0;
@@ -585,7 +583,7 @@ body.singular{
 
               h2.intro-text{
                 color: $accent;
-                font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+                font-family: $copy;
                 font-size:2.8em;
                 line-height: 1em;
                 text-align: center;
