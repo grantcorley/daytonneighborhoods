@@ -312,7 +312,7 @@
 												<?php
 														$website =  get_field('na_website');
 														if($website != "" ){ ?>
-															<?php the_field('na_website');?><br/>
+															<span class="hyperlink"><?php the_field('na_website');?></span><br/>
 												<?php } ?>
 
 												<!--show Contact if exists-->

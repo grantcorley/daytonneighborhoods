@@ -117,7 +117,6 @@
 											'walker'   => new TwentyTwenty_Walker_Page(),
 										)
 									);
-
 								}
 								?>
 
