@@ -213,6 +213,29 @@ get_header();
 <!-- </div> -->
 
 
+<!-- callouts -->
+
+<div class="container homepage-callouts">
+  <div class="row">
+			<div class="callout col-sm box-1">
+      <h2><a href="<?php echo esc_url( home_url( '/buying-renting/' ) ); ?>">Buy & Rent</a></h2>
+			<p>Find your perfect home</p>
+			<a href="<?php echo esc_url( home_url( '/buying-renting/' ) ); ?>"><div class="callout-button">Start Here</div></a>
+    </div>
+	</a>
+    <div class="callout col-sm box-2">
+      <h2><a href="<?php echo esc_url( home_url( '/city-living-essentials/' ) ); ?>">City Living</a></h2>
+			<p>Resources for living in Dayton</p>
+			<a href="<?php echo esc_url( home_url( '/city-living-essentials/' ) ); ?>"><div class="callout-button">Start Here</div></a>
+    </div>
+    <div class="callout col-sm box-3">
+      <h2><a href="<?php echo esc_url( home_url( '/financial-incentives/' ) ); ?>">Financial Incentives</a></h2>
+			<p>For buyers and renters</p>
+			<a href="<?php echo esc_url( home_url( '/financial-incentives/' ) ); ?>"><div class="callout-button">Start Here</div></a>
+    </div>
+  </div>
+</div>
+
 
 <!-- FEATURED POST: NEIGHBORHOOD PROFILE -->
 <article class="neighborhood_profile">
@@ -239,43 +262,6 @@ get_header();
 <!-- FEATURES SECTION -> Fall below the Featured Neighborhood -->
 <!-- 2-up at large screen sizes -->
 
-<div class="features">
-<!-- FEATURED POST: NEWS ITEM -->
-
-<?php
-
-$args = array(
-	'orderby'        => 'date',
-	'posts_per_page' => '1',
-	'category_name' => 'news',
-);
-
-$query = new WP_Query( $args );
-
-$query->the_post();
-get_template_part( 'template-parts/content', get_post_type() );
-//get_template_part( 'template-parts/content_neighborhoodprofile', get_post_type() );
-
-?>
-
-
-<!-- FEATURED POST: EVENTS ITEM -->
-<?php
-
-$args = array(
-	'orderby'        => 'date',
-	'posts_per_page' => '1',
-	'category_name' => 'events',
-);
-
-$query = new WP_Query( $args );
-
-$query->the_post();
-get_template_part( 'template-parts/content', get_post_type() );
-
-?>
-
-</div><!--end features-->
 
 <?php
 	}//end if( is_home() )

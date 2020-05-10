@@ -16,8 +16,6 @@
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-
-
 	<div class="post-inner neighborhood-profile <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
 		<div class="entry-content" id="full-width-content">
@@ -27,21 +25,7 @@
 			if ( ! is_search() ) {
 
 				if ( has_post_thumbnail() ){
-
-					// if ( is_front_page() ) {
-					// ? >
-					// 	<a href="<?php echo get_permalink(); ? >">
-					// < ? php
-					// }
-
-				get_template_part( 'template-parts/featured-image' );
-
-				// if ( is_front_page() ) {
-				// ? >
-				// 	</a>
-				// <?php
-				// }
-
+					get_template_part( 'template-parts/featured-image' );
 				}
 
 				else{
@@ -49,9 +33,7 @@
 
 					<figure class="featured-media">
 							<div class="featured-media-inner ">
-
 									<img width="1200" height="500" src="<?php echo get_stylesheet_directory_uri();?>/images/logo_1980x1000_alt.gif" class="attachment-featured size-featured wp-post-image" alt="Dayton Neighborhoods logo">
-
 							</div><!-- .featured-media-inner -->
 					</figure>
 

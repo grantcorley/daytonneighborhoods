@@ -32,12 +32,10 @@
 
 		<div class="entry-content">
 
+			<!-- <p>content_neighborhoodProfileQuery.php</p> -->
+
 			<?php
 			if ( ! is_search() ) {
-
-				//get_template_part( 'template-parts/featured-image' );
-
-				//the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
 
 				if ( has_post_thumbnail() ){
 					?><a class="img-link" href="<?php echo esc_url( get_permalink( ) ); ?>"><?php
@@ -65,13 +63,17 @@
 				get_template_part( 'template-parts/entry-header' );
 			?>
 
-			<?php
+			<!-- HERE -->
+			<!--is the below part even necessary??-->
+		<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 				the_excerpt();
 			} else {
 				the_content( __( 'Continue reading', 'twentytwenty' ) );
 			}
 			?>
+
+
 		</div><!--end article-name-description-->
 
 		</div><!-- .entry-content -->
@@ -91,21 +93,25 @@
 
 		edit_post_link();
 
+		the_content(); //pulls in the main content in the post
+		//the_post();
+
 		// Single bottom post meta.
 		twentytwenty_the_post_meta( get_the_ID(), 'single-bottom' );
 
-		if ( is_single() ) {
-			get_template_part( 'template-parts/entry-author-bio' );
-		}
+			if ( is_single() ) {
+				get_template_part( 'template-parts/entry-author-bio' );
+			}
+
 		?>
 
 	</div><!-- .section-inner -->
 
 	<?php
 
-	if ( is_single() ) {
-		get_template_part( 'template-parts/navigation' );
-	}
+		if ( is_single() ) {
+			get_template_part( 'template-parts/navigation' );
+		}
 
 	?>
 

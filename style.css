@@ -7906,6 +7906,12 @@ span.toggle-text {
   width: 28px;
   height: 28px; }
 
+.tribe-events .tribe-events-l-container {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  min-height: 400px !important;
+  margin-top: -1.76em; }
+
 .nav-toggle .toggle-inner {
   padding-top: 0; }
 
@@ -7960,10 +7966,46 @@ main.homepage .welcome-message {
     main.homepage .welcome-message p .line-2 {
       color: #cc0000; }
 
+main.homepage .container.homepage-callouts {
+  margin-bottom: 2em; }
+  main.homepage .container.homepage-callouts .row .callout {
+    text-align: center;
+    color: white;
+    padding: 1.5em .5em; }
+    main.homepage .container.homepage-callouts .row .callout h2 {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold; }
+      main.homepage .container.homepage-callouts .row .callout h2 a {
+        color: white; }
+        main.homepage .container.homepage-callouts .row .callout h2 a:link, main.homepage .container.homepage-callouts .row .callout h2 a:visited, main.homepage .container.homepage-callouts .row .callout h2 a:hover, main.homepage .container.homepage-callouts .row .callout h2 a:active {
+          color: white; }
+    main.homepage .container.homepage-callouts .row .callout p {
+      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+      display: none; }
+    main.homepage .container.homepage-callouts .row .callout .callout-button {
+      display: none; }
+  main.homepage .container.homepage-callouts .row .box-1 {
+    background-color: #605594;
+    background-image: url("images/callout01.jpg");
+    background-position: center center;
+    background-size: cover; }
+  main.homepage .container.homepage-callouts .row .box-2 {
+    background-color: #605594;
+    background-image: url("images/callout02.jpg");
+    background-position: center center;
+    background-size: cover; }
+  main.homepage .container.homepage-callouts .row .box-3 {
+    background-color: #605594;
+    background-image: url("images/callout03.jpg");
+    background-position: center center;
+    background-size: cover; }
+
 main.homepage article.neighborhood_profile {
   padding-bottom: 6em !important;
   border-bottom: 1px solid #cccccc;
-  padding-top: .5em !important; }
+  padding-top: .5em !important;
+  border-bottom: 0px; }
   main.homepage article.neighborhood_profile h2 {
     font-family: "Roboto", sans-serif;
     margin-top: 1rem; }
@@ -7980,6 +8022,58 @@ main.homepage .features article {
       color: black; }
     main.homepage .features article h2 a:hover, main.homepage .features article h2 a:active {
       color: #605594; }
+
+@media screen and (min-width: 576px) {
+  main.homepage .container.homepage-callouts {
+    margin-bottom: 2em; }
+    main.homepage .container.homepage-callouts .row .callout {
+      text-align: center;
+      color: white;
+      padding: 1.5em 1.5em;
+      min-height: 216px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main.homepage .container.homepage-callouts .row .callout h2 {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 2.4em; }
+        main.homepage .container.homepage-callouts .row .callout h2 a {
+          color: white; }
+          main.homepage .container.homepage-callouts .row .callout h2 a:link, main.homepage .container.homepage-callouts .row .callout h2 a:visited, main.homepage .container.homepage-callouts .row .callout h2 a:hover, main.homepage .container.homepage-callouts .row .callout h2 a:active {
+            color: white; }
+      main.homepage .container.homepage-callouts .row .callout p {
+        font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+        display: block; }
+      main.homepage .container.homepage-callouts .row .callout .callout-button {
+        background-color: none !important;
+        border: 1px solid white;
+        color: white;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 1em 2em;
+        border-radius: 20px;
+        cursor: pointer; }
+        main.homepage .container.homepage-callouts .row .callout .callout-button:hover, main.homepage .container.homepage-callouts .row .callout .callout-button:active {
+          background-color: rgba(255, 255, 255, 0.25); }
+    main.homepage .container.homepage-callouts .row .box-1 {
+      background-color: #605594;
+      background-image: url("images/callout01.jpg");
+      background-position: center center;
+      background-size: cover;
+      border-right: 1px solid white; }
+    main.homepage .container.homepage-callouts .row .box-2 {
+      background-color: #605594;
+      background-image: url("images/callout02.jpg");
+      background-position: center center;
+      background-size: cover;
+      border-right: 1px solid white; }
+    main.homepage .container.homepage-callouts .row .box-3 {
+      background-color: #605594;
+      background-image: url("images/callout03.jpg");
+      background-position: center center;
+      background-size: cover; } }
 
 @media screen and (min-width: 700px) {
   .features .entry-content {
@@ -8005,8 +8099,40 @@ main.homepage .features article {
       line-height: 1.2em; }
       main.homepage .welcome-message p .line-2 {
         color: #cc0000; }
+  main.homepage .container.homepage-callouts {
+    margin-bottom: 2em; }
+    main.homepage .container.homepage-callouts .row .callout {
+      text-align: center;
+      color: white;
+      padding: 1.5em 1.5em;
+      min-height: 216px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main.homepage .container.homepage-callouts .row .callout h2 {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 3em; }
+        main.homepage .container.homepage-callouts .row .callout h2 a {
+          color: white; }
+          main.homepage .container.homepage-callouts .row .callout h2 a:link, main.homepage .container.homepage-callouts .row .callout h2 a:visited, main.homepage .container.homepage-callouts .row .callout h2 a:hover, main.homepage .container.homepage-callouts .row .callout h2 a:active {
+            color: white; }
+      main.homepage .container.homepage-callouts .row .callout p {
+        font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+        display: block;
+        font-size: 1.5em; }
+      main.homepage .container.homepage-callouts .row .callout .callout-button {
+        background-color: none !important;
+        border: 1px solid white;
+        color: white;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 1em 2em;
+        border-radius: 20px; }
   main.homepage article.neighborhood_profile {
-    padding-top: 2.4em !important; }
+    padding-top: 2.4em !important;
+    border-bottom: 0px; }
     main.homepage article.neighborhood_profile .entry-content figure.featured-media {
       max-width: 72rem !important;
       width: calc(100% - 2rem); }
@@ -8043,10 +8169,45 @@ main.homepage .features article {
       line-height: 1.2em; }
       main.homepage .welcome-message p .line-2 {
         color: #cc0000; }
+  main.homepage .container.homepage-callouts {
+    margin-bottom: 2em; }
+    main.homepage .container.homepage-callouts .row .callout {
+      text-align: center;
+      color: white;
+      padding: 1.5em 1.5em;
+      padding-bottom: 3em;
+      min-height: 216px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main.homepage .container.homepage-callouts .row .callout h2 {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 3.6em; }
+        main.homepage .container.homepage-callouts .row .callout h2 a {
+          color: white; }
+          main.homepage .container.homepage-callouts .row .callout h2 a:link, main.homepage .container.homepage-callouts .row .callout h2 a:visited, main.homepage .container.homepage-callouts .row .callout h2 a:hover, main.homepage .container.homepage-callouts .row .callout h2 a:active {
+            color: white; }
+      main.homepage .container.homepage-callouts .row .callout p {
+        font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+        display: block;
+        font-size: 2em; }
+      main.homepage .container.homepage-callouts .row .callout .callout-button {
+        background-color: none !important;
+        border: 1px solid white;
+        color: white;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 1em 2em 1.2em 2em;
+        border-radius: 6px;
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.15); }
   main.homepage article.neighborhood_profile {
     padding-top: 4em !important;
     border: none;
-    border-bottom: 1px solid #cccccc; }
+    border-bottom: 0px; }
     main.homepage article.neighborhood_profile .entry-content figure.featured-media {
       max-width: 90rem !important;
       width: calc(100% - 2rem); }
@@ -8371,253 +8532,162 @@ ul.neighborhood-profile-links {
             font-size: 1.1em; } }
 
 /* post-query-page.scss */
-body.singular main#site-content article.page .header-over-image {
-  position: relative; }
-  body.singular main#site-content article.page .header-over-image header#entry-header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    background-color: none !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner {
-      width: 100%; }
-      body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
-      body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
-        font-size: 4em;
-        font-weight: bold;
-        font-family: "Roboto", sans-serif;
-        text-transform: uppercase; }
-  body.singular main#site-content article.page .header-over-image figure.featured-media {
-    position: relative;
-    display: inline; }
-
-body.singular main#site-content article.page .post-inner.thin.top-level {
-  padding-top: 1rem; }
-  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content h2.intro-text {
-    color: #cc0000;
-    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
-    font-size: 32px;
-    line-height: 36px;
-    text-align: center;
-    padding-bottom: .4em; }
-  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post {
-    border-bottom: 1px solid #bdbbc8;
-    max-width: 100rem;
-    padding-bottom: 4em; }
-    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
-      padding-top: 0; }
-      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
-        display: none; }
-      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
-        text-align: left;
-        margin-top: .75em;
-        margin-bottom: 0;
-        font-weight: bold;
-        font-size: 2.4em;
-        font-family: "Roboto", sans-serif;
-        font-weight: bold; }
-        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
-          color: #605594; }
-          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
-            color: #605594; }
-          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
-            color: #8980b6; }
-          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
-            color: #8980b6; }
-  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile {
-    border-bottom: none; }
-    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin {
+body.singular main#site-content article.page,
+body.tribe-events-page-template main#site-content article.page {
+  padding-top: 0 !important; }
+  body.singular main#site-content article.page .header-over-image,
+  body.tribe-events-page-template main#site-content article.page .header-over-image {
+    position: relative !important; }
+    body.singular main#site-content article.page .header-over-image header#entry-header,
+    body.tribe-events-page-template main#site-content article.page .header-over-image header#entry-header {
+      position: absolute;
+      top: 0;
       width: 100%;
-      max-width: 100%; }
-      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content {
+      height: 100%;
+      color: white;
+      background-color: none !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner,
+      body.tribe-events-page-template main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner {
+        width: 100%; }
+        body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
+        body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title,
+        body.tribe-events-page-template main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
+        body.tribe-events-page-template main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
+          font-size: 4em;
+          font-weight: bold;
+          font-family: "Roboto", sans-serif;
+          text-transform: uppercase;
+          color: white; }
+    body.singular main#site-content article.page .header-over-image figure.featured-media,
+    body.tribe-events-page-template main#site-content article.page .header-over-image figure.featured-media {
+      position: relative;
+      display: inline; }
+  body.singular main#site-content article.page .post-inner.thin.top-level,
+  body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level {
+    padding-top: 1rem; }
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content h2.intro-text,
+    body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content h2.intro-text {
+      color: #cc0000;
+      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+      font-size: 32px;
+      line-height: 36px;
+      text-align: center;
+      padding-bottom: .4em; }
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post,
+    body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post {
+      border-bottom: 1px solid #bdbbc8;
+      max-width: 100rem;
+      padding-bottom: 4em; }
+      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin,
+      body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
+        padding-top: 0; }
+        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories,
+        body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
+          display: none; }
+        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title,
+        body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
+          text-align: left;
+          margin-top: .75em;
+          margin-bottom: 0;
+          font-weight: bold;
+          font-size: 2.4em;
+          font-family: "Roboto", sans-serif;
+          font-weight: bold; }
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a,
+          body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
+            color: #605594; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
+              color: #605594; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
+              color: #8980b6; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
+              color: #8980b6; }
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile,
+    body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile {
+      border-bottom: none; }
+      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin,
+      body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin {
         width: 100%;
-        max-width: 100% !important; }
-        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link {
-          left: 0;
-          margin: .5em auto 0 auto;
-          display: block;
-          width: 50%;
-          flex-grow: 1; }
-          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media {
+        max-width: 100%; }
+        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content,
+        body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content {
+          width: 100%;
+          max-width: 100% !important; }
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link,
+          body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link {
             left: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            display: inline-block; }
-            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner {
+            margin: .5em auto 0 auto;
+            display: block;
+            width: 50%;
+            flex-grow: 1; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media {
               left: 0;
-              width: 100%;
-              height: auto; }
-              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner img {
+              margin-bottom: 0;
+              margin-left: 0;
+              display: inline-block; }
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner,
+              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner {
+                left: 0;
                 width: 100%;
                 height: auto; }
-        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description {
-          padding-left: .25em;
-          display: flex;
-          flex-direction: column;
-          justify-content: center; }
-          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner {
-            text-align: left; }
-            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner h2 {
-              font-size: 2em; }
-            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text {
-              margin-top: 0; }
-              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text p {
-                font-size: 1.5rem;
-                color: #626168; }
-          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description p {
-            text-align: left !important; }
-        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description > p {
-          display: none; }
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner img,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner img {
+                  width: 100%;
+                  height: auto; }
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description,
+          body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description {
+            padding-left: .25em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner {
+              text-align: left; }
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner h2,
+              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner h2 {
+                font-size: 2em; }
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text,
+              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text {
+                margin-top: 0; }
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text p,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text p {
+                  font-size: 1.5rem;
+                  color: #626168; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description p,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description p {
+              text-align: left !important; }
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description > p,
+          body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description > p {
+            display: none; }
 
 @media screen and (min-width: 700px) {
-  body.singular main#site-content {
+  body.singular main#site-content.neighborhood-profile,
+  body.tribe-events-page-template main#site-content.neighborhood-profile {
     padding-bottom: 0; }
-    body.singular main#site-content article.page .header-over-image {
-      position: relative; }
-      body.singular main#site-content article.page .header-over-image header#entry-header {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        color: white;
-        background-color: none !important; }
-        body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner {
-          width: 100%; }
-          body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
-          body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
-            font-size: 9em;
-            line-height: 1em;
-            font-weight: bold;
-            font-family: "Roboto", sans-serif;
-            text-transform: uppercase;
-            text-shadow: none;
-            background-color: rgba(96, 85, 148, 0.3);
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-            padding: .25em 0; }
-      body.singular main#site-content article.page .header-over-image figure.featured-media {
-        position: relative; }
-    body.singular main#site-content article.page .post-inner.thin.top-level {
-      padding-top: 3rem; }
-      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content h2.intro-text {
-        color: #cc0000;
-        font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
-        font-size: 2.8em;
-        line-height: 1em;
-        text-align: center;
-        padding-bottom: .85em;
-        max-width: 1200px !important;
-        margin-bottom: .25em; }
-      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post {
-        border-bottom: 1px solid #dbdbde;
-        padding-bottom: 4em; }
-        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
-          margin-top: 0;
-          padding-top: 0em !important;
-          margin: 0 auto; }
-          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content {
-            max-width: 600px;
-            margin: 0 auto; }
-            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header {
-              margin-left: 0; }
-              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
-                display: none; }
-              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
-                text-align: left;
-                margin-top: 0;
-                margin-bottom: 0;
-                font-weight: bold;
-                font-size: 2em;
-                font-family: "Roboto", sans-serif;
-                font-weight: bold; }
-                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
-                  color: #605594; }
-                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
-                    color: #605594; }
-                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
-                    color: #8980b6; }
-                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
-                    color: #8980b6; }
-      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts {
-        margin: auto;
-        padding-bottom: 6em;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 100%;
-        width: 100% !important;
-        background-color: #c5c0db;
-        padding-top: 1em; }
-        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile {
-          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-          background-color: white;
-          border: 1px solid #cccccc;
-          display: block;
-          border-radius: 6px;
-          max-width: 30%;
-          padding: .5em;
-          padding-bottom: 1.6em;
-          margin: .5em; }
-          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin {
-            width: 100%;
-            max-width: 100%; }
-            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content {
-              display: flex;
-              flex-direction: column;
-              width: 100%;
-              max-width: 100% !important; }
-              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link {
-                left: 0;
-                margin: .5em auto 0 auto;
-                display: block;
-                width: 50%;
-                flex-grow: 1; }
-                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media {
-                  left: 0;
-                  margin-bottom: 0;
-                  margin-left: 0;
-                  display: inline-block; }
-                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner {
-                    left: 0;
-                    width: 100%;
-                    height: auto; }
-                    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner img {
-                      width: 100%;
-                      height: auto; }
-              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description {
-                padding-left: .25em;
-                display: flex;
-                flex-direction: column;
-                justify-content: center; }
-                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner {
-                  text-align: left; }
-                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner h2 {
-                    font-size: 1em; }
-                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text {
-                    margin-top: 0; }
-                    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text p {
-                      font-size: 1.5rem; }
-                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description p {
-                  text-align: left !important; }
-              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description > p {
-                display: none; } }
-
-@media (min-width: 992px) {
-  body.singular main#site-content article.page .header-over-image {
+  body.singular main#site-content article.page .header-over-image,
+  body.tribe-events-page-template main#site-content article.page .header-over-image {
     position: relative; }
-    body.singular main#site-content article.page .header-over-image header#entry-header {
+    body.singular main#site-content article.page .header-over-image header#entry-header,
+    body.tribe-events-page-template main#site-content article.page .header-over-image header#entry-header {
       position: absolute;
       top: 0;
       width: 100%;
       color: white;
       background-color: none !important; }
-      body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner {
+      body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner,
+      body.tribe-events-page-template main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner {
         width: 100%; }
         body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
-        body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
+        body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title,
+        body.tribe-events-page-template main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
+        body.tribe-events-page-template main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
           font-size: 9em;
           line-height: 1em;
           font-weight: bold;
@@ -8628,11 +8698,177 @@ body.singular main#site-content article.page .post-inner.thin.top-level {
           border-top: 1px solid rgba(255, 255, 255, 0.3);
           border-bottom: 1px solid rgba(255, 255, 255, 0.3);
           padding: .25em 0; }
-    body.singular main#site-content article.page .header-over-image figure.featured-media {
+    body.singular main#site-content article.page .header-over-image figure.featured-media,
+    body.tribe-events-page-template main#site-content article.page .header-over-image figure.featured-media {
       position: relative; }
-  body.singular main#site-content article.page .post-inner.thin.top-level {
+  body.singular main#site-content article.page .post-inner.thin.top-level,
+  body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level {
     padding-top: 3rem; }
-    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content h2.intro-text {
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content h2.intro-text,
+    body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content h2.intro-text {
+      color: #cc0000;
+      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+      font-size: 2.8em;
+      line-height: 1em;
+      text-align: center;
+      padding-bottom: .85em;
+      max-width: 1200px !important;
+      margin-bottom: .25em; }
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post,
+    body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post {
+      border-bottom: 1px solid #dbdbde;
+      padding-bottom: 4em; }
+      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin,
+      body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
+        margin-top: 0;
+        padding-top: 0em !important;
+        margin: 0 auto; }
+        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content,
+        body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content {
+          max-width: 600px;
+          margin: 0 auto; }
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header,
+          body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header {
+            margin-left: 0; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
+              display: none; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
+              text-align: left;
+              margin-top: 0;
+              margin-bottom: 0;
+              font-weight: bold;
+              font-size: 2em;
+              font-family: "Roboto", sans-serif;
+              font-weight: bold; }
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a,
+              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
+                color: #605594; }
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
+                  color: #605594; }
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
+                  color: #8980b6; }
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
+                  color: #8980b6; }
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts,
+    body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts {
+      margin: auto;
+      padding-bottom: 6em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 100%;
+      width: 100% !important;
+      background-color: #c5c0db;
+      padding-top: 1em; }
+      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile,
+      body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile {
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        border: 1px solid #cccccc;
+        display: block;
+        border-radius: 6px;
+        max-width: 30%;
+        padding: .5em;
+        padding-bottom: 1.6em;
+        margin: .5em; }
+        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin,
+        body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin {
+          width: 100%;
+          max-width: 100%; }
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content,
+          body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 100% !important; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link {
+              left: 0;
+              margin: .5em auto 0 auto;
+              display: block;
+              width: 50%;
+              flex-grow: 1; }
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media,
+              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media {
+                left: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                display: inline-block; }
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner {
+                  left: 0;
+                  width: 100%;
+                  height: auto; }
+                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner img,
+                  body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner img {
+                    width: 100%;
+                    height: auto; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description {
+              padding-left: .25em;
+              display: flex;
+              flex-direction: column;
+              justify-content: center; }
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner,
+              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner {
+                text-align: left; }
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner h2,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner h2 {
+                  font-size: 1em; }
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text {
+                  margin-top: 0; }
+                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text p,
+                  body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text p {
+                    font-size: 1.5rem; }
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description p,
+              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description p {
+                text-align: left !important; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description > p,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description > p {
+              display: none; } }
+
+@media (min-width: 992px) {
+  body.singular main#site-content article.page .header-over-image,
+  body.tribe-events-page-template main#site-content article.page .header-over-image {
+    position: relative; }
+    body.singular main#site-content article.page .header-over-image header#entry-header,
+    body.tribe-events-page-template main#site-content article.page .header-over-image header#entry-header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      color: white;
+      background-color: none !important; }
+      body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner,
+      body.tribe-events-page-template main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner {
+        width: 100%; }
+        body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
+        body.singular main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title,
+        body.tribe-events-page-template main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h1.entry-title,
+        body.tribe-events-page-template main#site-content article.page .header-over-image header#entry-header .entry-header-inner.section-inner h2.entry-title {
+          font-size: 9em;
+          line-height: 1em;
+          font-weight: bold;
+          font-family: "Roboto", sans-serif;
+          text-transform: uppercase;
+          text-shadow: none;
+          background-color: rgba(96, 85, 148, 0.3);
+          border-top: 1px solid rgba(255, 255, 255, 0.3);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+          padding: .25em 0; }
+    body.singular main#site-content article.page .header-over-image figure.featured-media,
+    body.tribe-events-page-template main#site-content article.page .header-over-image figure.featured-media {
+      position: relative; }
+  body.singular main#site-content article.page .post-inner.thin.top-level,
+  body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level {
+    padding-top: 3rem; }
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content h2.intro-text,
+    body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content h2.intro-text {
       color: #cc0000;
       font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
       font-size: 2.8em;
@@ -8641,21 +8877,27 @@ body.singular main#site-content article.page .post-inner.thin.top-level {
       padding-bottom: 1em;
       max-width: 1200px !important;
       margin-bottom: .25em; }
-    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post {
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post,
+    body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post {
       border-bottom: 1px solid #dbdbde;
       padding-bottom: 4em; }
-      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
+      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin,
+      body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
         margin-top: 0;
         padding-top: 0em !important;
         margin: 0 auto; }
-        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content {
+        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content,
+        body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content {
           max-width: 600px;
           margin: 0 auto; }
-          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header {
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header,
+          body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header {
             margin-left: 0; }
-            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
               display: none; }
-            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
               text-align: left;
               margin-top: 0;
               margin-bottom: 0;
@@ -8663,15 +8905,20 @@ body.singular main#site-content article.page .post-inner.thin.top-level {
               font-size: 2em;
               font-family: "Roboto", sans-serif;
               font-weight: bold; }
-              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a,
+              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
                 color: #605594; }
-                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
                   color: #605594; }
-                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
                   color: #8980b6; }
-                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
                   color: #8980b6; }
-    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts {
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts,
+    body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts {
       margin: auto;
       display: flex;
       flex-wrap: wrap;
@@ -8679,7 +8926,8 @@ body.singular main#site-content article.page .post-inner.thin.top-level {
       justify-content: center;
       max-width: 100%;
       width: 100% !important; }
-      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile {
+      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile,
+      body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile {
         border: 1px solid #cccccc;
         display: block;
         border-radius: 6px;
@@ -8687,48 +8935,61 @@ body.singular main#site-content article.page .post-inner.thin.top-level {
         padding: .5em;
         padding-bottom: 1.6em;
         margin: .5em; }
-        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin {
+        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin,
+        body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin {
           width: 100%;
           max-width: 100%; }
-          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content {
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content,
+          body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content {
             display: flex;
             flex-direction: column;
             width: 100%;
             max-width: 100% !important; }
-            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link {
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link {
               left: 0;
               margin: .5em auto 0 auto;
               display: block;
               width: 50%;
               flex-grow: 1; }
-              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media {
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media,
+              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media {
                 left: 0;
                 margin-bottom: 0;
                 margin-left: 0;
                 display: inline-block; }
-                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner {
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner {
                   left: 0;
                   width: 100%;
                   height: auto; }
-                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner img {
+                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner img,
+                  body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content a.img-link figure.featured-media .featured-media-inner img {
                     width: 100%;
                     height: auto; }
-            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description {
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description {
               padding-left: .25em;
               display: flex;
               flex-direction: column;
               justify-content: center; }
-              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner {
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner,
+              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner {
                 text-align: left; }
-                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner h2 {
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner h2,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner h2 {
                   font-size: 1.75em; }
-                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text {
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text {
                   margin-top: 0; }
-                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text p {
+                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text p,
+                  body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description header#entry-header .entry-header-inner .intro-text p {
                     font-size: 1.8rem; }
-              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description p {
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description p,
+              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description p {
                 text-align: left !important; }
-            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description > p {
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description > p,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin .entry-content .article-name-description > p {
               display: none; } }
 
 /* category.scss */
@@ -8935,10 +9196,46 @@ main.homepage .welcome-message {
     main.homepage .welcome-message p .line-2 {
       color: #cc0000; }
 
+main.homepage .container.homepage-callouts {
+  margin-bottom: 2em; }
+  main.homepage .container.homepage-callouts .row .callout {
+    text-align: center;
+    color: white;
+    padding: 1.5em .5em; }
+    main.homepage .container.homepage-callouts .row .callout h2 {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold; }
+      main.homepage .container.homepage-callouts .row .callout h2 a {
+        color: white; }
+        main.homepage .container.homepage-callouts .row .callout h2 a:link, main.homepage .container.homepage-callouts .row .callout h2 a:visited, main.homepage .container.homepage-callouts .row .callout h2 a:hover, main.homepage .container.homepage-callouts .row .callout h2 a:active {
+          color: white; }
+    main.homepage .container.homepage-callouts .row .callout p {
+      font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+      display: none; }
+    main.homepage .container.homepage-callouts .row .callout .callout-button {
+      display: none; }
+  main.homepage .container.homepage-callouts .row .box-1 {
+    background-color: #605594;
+    background-image: url("images/callout01.jpg");
+    background-position: center center;
+    background-size: cover; }
+  main.homepage .container.homepage-callouts .row .box-2 {
+    background-color: #605594;
+    background-image: url("images/callout02.jpg");
+    background-position: center center;
+    background-size: cover; }
+  main.homepage .container.homepage-callouts .row .box-3 {
+    background-color: #605594;
+    background-image: url("images/callout03.jpg");
+    background-position: center center;
+    background-size: cover; }
+
 main.homepage article.neighborhood_profile {
   padding-bottom: 6em !important;
   border-bottom: 1px solid #cccccc;
-  padding-top: .5em !important; }
+  padding-top: .5em !important;
+  border-bottom: 0px; }
   main.homepage article.neighborhood_profile h2 {
     font-family: "Roboto", sans-serif;
     margin-top: 1rem; }
@@ -8955,6 +9252,58 @@ main.homepage .features article {
       color: black; }
     main.homepage .features article h2 a:hover, main.homepage .features article h2 a:active {
       color: #605594; }
+
+@media screen and (min-width: 576px) {
+  main.homepage .container.homepage-callouts {
+    margin-bottom: 2em; }
+    main.homepage .container.homepage-callouts .row .callout {
+      text-align: center;
+      color: white;
+      padding: 1.5em 1.5em;
+      min-height: 216px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main.homepage .container.homepage-callouts .row .callout h2 {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 2.4em; }
+        main.homepage .container.homepage-callouts .row .callout h2 a {
+          color: white; }
+          main.homepage .container.homepage-callouts .row .callout h2 a:link, main.homepage .container.homepage-callouts .row .callout h2 a:visited, main.homepage .container.homepage-callouts .row .callout h2 a:hover, main.homepage .container.homepage-callouts .row .callout h2 a:active {
+            color: white; }
+      main.homepage .container.homepage-callouts .row .callout p {
+        font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+        display: block; }
+      main.homepage .container.homepage-callouts .row .callout .callout-button {
+        background-color: none !important;
+        border: 1px solid white;
+        color: white;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 1em 2em;
+        border-radius: 20px;
+        cursor: pointer; }
+        main.homepage .container.homepage-callouts .row .callout .callout-button:hover, main.homepage .container.homepage-callouts .row .callout .callout-button:active {
+          background-color: rgba(255, 255, 255, 0.25); }
+    main.homepage .container.homepage-callouts .row .box-1 {
+      background-color: #605594;
+      background-image: url("images/callout01.jpg");
+      background-position: center center;
+      background-size: cover;
+      border-right: 1px solid white; }
+    main.homepage .container.homepage-callouts .row .box-2 {
+      background-color: #605594;
+      background-image: url("images/callout02.jpg");
+      background-position: center center;
+      background-size: cover;
+      border-right: 1px solid white; }
+    main.homepage .container.homepage-callouts .row .box-3 {
+      background-color: #605594;
+      background-image: url("images/callout03.jpg");
+      background-position: center center;
+      background-size: cover; } }
 
 @media screen and (min-width: 700px) {
   .features .entry-content {
@@ -8980,8 +9329,40 @@ main.homepage .features article {
       line-height: 1.2em; }
       main.homepage .welcome-message p .line-2 {
         color: #cc0000; }
+  main.homepage .container.homepage-callouts {
+    margin-bottom: 2em; }
+    main.homepage .container.homepage-callouts .row .callout {
+      text-align: center;
+      color: white;
+      padding: 1.5em 1.5em;
+      min-height: 216px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main.homepage .container.homepage-callouts .row .callout h2 {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 3em; }
+        main.homepage .container.homepage-callouts .row .callout h2 a {
+          color: white; }
+          main.homepage .container.homepage-callouts .row .callout h2 a:link, main.homepage .container.homepage-callouts .row .callout h2 a:visited, main.homepage .container.homepage-callouts .row .callout h2 a:hover, main.homepage .container.homepage-callouts .row .callout h2 a:active {
+            color: white; }
+      main.homepage .container.homepage-callouts .row .callout p {
+        font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+        display: block;
+        font-size: 1.5em; }
+      main.homepage .container.homepage-callouts .row .callout .callout-button {
+        background-color: none !important;
+        border: 1px solid white;
+        color: white;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 1em 2em;
+        border-radius: 20px; }
   main.homepage article.neighborhood_profile {
-    padding-top: 2.4em !important; }
+    padding-top: 2.4em !important;
+    border-bottom: 0px; }
     main.homepage article.neighborhood_profile .entry-content figure.featured-media {
       max-width: 72rem !important;
       width: calc(100% - 2rem); }
@@ -9018,10 +9399,45 @@ main.homepage .features article {
       line-height: 1.2em; }
       main.homepage .welcome-message p .line-2 {
         color: #cc0000; }
+  main.homepage .container.homepage-callouts {
+    margin-bottom: 2em; }
+    main.homepage .container.homepage-callouts .row .callout {
+      text-align: center;
+      color: white;
+      padding: 1.5em 1.5em;
+      padding-bottom: 3em;
+      min-height: 216px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main.homepage .container.homepage-callouts .row .callout h2 {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 3.6em; }
+        main.homepage .container.homepage-callouts .row .callout h2 a {
+          color: white; }
+          main.homepage .container.homepage-callouts .row .callout h2 a:link, main.homepage .container.homepage-callouts .row .callout h2 a:visited, main.homepage .container.homepage-callouts .row .callout h2 a:hover, main.homepage .container.homepage-callouts .row .callout h2 a:active {
+            color: white; }
+      main.homepage .container.homepage-callouts .row .callout p {
+        font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+        display: block;
+        font-size: 2em; }
+      main.homepage .container.homepage-callouts .row .callout .callout-button {
+        background-color: none !important;
+        border: 1px solid white;
+        color: white;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 1em 2em 1.2em 2em;
+        border-radius: 6px;
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.15); }
   main.homepage article.neighborhood_profile {
     padding-top: 4em !important;
     border: none;
-    border-bottom: 1px solid #cccccc; }
+    border-bottom: 0px; }
     main.homepage article.neighborhood_profile .entry-content figure.featured-media {
       max-width: 90rem !important;
       width: calc(100% - 2rem); }

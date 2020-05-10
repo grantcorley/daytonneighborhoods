@@ -38,11 +38,12 @@
 
 				//get_template_part( 'template-parts/featured-image' );
 
+
 				if ( has_post_thumbnail() ){
 				get_template_part( 'template-parts/featured-image' );
 				}
 
-		
+
 
 			}//end if !is_search
 			get_template_part( 'template-parts/entry-header' );
@@ -51,8 +52,14 @@
 			<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 				the_excerpt();
+				?><?php
 			} else {
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
+				//the_content( __( 'Continue reading', 'twentytwenty' ) );
+				//get_the_content();
+				the_content();
+				?>
+
+				<?php
 			}
 ?>
 
@@ -86,9 +93,7 @@
 	<?php
 
 	if ( is_single() ) {
-
 		get_template_part( 'template-parts/navigation' );
-
 	}
 
 

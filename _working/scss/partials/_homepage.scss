@@ -67,10 +67,75 @@ main.homepage{
     }//end welcome-message
 
 
+.container.homepage-callouts{
+  .row{
+
+    .callout{
+      text-align: center;
+      color:white;
+      padding: 1.5em .5em;
+
+      h2{
+        color:white;
+        font-family: $headline;
+        font-weight: bold;
+
+        a{
+          color:white;
+
+          &:link, &:visited,
+          &:hover, &:active{
+            color:white;
+          }
+
+        }
+
+      }
+
+      p{
+        font-family: $copy;
+        display:none;
+      }
+
+      .callout-button{
+        display:none;
+      }
+
+    }
+
+    .box-1{
+      background-color: $primary;
+      background-image: url('images/callout01.jpg');
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .box-2{
+      background-color: $primary;
+      background-image: url('images/callout02.jpg');
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .box-3{
+      background-color: $primary;
+      background-image: url('images/callout03.jpg');
+      background-position: center center;
+      background-size: cover;
+    }
+
+  }//end row
+
+  margin-bottom:2em;
+
+}//.container.homepage-callouts
+
+
 article.neighborhood_profile{
   padding-bottom:6em !important;
   border-bottom:1px solid $gray;
   padding-top:.5em !important;
+  border-bottom: 0px;
 
   h2{
     font-family: $headline;
@@ -122,6 +187,98 @@ article.neighborhood_profile{
 
 
 }//main._homepage
+
+
+@media screen and (min-width: 576px){
+
+  main.homepage{
+
+    .container.homepage-callouts{
+      .row{
+
+        .callout{
+          text-align: center;
+          color:white;
+          padding: 1.5em 1.5em;
+          min-height:216px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          h2{
+            color:white;
+            font-family: $headline;
+            font-weight: bold;
+            font-size:2.4em;
+
+            a{
+              color:white;
+
+              &:link, &:visited,
+              &:hover, &:active{
+                color:white;
+              }
+
+            }
+
+          }
+
+          p{
+            font-family: $copy;
+            display:block;
+          }
+
+          .callout-button{
+            background-color: none !important;
+            border:1px solid white;
+            color:white;
+            display: inline-block;
+            margin: 0 auto;
+            padding: 1em 2em;
+            border-radius: 20px;
+            cursor:pointer;
+
+            &:hover, &:active{
+              background-color: rgba(255, 255, 255, .25);
+            }
+
+          }
+
+        }
+
+        .box-1{
+          background-color: $primary;
+          background-image: url('images/callout01.jpg');
+          background-position: center center;
+          background-size: cover;
+          border-right:1px solid white;
+        }
+
+        .box-2{
+          background-color: $primary;
+          background-image: url('images/callout02.jpg');
+          background-position: center center;
+          background-size: cover;
+          border-right:1px solid white;
+        }
+
+        .box-3{
+          background-color: $primary;
+          background-image: url('images/callout03.jpg');
+          background-position: center center;
+          background-size: cover;
+        }
+
+      }//end row
+
+      margin-bottom:2em;
+
+    }//.container.homepage-callouts
+
+
+  }//end main.homepage
+
+}
 
 
 @media screen and (min-width: 700px) {
@@ -183,10 +340,67 @@ article.neighborhood_profile{
 
 
 
+      .container.homepage-callouts{
+        .row{
+
+          .callout{
+            text-align: center;
+            color:white;
+            padding: 1.5em 1.5em;
+            min-height:216px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2{
+              color:white;
+              font-family: $headline;
+              font-weight: bold;
+              font-size:3em;
+
+              a{
+                color:white;
+
+                &:link, &:visited,
+                &:hover, &:active{
+                  color:white;
+                }
+
+              }
+
+            }
+
+            p{
+              font-family: $copy;
+              display:block;
+              font-size:1.5em;
+            }
+
+            .callout-button{
+              background-color: none !important;
+              border:1px solid white;
+              color:white;
+              display: inline-block;
+              margin: 0 auto;
+              padding: 1em 2em;
+              border-radius: 20px;
+            }
+
+          }
+
+
+        }//end row
+
+        margin-bottom:2em;
+
+      }//.container.homepage-callouts
+
+
 
   article.neighborhood_profile{
 
     padding-top:2.4em !important;
+    border-bottom: 0px;
 
     .entry-content{
 
@@ -282,10 +496,72 @@ article.neighborhood_profile{
       }//end welcome-message
 
 
+
+      .container.homepage-callouts{
+        .row{
+
+          .callout{
+            text-align: center;
+            color:white;
+            padding: 1.5em 1.5em;
+            padding-bottom: 3em;
+            min-height:216px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2{
+              color:white;
+              font-family: $headline;
+              font-weight: bold;
+              font-size:3.6em;
+
+              a{
+                color:white;
+
+                &:link, &:visited,
+                &:hover, &:active{
+                  color:white;
+                }
+
+              }
+
+            }
+
+            p{
+              font-family: $copy;
+              display:block;
+              font-size:2em;
+            }
+
+            .callout-button{
+              background-color: none !important;
+              border:1px solid white;
+              color:white;
+              display: inline-block;
+              margin: 0 auto;
+              padding: 1em 2em 1.2em 2em;
+              border-radius: 6px;
+              font-size: 1.5em;
+              font-weight: bold;
+              background-color: rgba(0,0,0,.15);
+            }
+
+          }
+
+
+        }//end row
+
+        margin-bottom:2em;
+
+      }//.container.homepage-callouts
+
+
   article.neighborhood_profile{
     padding-top:4em !important;
     border:none;
-    border-bottom:1px solid $gray;
+    //border-bottom:1px solid $gray;
+    border-bottom: 0px;
 
     .entry-content{
 

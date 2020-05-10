@@ -14,7 +14,7 @@ get_header();
 ?>
 
 
-<main id="site-content" role="main" class="post-query-page">
+<main id="site-content" role="main" class="post-query-page neighborhood-profile">
 
 <article class="page">
 
@@ -42,6 +42,7 @@ get_header();
 	<h1 class="entry-title fade-in">Neighborhood Profiles</h1>
 
 
+
 	<!-- that was twentytwenty_the_post_meta -->
 
 </div><!-- .entry-header-inner -->
@@ -60,6 +61,8 @@ get_header();
 		<div class="entry-content">
 
 			<h2 class="intro-text">Explore Dayton's neighborhoods</h2>
+
+			<!-- <p>page_neighborhoodProfile_query.php</p> -->
 
 
 			<!--============//? >===============-->

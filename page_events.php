@@ -39,7 +39,7 @@ get_header();
 
 <div class="entry-header-inner section-inner medium">
 
-	<h1 class="entry-title fade-in">Events</h1>
+	<h1 class="entry-title fade-in">Events CALENDAR</h1>
 	<p></p>
 
 
@@ -81,7 +81,7 @@ get_header();
 
 				while ( $the_query->have_posts() ) {
 					$the_query->the_post();
-					get_template_part( 'template-parts/content', get_post_type() );
+					get_template_part( 'template-parts/content_eventsQuery', get_post_type() );
 					//the_excerpt();
 				}
 			}

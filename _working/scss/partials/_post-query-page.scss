@@ -3,16 +3,22 @@
 //ANY PAGE THAT PULLS IN EXTERNAL POSTS BY CATEGORY
 
 //MOBILE SIZES
-body.singular{
+
+//was...body.singular{
+body.singular,
+body.tribe-events-page-template
+{
 
  main#site-content{
 
   article.page{  //(top-level article)
 
+    padding-top:0 !important;
     //text-align: center;
 
     .header-over-image{
-        position: relative;
+        position: relative !important;
+
 
     header#entry-header{
 
@@ -36,12 +42,16 @@ body.singular{
             font-weight: bold;
             font-family: $headline;
             text-transform: uppercase;
+            color:white;
             //text-shadow: 2px 2px 4px rgba(0,0,0,.85);          //text-shadow: 7px 8px 9px -5px rgba(0,0,0,0.78);
           }
 
         }//.entry-header-inner
 
       }//header
+
+
+
 
       figure.featured-media {
         position: relative;
@@ -110,6 +120,14 @@ body.singular{
                 }//end h2.entry-title{
               }//end .entry-header-inner
             }//end header#entry-header
+
+
+            // .tribe-events .tribe-events-l-container {
+            //     padding-bottom: 0 !important;
+            //     padding-top: 0 !important;
+            //     min-height: 400px !important;
+            //     border:2px solid red !important;
+            // }
 
             }//end .entry-content
 
@@ -250,13 +268,21 @@ body.singular{
                             //was 768
 @media screen and (min-width: 700px) {
 
+//was...body.singular{
+body.singular,
+body.tribe-events-page-template
+{
 
-  body.singular{
+    //----> remove padding ONLY from Neighborhood Profile query page (cuz of purple BG)
+    //----> then allow padding on all other query pages
+    main#site-content.neighborhood-profile{
+      padding-bottom: 0;
+    }
 
    //main#site-content.post-query-page{
    main#site-content{
 
-     padding-bottom: 0;
+     //padding-bottom: 0;
 
 
     article.page{  //(top-level article)
@@ -527,7 +553,10 @@ body.singular{
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 
-  body.singular{
+  //body.singular{
+  body.singular,
+  body.tribe-events-page-template
+  {
 
    //main#site-content.post-query-page{
    main#site-content{

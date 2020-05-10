@@ -1,35 +1,26 @@
 //scripts.js
 
+//add <a> tags dyamically to hyperlink fields
 function processLink(hl){
 
-  console.log(hl);
+    var textString = hl.textContent;
 
-  var textString = hl.textContent;
+    // create wrapper container
+    var wrapper = document.createElement('a');
 
-  console.log('the content is ' + textString);
+    // insert wrapper before el in the DOM tree
+    hl.parentNode.insertBefore(wrapper, hl);
+    wrapper.appendChild(hl);
+    var theURL = ("http://www." + textString);
 
-  // create wrapper container
-  var wrapper = document.createElement('a');
-
-  // insert wrapper before el in the DOM tree
-  hl.parentNode.insertBefore(wrapper, hl);
-
-  wrapper.appendChild(hl);
-
-  var theURL = ("http://www." + textString);
-
-  wrapper.setAttribute("href", theURL);
+    wrapper.setAttribute("href", theURL);
 
 }
 
 
 //(function () {//start IIFE
 
-  console.log("iife outer");
-
   document.addEventListener('DOMContentLoaded', function(event) {
-
-    console.log("iife inner");
 
     var body = document.body;
     console.log(body);

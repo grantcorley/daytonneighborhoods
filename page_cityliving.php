@@ -91,10 +91,6 @@ get_header();
 			<!--============//? >===============-->
 
 
-
-
-
-
 	</div> <!--end entry-content-->
 
 </div> <!--end post-inner thin-->
