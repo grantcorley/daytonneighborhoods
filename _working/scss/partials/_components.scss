@@ -18,13 +18,8 @@ span.toggle-text{
 }
 
 .nav-toggle .toggle-icon, .nav-toggle svg {
-    // height: 2rem;
-    // width: 2.6rem;
-    // width:24px;
-    // height:36px;
     width:28px;
     height:28px;
-
 }
 
 
@@ -32,9 +27,7 @@ span.toggle-text{
     padding-bottom: 0 !important;
     padding-top: 0 !important;
     min-height: 400px !important;
-    margin-top:-1.76em;
 }
-
 
 
 .nav-toggle .toggle-inner{
@@ -42,16 +35,11 @@ span.toggle-text{
 }
 
 .menu-icon{
-  // width:24px;
-  // height:36px;
-  // height: 2rem;
-  // width: 2.6rem;
   width:26px;
   height:26px;
   display: block;
   background-image: url('images/menu-icon.svg');
   background-repeat: no-repeat;
-  //border:1px dotted pink;
 }
 
 button.toggle.nav-toggle{

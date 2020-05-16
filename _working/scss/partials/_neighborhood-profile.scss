@@ -65,11 +65,15 @@
       font-weight: bold;
       margin-bottom: 0;
       font-size: x-large;
+
     }
 
     p.icon-stat{
       font-size: 36px;
-      color: $primary;
+      color: $accent;
+      //olor: darken(green, 5%);
+      // color: black;
+      //color: gray;
     }
 
 
@@ -106,8 +110,8 @@
           padding: 1em;
 
           img.icon{
-            max-width: 120px;
-            max-height: 120px;
+            max-width: 100px;
+            max-height: 100px;
             margin:1em auto 1em auto;
           }
 
@@ -134,7 +138,7 @@
 
 
         .description{
-          flex-shrink: 1.4;
+          //flex-shrink: 1.4;
           // padding-right: 2em;
           border-top: 2px dotted lighten($primary, 30%);
 
@@ -149,19 +153,28 @@
 
         }
 
-        .quick-stats{
-          background-color: lighten($primary, 30%);
-          padding: 2em;
-          padding-top: 1em;
-          padding-bottom:2.4em;
-          border-top: $primary 3px solid;
+        .col-sm.quick-stats{
+          // background-color: lighten($primary, 30%);
+          background-color: lighten($gray, 10%);
+          padding:none !important;
+          padding-left:0;
+          padding-right:0;
 
-          h4{
+          h4.q-stats{
             margin-bottom:.5em;
-            span.q-stats{
-              color: $primary;
-              text-transform: uppercase;
-            }
+            // background-color:darken($primary, 10%);
+            background-color: lighten($primary, 10%);
+            padding:.5em;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+          }
+
+          .content{
+            // border:1px dotted gray;
+            padding:1em;
+            padding-top:0;
+            text-align: center;
           }
 
           p{
@@ -180,7 +193,7 @@
 
 
       section.neighborhood-assoc-info{
-        background-color: lighten($secondary, 50%);
+        background-color: lighten($gray, 10%);
         margin-top: 1em;
         padding:2em;
 
@@ -362,7 +375,6 @@ ul.neighborhood-profile-links{
 
             p.icon-stat{
               font-size: 36px;
-              color: $primary;
             }
 
           }
@@ -389,12 +401,12 @@ ul.neighborhood-profile-links{
 
 
           .description{
-            // padding-right: 0;
-            flex-basis: 60%;
+            //flex-basis: 160%;
             border-top: 0;
 
             p{
-              font-size: 28px;
+              // font-size: 28px;
+              font-size:18px;
             }
 
             p:first-child:first-letter {
@@ -409,9 +421,12 @@ ul.neighborhood-profile-links{
 
           }
 
-          .quick-stats{
+          .col-sm.quick-stats{
 
             flex-grow: 1;
+            padding:none !important;
+            padding-left:0;
+            padding-right:0;
 
             h4 {
               font-size: 1.4em;
@@ -421,7 +436,7 @@ ul.neighborhood-profile-links{
 
 
             p{
-              font-size:1.1em;
+              font-size:.95em;
               text-align: center;
             }
 
@@ -520,7 +535,6 @@ ul.neighborhood-profile-links{
 
             p.icon-stat{
               font-size: 36px;
-              color: $primary;
             }
 
           }
@@ -548,7 +562,7 @@ ul.neighborhood-profile-links{
 
           .description{
             // padding-right: 0;
-            flex-basis: 60%;
+            //flex-basis: 150%;
             border-top: 0;
 
             p{
@@ -570,9 +584,12 @@ ul.neighborhood-profile-links{
 
           }
 
-          .quick-stats{
+          .col-sm.quick-stats{
 
             flex-grow: 1;
+            padding: none !important;
+            padding-left:0;
+            padding-right:0;
 
             h4 {
               font-size: 1.4em;

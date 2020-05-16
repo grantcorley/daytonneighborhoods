@@ -49,6 +49,7 @@ main.homepage{
         text-align: center;
         color: $accent;
         font-size: 3.2em;
+        padding: 1em 0;
       }
 
       p{
@@ -79,6 +80,7 @@ main.homepage{
         color:white;
         font-family: $headline;
         font-weight: bold;
+        padding: 1em 0;
 
         a{
           color:white;
@@ -210,6 +212,7 @@ article.neighborhood_profile{
             font-family: $headline;
             font-weight: bold;
             font-size:2.4em;
+            padding:0;
 
             a{
               color:white;
@@ -540,8 +543,8 @@ article.neighborhood_profile{
               color:white;
               display: inline-block;
               margin: 0 auto;
-              padding: 1em 2em 1.2em 2em;
-              border-radius: 6px;
+              padding: .5em 2em .7em 2em;
+              border-radius: 5px;
               font-size: 1.5em;
               font-weight: bold;
               background-color: rgba(0,0,0,.15);

@@ -9,56 +9,92 @@ body.singular,
 body.tribe-events-page-template
 {
 
+  background-color: white;
+
  main#site-content{
+
+   // border:4px solid orange;
 
   article.page{  //(top-level article)
 
     padding-top:0 !important;
     //text-align: center;
 
-    .header-over-image{
-        position: relative !important;
+    .main-img{ //--------------
 
+      height:200px;
+      overflow:hidden;
+      perspective: 2px;
+      position: relative;
+      //background-image: url("images/WestwoodMural_1980x1000.jpg");
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $primary;
 
-    header#entry-header{
-
-        position: absolute;
-        top: 0;
-        width:100%;
-        height:100%;
+      h1.entry-title,
+      h2.entry-title {
+        font-size:3.2em;
+        line-height: 1em;
+        font-weight: bold;
+        font-family: $headline;
+        // text-transform: uppercase;
+        text-shadow: none;
+        background-color: rgba(96,85,148, .3);
+        border-top:1px solid rgba(255, 255, 255, .3);
+        border-bottom:1px solid rgba(255, 255, 255, .3);
+        padding: .25em 0;
+        text-align: center;
         color:white;
-        background-color: none !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        .entry-header-inner.section-inner{
-
-          width:100%;
-
-          h1.entry-title,
-          h2.entry-title {
-            font-size:4em;
-            font-weight: bold;
-            font-family: $headline;
-            text-transform: uppercase;
-            color:white;
-            //text-shadow: 2px 2px 4px rgba(0,0,0,.85);          //text-shadow: 7px 8px 9px -5px rgba(0,0,0,0.78);
-          }
-
-        }//.entry-header-inner
-
-      }//header
-
-
-
-
-      figure.featured-media {
-        position: relative;
-        display:inline;
       }
 
-      }//end header-over-image
+
+    }//---------------------------
+
+
+    .main-img.neighborhood-profiles{
+      // background-image: url("images/BelmontHomes.jpg");
+      background-image: url("images/treeLinedStreet.jpg");
+    }
+
+    .main-img.city-living{
+      background-image: url("images/WestwoodMural_1980x1000.jpg");
+    }
+
+    .main-img.buy-and-rent{
+      // background-image: url("images/belmontHome_featuredImg.jpg");
+      background-image: url("images/walnutHills_homes.jpg");
+      //background-image: url("images/DVTriange_house.jpg");
+    }
+
+    .main-img.incentives{
+      // background-image: url("images/onThePorch.jpg");
+      background-image: url("images/playground.jpg");
+    }
+
+    .main-img.news{
+      background-image: url("images/grafton.jpg");
+    }
+
+    .main-img.events{
+      background-image: url("images/pond.jpg");
+    }
+
+    .main-img.podcast{
+      background-image: url("images/twinTowersMural.jpg");
+    }
+
+    .main-img.contact{
+      background-image: url("images/fiveOaks.jpg");
+    }
+
+
+
+
+
 
       .post-inner.thin.top-level{
 
@@ -122,12 +158,7 @@ body.tribe-events-page-template
             }//end header#entry-header
 
 
-            // .tribe-events .tribe-events-l-container {
-            //     padding-bottom: 0 !important;
-            //     padding-top: 0 !important;
-            //     min-height: 400px !important;
-            //     border:2px solid red !important;
-            // }
+
 
             }//end .entry-content
 
@@ -254,6 +285,8 @@ body.tribe-events-page-template
 
   }//end post-inner.thin.top-level
 
+
+
 }//article.page (top-level)
 
 }//main#site-content post-query-page
@@ -287,46 +320,42 @@ body.tribe-events-page-template
 
     article.page{  //(top-level article)
 
-      //-------------------------------------
-      .header-over-image{
-          position: relative;
+      .main-img{ //--------------
 
-      header#entry-header{
+        height:360px;
+        overflow:hidden;
+        perspective: 2px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-          position: absolute;
-          top: 0;
-          width:100%;
+        h1.entry-title,
+        h2.entry-title {
+          font-size:9em;
+          line-height: 1em;
+          font-weight: bold;
+          font-family: $headline;
+          // text-transform: uppercase;
+          text-shadow: none;
+          background-color: rgba(96,85,148, .3);
+          border-top:1px solid rgba(255, 255, 255, .3);
+          border-bottom:1px solid rgba(255, 255, 255, .3);
+          padding: .25em 0;
+          text-align: center;
           color:white;
-          background-color: none !important;
-
-          .entry-header-inner.section-inner{
-
-            width:100%;
-
-            h1.entry-title,
-            h2.entry-title {
-              font-size:9em;
-              line-height: 1em;
-              font-weight: bold;
-              font-family: $headline;
-              text-transform: uppercase;
-              text-shadow: none;
-              background-color: rgba(96,85,148, .3);
-              border-top:1px solid rgba(255, 255, 255, .3);
-              border-bottom:1px solid rgba(255, 255, 255, .3);
-              padding: .25em 0;
-            }
-
-          }
-
-          }//.entry-header-inner
-
-        figure.featured-media {
-          position: relative;
         }
 
-        }//end header-over-image
-        //-------------------------------------
+
+      }//---------------------------
+
+
+
+
+
 
       .post-inner.thin.top-level{
 
@@ -420,7 +449,8 @@ body.tribe-events-page-template
             //border:2px solid red;
             max-width:100%;
             width:100% !important;
-            background-color: lighten($primary, 35%);
+            // background-color: lighten($primary, 35%);
+            background-color: lighten($gray, 10%);
             padding-top:1em;
 
                   article.post.category-neighborhood-profile{
@@ -547,6 +577,13 @@ body.tribe-events-page-template
 
   }//body.singular
 
+  //hide padding at top on content on Neighborhood Profiles page ONLY
+  body.singular main#site-content.post-query-page.neighborhood-profile article.page .post-inner.thin.top-level
+  {
+      padding-top: 0 !important;
+  }
+
+
 }//end media query
 
 
@@ -585,7 +622,7 @@ body.tribe-events-page-template
               line-height: 1em;
               font-weight: bold;
               font-family: $headline;
-              text-transform: uppercase;
+              // text-transform: uppercase;
               text-shadow: none;
               background-color: rgba(96,85,148, .3);
               border-top:1px solid rgba(255, 255, 255, .3);
@@ -690,7 +727,8 @@ body.tribe-events-page-template
             margin: auto;
             display:flex;
             flex-wrap: wrap;
-            border-top:2px solid $accent;
+            //border-top:2px solid $accent;
+            border-top:0;
 
             justify-content: center;
             //border:2px solid red;
@@ -809,6 +847,9 @@ body.tribe-events-page-template
   }//main#site-content post-query-page
 
   }//body.singular
+
+
+
 
 
 

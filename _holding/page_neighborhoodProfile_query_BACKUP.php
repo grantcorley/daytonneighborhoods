@@ -1,6 +1,6 @@
 <?php
  /**
- * Template Name: City Living
+ * Template Name: No Edit!: Neighborhood Profile Query
  *
 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -14,17 +14,43 @@ get_header();
 ?>
 
 
-<main id="site-content" role="main" class="post-query-page">
+<main id="site-content" role="main" class="post-query-page neighborhood-profile">
 
 <article class="page">
 
 <!-- ========================== -->
 
+<div class="header-over-image">
 
-<div class="main-img city-living">
-	<h2 class="entry-title">City Living<h2>
+<figure class="featured-media">
+
+	<div class="featured-media-inner section-inner">
+
+		<img src=" <?php echo get_stylesheet_directory_uri(); ?>/images/BelmontHomes.jpg" width="1980" height="1000" alt="Homes in Belmont, Dayton OH"/>
+
+	</div><!-- .featured-media-inner -->
+
+</figure><!-- .featured-media -->
+
+
+<header id="entry-header" class="has-text-align-center header-footer-group">
+
+
+
+<div class="entry-header-inner section-inner medium">
+
+	<h1 class="entry-title fade-in">Neighborhood Profiles</h1>
+
+
+
+	<!-- that was twentytwenty_the_post_meta -->
+
+</div><!-- .entry-header-inner -->
+
+
+
+</header><!-- .entry-header -->
 </div>
-
 
 <!-- ========================== -->
 
@@ -34,17 +60,20 @@ get_header();
 
 		<div class="entry-content">
 
-			<h2 class="intro-text">Essential resources for living in Dayton</h2>
+			<h2 class="intro-text">Explore Dayton's neighborhoods</h2>
+
+			<!-- <p>page_neighborhoodProfile_query.php</p> -->
 
 
 			<!--============//? >===============-->
+			<div id="the-posts">
 
 			<?php
 
 			// $the_query = new WP_Query( array( 'category_name' => 'city-living-essentials' ) );
 
 			$the_query = new WP_Query( array(
-									'category_name' => 'city-living-essentials',
+									'category_name' => 'neighborhood-profile',
 									'orderby' => 'title',
     							'order'   => 'ASC',
 								));
@@ -55,14 +84,19 @@ get_header();
 
 				while ( $the_query->have_posts() ) {
 					$the_query->the_post();
-					get_template_part( 'template-parts/content', get_post_type() );
-					//the_excerpt();
+					// get_template_part( 'template-parts/content', get_post_type() );
+					get_template_part( 'template-parts/content_neighborhoodProfileQuery', get_post_type() );
+					the_excerpt();
 				}
 			}
 			?>
 
-
+			</div> <!-- end the-posts-->
 			<!--============//? >===============-->
+
+
+
+
 
 
 	</div> <!--end entry-content-->

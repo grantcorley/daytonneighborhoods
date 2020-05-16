@@ -1,6 +1,6 @@
 <?php
  /**
- * Template Name: City Living
+ * Template Name: Events
  *
 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -20,11 +20,9 @@ get_header();
 
 <!-- ========================== -->
 
-
-<div class="main-img city-living">
-	<h2 class="entry-title">City Living<h2>
+<div class="main-img events">
+	<h2 class="entry-title">Events<h2>
 </div>
-
 
 <!-- ========================== -->
 
@@ -34,7 +32,7 @@ get_header();
 
 		<div class="entry-content">
 
-			<h2 class="intro-text">Essential resources for living in Dayton</h2>
+			<!-- <h2 class="intro-text">Incentives subhead</h2> -->
 
 
 			<!--============//? >===============-->
@@ -44,7 +42,7 @@ get_header();
 			// $the_query = new WP_Query( array( 'category_name' => 'city-living-essentials' ) );
 
 			$the_query = new WP_Query( array(
-									'category_name' => 'city-living-essentials',
+									'category_name' => 'events',
 									'orderby' => 'title',
     							'order'   => 'ASC',
 								));
@@ -55,7 +53,7 @@ get_header();
 
 				while ( $the_query->have_posts() ) {
 					$the_query->the_post();
-					get_template_part( 'template-parts/content', get_post_type() );
+					get_template_part( 'template-parts/content_eventsQuery', get_post_type() );
 					//the_excerpt();
 				}
 			}
@@ -63,6 +61,10 @@ get_header();
 
 
 			<!--============//? >===============-->
+
+
+
+
 
 
 	</div> <!--end entry-content-->

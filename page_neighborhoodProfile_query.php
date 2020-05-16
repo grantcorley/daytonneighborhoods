@@ -20,36 +20,8 @@ get_header();
 
 <!-- ========================== -->
 
-<div class="header-over-image">
-
-<figure class="featured-media">
-
-	<div class="featured-media-inner section-inner">
-
-		<img src=" <?php echo get_stylesheet_directory_uri(); ?>/images/BelmontHomes.jpg" width="1980" height="1000" alt="Homes in Belmont, Dayton OH"/>
-
-	</div><!-- .featured-media-inner -->
-
-</figure><!-- .featured-media -->
-
-
-<header id="entry-header" class="has-text-align-center header-footer-group">
-
-
-
-<div class="entry-header-inner section-inner medium">
-
-	<h1 class="entry-title fade-in">Neighborhood Profiles</h1>
-
-
-
-	<!-- that was twentytwenty_the_post_meta -->
-
-</div><!-- .entry-header-inner -->
-
-
-
-</header><!-- .entry-header -->
+<div class="main-img neighborhood-profiles">
+	<h2 class="entry-title">Neighborhood Profiles<h2>
 </div>
 
 <!-- ========================== -->
@@ -60,7 +32,7 @@ get_header();
 
 		<div class="entry-content">
 
-			<h2 class="intro-text">Explore Dayton's neighborhoods</h2>
+			<!-- <h2 class="intro-text">Explore Dayton's neighborhoods</h2> -->
 
 			<!-- <p>page_neighborhoodProfile_query.php</p> -->
 

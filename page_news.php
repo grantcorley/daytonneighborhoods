@@ -18,40 +18,11 @@ get_header();
 
 <article class="page">
 
+
 <!-- ========================== -->
-
-<div class="header-over-image">
-
-<figure class="featured-media">
-
-	<div class="featured-media-inner section-inner">
-
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/grafton.jpg" width="1980" height="1000" alt="Westwood mural, Dayton OH" />
-
-	</div><!-- .featured-media-inner -->
-
-</figure><!-- .featured-media -->
-
-
-<header id="entry-header" class="has-text-align-center header-footer-group">
-
-
-
-<div class="entry-header-inner section-inner medium">
-
-	<h1 class="entry-title fade-in">News</h1>
-	<p></p>
-
-
-	<!-- that was twentytwenty_the_post_meta -->
-
-</div><!-- .entry-header-inner -->
-
-
-
-</header><!-- .entry-header -->
+<div class="main-img news">
+	<h2 class="entry-title">News<h2>
 </div>
-
 <!-- ========================== -->
 
 

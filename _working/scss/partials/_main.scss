@@ -3,7 +3,7 @@
 body{
 
   background-color: $secondary;
-  
+
     main#site-content{
       background-color: white;
       padding-bottom: 12.5em;
@@ -101,6 +101,10 @@ body.singular{
 input.search-submit{
    background-color: $accent;
   //background-color:violet
+}
+
+.inside-post figure.featured-media > .featured-media-inner{
+  background-color:#e4d3be;
 }
 
 

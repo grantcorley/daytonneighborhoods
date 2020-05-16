@@ -92,10 +92,9 @@
 				</section>
 
 
+
 				<!-- FLEXBOX LAYOUT: HOME INFO -->
 				<section class="home-info">
-
-
 
 					<!-- AVG HOME VALUES -->
 					<?php
@@ -142,10 +141,8 @@
 
 
 
-
 				<!--pics row 1-->
 				<div class="row pictures">
-
 
 					<!--show first column/photo if exists-->
 					<?php
@@ -178,64 +175,76 @@
 				</div>
 
 
-				<section class="description-quick-stats">
+				<!-- ======= -->
 
-						<div class="description">
-								<p><?php the_field('neighborhood_description');?></p>
-						</div>
+				<section class="description-quick-stats container">
+						<div class="row">
 
-						<div class="quick-stats">
-							<h4><span class="q-stats">Quick Stats</span> <br/> <?php the_field('neighborhood');?></h4>
+								<div class="col-sm description">
+										<p><?php the_field('neighborhood_description');?></p>
+								</div>
 
+								<div class="col-sm quick-stats">
+									<h4 class="q-stats">Quick Stats</h4>
 
-								<!--Show Zip Code(s) if exists-->
-								<?php
-										$zip_codes =  get_field('zip_codes');
-										if($zip_codes != "" ){?>
-												<p><span class="label">Zip Code(s):</span>
-													<?php the_field('zip_codes');?></p>
-								<?php } ?>
+									<div class="content">
 
+										<h4><?php the_field('neighborhood');?></h4>
 
-							<!--Show Neighborhood(s) if exists-->
-							<?php
-									$neighborhoods =  get_field('neighborhoods');
-									if($neighborhoods != "" ){?>
-											<p><span class="label">Neighborhoods(s):</span>
-											<?php the_field('neighborhoods');?></p>
-							<?php } ?>
+										<!--Show Zip Code(s) if exists-->
+										<?php
+												$zip_codes =  get_field('zip_codes');
+												if($zip_codes != "" ){?>
+														<p><span class="label">Zip Code(s):</span>
+															<?php the_field('zip_codes');?></p>
+										<?php } ?>
 
 
-							<!--Show Historic District(s) if exists-->
-							<?php
-									$historic_districts =  get_field('historic_districts');
-									if($historic_districts != "" ){?>
-											<p><span class="label">Historic District(s):</span>
-											<?php the_field('historic_districts');?></p>
-							<?php } ?>
+									<!--Show Neighborhood(s) if exists-->
+									<?php
+											$neighborhoods =  get_field('neighborhoods');
+											if($neighborhoods != "" ){?>
+													<p><span class="label">Neighborhoods(s):</span>
+													<?php the_field('neighborhoods');?></p>
+									<?php } ?>
+
+
+									<!--Show Historic District(s) if exists-->
+									<?php
+											$historic_districts =  get_field('historic_districts');
+											if($historic_districts != "" ){?>
+													<p><span class="label">Historic District(s):</span>
+													<?php the_field('historic_districts');?></p>
+									<?php } ?>
 
 
 
-							<!--Show Housing Units Per Acre if exists-->
-							<?php
-									$units_per_acre =  get_field('housing_units_acre');
-									if($units_per_acre != "" ){?>
-										<p><span class="label">Housing Units Per Acre:</span>
-										<?php the_field('housing_units_acre');?></p>
-							<?php } ?>
+									<!--Show Housing Units Per Acre if exists-->
+									<?php
+											$units_per_acre =  get_field('housing_units_acre');
+											if($units_per_acre != "" ){?>
+												<p><span class="label">Housing Units Per Acre:</span>
+												<?php the_field('housing_units_acre');?></p>
+									<?php } ?>
 
 
-							<!--Show Known For if exists-->
-							<?php
-									$known_for =  get_field('known_for');
-									if($known_for != "" ){?>
-										<p><span class="label">Known For:</span>
-										<?php the_field('known_for');?></p>
-							<?php } ?>
+									<!--Show Known For if exists-->
+									<?php
+											$known_for =  get_field('known_for');
+											if($known_for != "" ){?>
+												<p><span class="label">Known For:</span>
+												<?php the_field('known_for');?></p>
+									<?php } ?>
 
-						</div>
+								</div> <!-- end content -->
+								</div>
+						</div> <!--end row-->
+				</section>
 
-				</section> <!-- end description-quick-stats -->
+				<!-- ======= -->
+
+
+
 
 
 					<!--pics row 2-->
@@ -272,12 +281,16 @@
 
 						<!-- =========== -->
 
-
-
-
-
 					</div>
 
+
+					<div class="row map">
+						<?php
+								$map =  get_field('map');
+								if($map != "" ){ ?>
+										<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('map');?>" class="img-fluid" alt="<?php the_field('map_description');?>">
+								<?php } ?>
+					</div><!--end map row-->
 
 
 								<section class="neighborhood-assoc-info">
@@ -287,8 +300,8 @@
 											$neighborhood_assoc =  get_field('neighborhood_association');
 											if($neighborhood_assoc != "" ){?>
 
-											<h4>Neighborhood Association</h4>
-											<p><strong><?php the_field('neighborhood_association');?></strong><br/>
+											<!-- <h4>Neighborhood Association</h4> -->
+											<h4><?php the_field('neighborhood_association');?></h4>
 
 												<!--show Website if exists-->
 												<?php
@@ -329,6 +342,7 @@
 
 
 							</section> <!-- end neighborhood-assoc-info -->
+
 
 
 

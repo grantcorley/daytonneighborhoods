@@ -19,36 +19,10 @@ get_header();
 
 <!-- ========================== -->
 
-<div class="header-over-image">
-
-<figure class="featured-media">
-
-	<div class="featured-media-inner section-inner">
-
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/onThePorch.jpg" width="1980" height="1000" alt="Couple relaxing on front porch in Dayton, OH" />
-
-	</div><!-- .featured-media-inner -->
-
-</figure><!-- .featured-media -->
-
-
-<header id="entry-header" class="has-text-align-center header-footer-group">
-
-
-
-<div class="entry-header-inner section-inner medium">
-
-	<h1 class="entry-title fade-in">Incentives</h1>
-	<p></p>
-
-
-
-</div><!-- .entry-header-inner -->
-
-
-
-</header><!-- .entry-header -->
+<div class="main-img incentives">
+	<h2 class="entry-title">Incentives<h2>
 </div>
+
 
 <!-- ========================== -->
 
