@@ -7503,7 +7503,7 @@ body {
   background-color: #5e5c64; }
   body main#site-content {
     background-color: white;
-    padding-bottom: 12.5em;
+    padding-bottom: 3.6em;
     min-height: 1000px; }
   body a:hover, body a:active {
     color: #605594; }
@@ -7547,7 +7547,8 @@ input.search-submit {
   background-color: #cc0000; }
 
 .inside-post figure.featured-media > .featured-media-inner {
-  background-color: #e4d3be; }
+  background-color: slategray;
+  background-image: url("images/pattern.gif"); }
 
 @media (min-width: 700px) {
   .post-inner {
@@ -7620,6 +7621,9 @@ h1, h2 {
     font-size: 21px; } }
 
 /* _header.scss */
+nav.primary-menu-wrapper {
+  display: none; }
+
 header#site-header {
   border-bottom: 2px solid #cc0000;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); }
@@ -7815,6 +7819,10 @@ nav.expanded-menu ul.modal-menu > li.menu-item > .sub-menu li.menu-item {
 .header-navigation-wrapper nav.primary-menu-wrapper ul.primary-menu li.menu-item.current-menu-item a {
   text-decoration: none !important; }
 
+@media screen and (min-width: 1200px) {
+  nav.primary-menu-wrapper {
+    display: block; } }
+
 /*  _footer.scss  */
 footer#site-footer {
   border-top: 2px solid #cc0000;
@@ -7930,6 +7938,21 @@ button.toggle.nav-toggle {
 input.search-submit {
   background-color: #cc0000; }
 
+ul.neighborhood-profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  list-style: none;
+  justify-content: center; }
+  ul.neighborhood-profile-links li a {
+    font-size: 2em;
+    color: gray;
+    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
+
+@media screen and (min-width: 768px) {
+  ul.neighborhood-profile-links {
+    padding: 0 3em; } }
+
 /* _homepage.scss */
 main.homepage .slideshow-holder {
   position: relative; }
@@ -7979,7 +8002,8 @@ main.homepage .container.homepage-callouts {
       color: white;
       font-family: "Roboto", sans-serif;
       font-weight: bold;
-      padding: 1em 0; }
+      padding: 1em 0;
+      font-size: 2.4rem; }
       main.homepage .container.homepage-callouts .row .callout h2 a {
         color: white; }
         main.homepage .container.homepage-callouts .row .callout h2 a:link, main.homepage .container.homepage-callouts .row .callout h2 a:visited, main.homepage .container.homepage-callouts .row .callout h2 a:hover, main.homepage .container.homepage-callouts .row .callout h2 a:active {
@@ -8004,6 +8028,35 @@ main.homepage .container.homepage-callouts {
     background-image: url("images/callout03.jpg");
     background-position: center center;
     background-size: cover; }
+  main.homepage .container.homepage-callouts .row .box-4 {
+    background-color: #605594;
+    background-image: url("images/callout04.jpg");
+    background-position: center center;
+    background-size: cover; }
+
+main.homepage .featured-neighborhoods h3 {
+  text-align: center;
+  font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+  color: #cc0000;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: .5em; }
+
+main.homepage .featured-neighborhoods .row article.col-sm a:link, main.homepage .featured-neighborhoods .row article.col-sm a:visited {
+  color: #605594; }
+
+main.homepage .featured-neighborhoods .row article.col-sm a:hover, main.homepage .featured-neighborhoods .row article.col-sm a:active {
+  color: #cc0000; }
+
+main.homepage .featured-neighborhoods .row article.col-sm img {
+  margin-bottom: 1em; }
+
+main.homepage .featured-neighborhoods .row article.col-sm h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: .75em; }
 
 main.homepage article.neighborhood_profile {
   padding-bottom: 6em !important;
@@ -8078,7 +8131,13 @@ main.homepage .features article {
       background-color: #605594;
       background-image: url("images/callout03.jpg");
       background-position: center center;
-      background-size: cover; } }
+      background-size: cover; }
+    main.homepage .container.homepage-callouts .row .box-4 {
+      background-color: #605594;
+      background-image: url("images/callout04.jpg");
+      background-position: center center;
+      background-size: cover;
+      margin-top: 1px; } }
 
 @media screen and (min-width: 700px) {
   .features .entry-content {
@@ -8209,6 +8268,20 @@ main.homepage .features article {
         font-size: 1.5em;
         font-weight: bold;
         background-color: rgba(0, 0, 0, 0.15); }
+  main.homepage .featured-neighborhoods h3 {
+    text-align: center;
+    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+    color: #cc0000;
+    font-size: 3.2rem;
+    padding-top: 1rem;
+    padding-bottom: .5em; }
+  main.homepage .featured-neighborhoods .row article.col-sm img {
+    margin-bottom: 1em; }
+  main.homepage .featured-neighborhoods .row article.col-sm h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: .75em; }
   main.homepage article.neighborhood_profile {
     padding-top: 4em !important;
     border: none;
@@ -8249,10 +8322,10 @@ main.homepage .features article {
           .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories .entry-categories-inner a:hover, .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories .entry-categories-inner a:active {
             text-decoration: underline; }
       .neighborhood-profile .entry-content#full-width-content header#entry-header h1.entry-title {
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
+        font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
         font-size: 4.2em;
-        margin-top: .0; }
+        margin-top: .0;
+        color: #555b6b; }
       .neighborhood-profile .entry-content#full-width-content header#entry-header .intro-text.section-inner {
         display: none; }
     .neighborhood-profile .entry-content#full-width-content .container {
@@ -8307,28 +8380,48 @@ main.homepage .features article {
             font-size: 18px;
             padding-top: .5em;
             padding-bottom: 1em; }
-        .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .col-sm.quick-stats {
+        .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats {
           background-color: #e6e5e5;
           padding: none !important;
           padding-left: 0;
           padding-right: 0; }
-          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .col-sm.quick-stats h4.q-stats {
+          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats h4.q-stats {
             margin-bottom: .5em;
-            background-color: #7a6fad;
-            padding: .5em;
+            background-color: #cc0000;
+            padding: .25em;
+            padding-bottom: .45em;
             text-align: center;
             color: white;
-            text-transform: uppercase; }
-          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .col-sm.quick-stats .content {
+            font-family: "Roboto Slab", serif;
+            letter-spacing: .025rem; }
+          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats h4.neighborhood {
+            margin-bottom: .25em;
+            font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+            font-weight: bold;
+            color: #210f10; }
+          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats .content {
+            font-family: Arial, sans-serif;
             padding: 1em;
             padding-top: 0;
             text-align: center; }
-          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .col-sm.quick-stats p {
-            font-size: 1.6em; }
-          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .col-sm.quick-stats span.label {
+          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats p {
+            font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+            font-style: oblique;
+            font-size: 1.8em;
+            padding-bottom: .5em;
+            margin-bottom: 0; }
+          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats p:not(:last-of-type) {
+            border-bottom: 1px solid #cccccc; }
+          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats p:not(:first-of-type) span.label {
+            border-top: 1px solid white;
+            padding-top: 3px; }
+          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats span.label {
+            font-family: Arial, sans-serif;
+            font-style: normal;
             display: block;
             font-weight: bold;
-            color: #605594; }
+            color: #cc0000 !important;
+            letter-spacing: -1px; }
       .neighborhood-profile .entry-content#full-width-content .container section.neighborhood-assoc-info {
         background-color: #e6e5e5;
         margin-top: 1em;
@@ -8342,17 +8435,6 @@ h3.explore {
   text-align: center;
   font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
   padding-top: 1em; }
-
-ul.neighborhood-profile-links {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 0;
-  list-style: none;
-  justify-content: center; }
-  ul.neighborhood-profile-links li a {
-    font-size: 2em;
-    color: gray;
-    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; }
 
 @media screen and (min-width: 576px) {
   .row.pictures {
@@ -8378,8 +8460,7 @@ ul.neighborhood-profile-links {
             .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories .entry-categories-inner a:hover, .neighborhood-profile .entry-content#full-width-content header#entry-header .entry-categories .entry-categories-inner a:active {
               text-decoration: underline; }
         .neighborhood-profile .entry-content#full-width-content header#entry-header h1.entry-title {
-          font-family: "Roboto", sans-serif;
-          font-weight: bold;
+          font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
           font-size: 4.2em;
           margin-top: .0; }
         .neighborhood-profile .entry-content#full-width-content header#entry-header .intro-text.section-inner {
@@ -8438,21 +8519,50 @@ ul.neighborhood-profile-links {
               padding-top: 4px;
               padding-right: 8px;
               padding-left: 3px; }
-          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .col-sm.quick-stats {
-            flex-grow: 1;
+          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats {
+            background-color: #e6e5e5;
             padding: none !important;
             padding-left: 0;
             padding-right: 0; }
-            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .col-sm.quick-stats h4 {
-              font-size: 1.4em;
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats h4.q-stats {
+              margin-bottom: .5em;
+              background-color: #cc0000;
+              padding: .25em;
+              padding-bottom: .45em;
+              text-align: center;
+              color: white;
+              font-family: "Roboto Slab", serif;
+              letter-spacing: .025rem;
+              font-size: 1.76em; }
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats h4.neighborhood {
+              margin-bottom: .25em;
+              font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+              font-weight: bold;
+              color: #210f10;
+              font-size: 2em; }
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats .content {
+              font-family: Arial, sans-serif;
+              padding: 1em;
+              padding-top: 0;
               text-align: center; }
-            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .col-sm.quick-stats p {
-              font-size: .95em;
-              text-align: center; }
-            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .col-sm.quick-stats span.label {
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats p {
+              font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+              font-style: oblique;
+              font-size: 1.1em;
+              padding-bottom: .5em;
+              margin-bottom: 0; }
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats p:not(:last-of-type) {
+              border-bottom: 1px solid #cccccc; }
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats p:not(:first-of-type) span.label {
+              border-top: 1px solid white;
+              padding-top: 3px; }
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats span.label {
+              font-family: Arial, sans-serif;
+              font-style: normal;
               display: block;
               font-weight: bold;
-              color: #605594; }
+              color: #cc0000 !important;
+              letter-spacing: -1px; }
         .neighborhood-profile .entry-content#full-width-content .container section.neighborhood-assoc-info h4 {
           font-size: 1.1em; }
         .neighborhood-profile .entry-content#full-width-content .container section.neighborhood-assoc-info p {
@@ -8465,6 +8575,8 @@ ul.neighborhood-profile-links {
       width: 100% !important;
       max-width: 1000px !important;
       margin: 0 auto; }
+      .neighborhood-profile .entry-content#full-width-content h1.entry-title {
+        font-size: 6em !important; }
       .neighborhood-profile .entry-content#full-width-content .container {
         width: 100% !important;
         max-width: none !important; }
@@ -8520,21 +8632,49 @@ ul.neighborhood-profile-links {
               padding-top: 4px;
               padding-right: 8px;
               padding-left: 3px; }
-          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .col-sm.quick-stats {
-            flex-grow: 1;
+          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats {
+            background-color: #e6e5e5;
             padding: none !important;
             padding-left: 0;
             padding-right: 0; }
-            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .col-sm.quick-stats h4 {
-              font-size: 1.4em;
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats h4.q-stats {
+              margin-bottom: .5em;
+              background-color: #cc0000;
+              padding: .25em;
+              text-align: center;
+              color: white;
+              font-family: "Roboto Slab", serif;
+              letter-spacing: .025rem;
+              font-size: 1.2em; }
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats h4.neighborhood {
+              margin-bottom: .25em;
+              font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+              font-weight: bold;
+              color: #210f10;
+              font-size: 1.5em; }
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats .content {
+              font-family: Arial, sans-serif;
+              padding: 1em;
+              padding-top: 0;
               text-align: center; }
-            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .col-sm.quick-stats p {
-              font-size: 1em;
-              text-align: center; }
-            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .col-sm.quick-stats span.label {
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats p {
+              font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+              font-style: oblique;
+              font-size: .9em;
+              padding-bottom: .5em;
+              margin-bottom: 0; }
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats p:not(:last-of-type) {
+              border-bottom: 1px solid #cccccc; }
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats p:not(:first-of-type) span.label {
+              border-top: 1px solid white;
+              padding-top: 3px; }
+            .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats span.label {
+              font-family: Arial, sans-serif;
+              font-style: normal;
               display: block;
               font-weight: bold;
-              color: #605594; }
+              color: #cc0000 !important;
+              letter-spacing: -1px; }
         .neighborhood-profile .entry-content#full-width-content .container section.neighborhood-assoc-info {
           padding-top: 1em; }
           .neighborhood-profile .entry-content#full-width-content .container section.neighborhood-assoc-info h4 {
@@ -8591,13 +8731,13 @@ body.tribe-events-page-template {
       background-image: url("images/playground.jpg"); }
     body.singular main#site-content article.page .main-img.news,
     body.tribe-events-page-template main#site-content article.page .main-img.news {
-      background-image: url("images/grafton.jpg"); }
+      background-image: url("images/museum.jpg"); }
     body.singular main#site-content article.page .main-img.events,
     body.tribe-events-page-template main#site-content article.page .main-img.events {
       background-image: url("images/pond.jpg"); }
     body.singular main#site-content article.page .main-img.podcast,
     body.tribe-events-page-template main#site-content article.page .main-img.podcast {
-      background-image: url("images/twinTowersMural.jpg"); }
+      background-image: url("images/innerEastMural.jpg"); }
     body.singular main#site-content article.page .main-img.contact,
     body.tribe-events-page-template main#site-content article.page .main-img.contact {
       background-image: url("images/fiveOaks.jpg"); }
@@ -8796,15 +8936,12 @@ body.tribe-events-page-template {
       justify-content: center;
       max-width: 100%;
       width: 100% !important;
-      background-color: #e6e5e5;
+      background-color: #ebebeb;
       padding-top: 1em; }
       body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile,
       body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile {
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
         background-color: white;
-        border: 1px solid #cccccc;
         display: block;
-        border-radius: 6px;
         max-width: 30%;
         padding: .5em;
         padding-bottom: 1.6em;
@@ -8962,9 +9099,7 @@ body.tribe-events-page-template {
       width: 100% !important; }
       body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile,
       body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile {
-        border: 1px solid #cccccc;
         display: block;
-        border-radius: 6px;
         max-width: 30%;
         padding: .5em;
         padding-bottom: 1.6em;
@@ -9241,7 +9376,8 @@ main.homepage .container.homepage-callouts {
       color: white;
       font-family: "Roboto", sans-serif;
       font-weight: bold;
-      padding: 1em 0; }
+      padding: 1em 0;
+      font-size: 2.4rem; }
       main.homepage .container.homepage-callouts .row .callout h2 a {
         color: white; }
         main.homepage .container.homepage-callouts .row .callout h2 a:link, main.homepage .container.homepage-callouts .row .callout h2 a:visited, main.homepage .container.homepage-callouts .row .callout h2 a:hover, main.homepage .container.homepage-callouts .row .callout h2 a:active {
@@ -9266,6 +9402,35 @@ main.homepage .container.homepage-callouts {
     background-image: url("images/callout03.jpg");
     background-position: center center;
     background-size: cover; }
+  main.homepage .container.homepage-callouts .row .box-4 {
+    background-color: #605594;
+    background-image: url("images/callout04.jpg");
+    background-position: center center;
+    background-size: cover; }
+
+main.homepage .featured-neighborhoods h3 {
+  text-align: center;
+  font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+  color: #cc0000;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: .5em; }
+
+main.homepage .featured-neighborhoods .row article.col-sm a:link, main.homepage .featured-neighborhoods .row article.col-sm a:visited {
+  color: #605594; }
+
+main.homepage .featured-neighborhoods .row article.col-sm a:hover, main.homepage .featured-neighborhoods .row article.col-sm a:active {
+  color: #cc0000; }
+
+main.homepage .featured-neighborhoods .row article.col-sm img {
+  margin-bottom: 1em; }
+
+main.homepage .featured-neighborhoods .row article.col-sm h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: .75em; }
 
 main.homepage article.neighborhood_profile {
   padding-bottom: 6em !important;
@@ -9340,7 +9505,13 @@ main.homepage .features article {
       background-color: #605594;
       background-image: url("images/callout03.jpg");
       background-position: center center;
-      background-size: cover; } }
+      background-size: cover; }
+    main.homepage .container.homepage-callouts .row .box-4 {
+      background-color: #605594;
+      background-image: url("images/callout04.jpg");
+      background-position: center center;
+      background-size: cover;
+      margin-top: 1px; } }
 
 @media screen and (min-width: 700px) {
   .features .entry-content {
@@ -9471,6 +9642,20 @@ main.homepage .features article {
         font-size: 1.5em;
         font-weight: bold;
         background-color: rgba(0, 0, 0, 0.15); }
+  main.homepage .featured-neighborhoods h3 {
+    text-align: center;
+    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+    color: #cc0000;
+    font-size: 3.2rem;
+    padding-top: 1rem;
+    padding-bottom: .5em; }
+  main.homepage .featured-neighborhoods .row article.col-sm img {
+    margin-bottom: 1em; }
+  main.homepage .featured-neighborhoods .row article.col-sm h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: .75em; }
   main.homepage article.neighborhood_profile {
     padding-top: 4em !important;
     border: none;

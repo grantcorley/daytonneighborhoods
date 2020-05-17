@@ -4,15 +4,12 @@
 //MOBILE SIZE
 .neighborhood-profile{
 
-  //border: 2px dotted green;
   padding-top:0;
 
   .entry-content#full-width-content{
 
     width:100% !important;
     max-width: 100% !important;
-    //padding-top:1em;
-
 
     header#entry-header{
       text-align: center;
@@ -29,21 +26,19 @@
             &:visited{
 
             }
-
             &:hover,
             &:active{
               text-decoration: underline;
             }
-
           }
         }
       }
 
       h1.entry-title{
-        font-family: $headline;
-        font-weight: bold;
+        font-family: $copy;
         font-size: 4.2em;
         margin-top: .0;
+        color: #555b6b;
       }
 
       .intro-text.section-inner{
@@ -53,8 +48,6 @@
     }
 
     .container{
-
-      //border:2px dotted blue;
       width:100% !important;
       max-width: none !important;
 
@@ -71,9 +64,6 @@
     p.icon-stat{
       font-size: 36px;
       color: $accent;
-      //olor: darken(green, 5%);
-      // color: black;
-      //color: gray;
     }
 
 
@@ -99,8 +89,6 @@
       section.home-info{
         background-color:white;
         text-align: center;
-        //border:1px dotted #d4d4d4;
-
 
         display:block;
 
@@ -130,31 +118,24 @@
         text-align: center;
       }
 
-
-
       section.description-quick-stats{
         display: block;
         margin-top:.85em;
 
 
         .description{
-          //flex-shrink: 1.4;
-          // padding-right: 2em;
+
           border-top: 2px dotted lighten($primary, 30%);
 
           p{
-
             font-size: 18px;
-            //text-align: center;
             padding-top: .5em;
             padding-bottom: 1em;
-
           }
 
         }
 
-        .col-sm.quick-stats{
-          // background-color: lighten($primary, 30%);
+        .quick-stats{
           background-color: lighten($gray, 10%);
           padding:none !important;
           padding-left:0;
@@ -162,29 +143,56 @@
 
           h4.q-stats{
             margin-bottom:.5em;
-            // background-color:darken($primary, 10%);
-            background-color: lighten($primary, 10%);
-            padding:.5em;
+            background-color: $accent;
+            padding:.25em;
+            padding-bottom:.45em;
             text-align: center;
             color: white;
-            text-transform: uppercase;
+            font-family: $slab;
+            letter-spacing: .025rem;
+          }
+
+          h4.neighborhood{
+            margin-bottom:.25em;
+            font-family: $copy;
+            font-weight: bold;
+            color: #210f10;
           }
 
           .content{
-            // border:1px dotted gray;
+            font-family: Arial, sans-serif;
             padding:1em;
             padding-top:0;
             text-align: center;
           }
 
           p{
-            font-size:1.6em;
+            font-family: $copy;
+            font-style: oblique;
+            font-size:1.8em;
+            padding-bottom:.5em;
+            margin-bottom:0;
+          }
+
+          p:not(:last-of-type){
+            border-bottom:1px solid $gray;
+          }
+
+          p:not(:first-of-type) {
+            span.label{
+                border-top:1px solid white;
+                padding-top:3px;
+              }
           }
 
           span.label{
+            // padding-top:1em;
+            font-family: Arial, sans-serif;
+            font-style: normal;
             display:block;
             font-weight: bold;
-            color: $primary;
+            color: $accent !important;
+            letter-spacing: -1px;
           }
 
         }//end quick-stats
@@ -217,25 +225,7 @@ h3.explore { //Explore Dayton's Neighborhoods
   padding-top:1em;
 }
 
-ul.neighborhood-profile-links{
-  //border:1px dotted gray;
-  display:flex;
-  flex-wrap: wrap;
-  margin-left: 0;
-  list-style: none;
-  justify-content: center;
 
-  li{
-    a{
-      font-size:2em;
-      color: gray;
-      font-family: $copy;
-
-
-    }
-  }
-
-}
 
 
 //MEDIA QUERIES -----------
@@ -255,14 +245,6 @@ ul.neighborhood-profile-links{
 
 @media screen and (min-width: 601px) {
 
-
-  .neighborhood-profile{
-
-    // border: 2px dashed aqua;
-
-  }
-
-
 }//end min-width 601px
 
 
@@ -275,13 +257,9 @@ ul.neighborhood-profile-links{
 
   .neighborhood-profile{
 
-    // border: 2px solid orange;
-
     padding-top:0;
 
     .entry-content#full-width-content{
-
-      // border: 1px dotted red;
 
       width:100% !important;
       max-width: 1000px !important;
@@ -290,7 +268,6 @@ ul.neighborhood-profile-links{
 
 
       header#entry-header{
-        //border:2px solid red;
         text-align: center;
         max-width: 100% !important;
 
@@ -317,10 +294,12 @@ ul.neighborhood-profile-links{
         }
 
         h1.entry-title{
-          font-family: $headline;
-          font-weight: bold;
+          //font-family: $headline;
+          font-family: $copy;
+          //font-weight: bold;
           font-size: 4.2em;
           margin-top: .0;
+
         }
 
         .intro-text.section-inner{
@@ -328,7 +307,6 @@ ul.neighborhood-profile-links{
         }
 
       }
-
 
 
       .container{
@@ -352,11 +330,8 @@ ul.neighborhood-profile-links{
           padding-top: .5em;
 
           display:flex;
-          //flex-wrap: wrap;
-
 
           .box{
-
             flex-grow: 1;
             margin: 0 .5em 0 .5em;
             padding: 1em;
@@ -391,8 +366,7 @@ ul.neighborhood-profile-links{
         }
 
         section.home-info{
-          // border-top: 2px solid $primary;
-          // background-color:white;
+
         }
 
         section.description-quick-stats{
@@ -401,11 +375,9 @@ ul.neighborhood-profile-links{
 
 
           .description{
-            //flex-basis: 160%;
             border-top: 0;
 
             p{
-              // font-size: 28px;
               font-size:18px;
             }
 
@@ -421,32 +393,73 @@ ul.neighborhood-profile-links{
 
           }
 
-          .col-sm.quick-stats{
-
-            flex-grow: 1;
+          .quick-stats{
+            //border:1px solid blue;
+            background-color: lighten($gray, 10%);
             padding:none !important;
             padding-left:0;
             padding-right:0;
 
-            h4 {
-              font-size: 1.4em;
+            h4.q-stats{
+              margin-bottom:.5em;
+              background-color: $accent;
+              padding:.25em;
+              padding-bottom:.45em;
+              text-align: center;
+              color: white;
+              font-family: $slab;
+              letter-spacing: .025rem;
+              font-size:1.76em;
+            }
+
+            h4.neighborhood{
+              margin-bottom:.25em;
+              //text-transform: uppercase;
+              // font-family: $slab;
+              font-family: $copy;
+              font-weight: bold;
+              color: #210f10;
+              font-size:2em;
+            }
+
+            .content{
+              font-family: Arial, sans-serif;
+              padding:1em;
+              padding-top:0;
               text-align: center;
             }
 
-
-
             p{
-              font-size:.95em;
-              text-align: center;
+              font-family: $copy;
+              font-style: oblique;
+              font-size:1.1em;
+              padding-bottom:.5em;
+              margin-bottom:0;
+            }
+
+            p:not(:last-of-type){
+              border-bottom:1px solid $gray;
+            }
+
+            p:not(:first-of-type) {
+              span.label{
+                  border-top:1px solid white;
+                  //border-top:1px solid $gray;
+                  padding-top:3px;
+                }
             }
 
             span.label{
+              // padding-top:1em;
+              font-family: Arial, sans-serif;
+              font-style: normal;
               display:block;
               font-weight: bold;
-              color: $primary;
+              color: $accent !important;
+              letter-spacing: -1px;
             }
 
-          }//quick-stats
+          }//end quick-stats
 
         }//end section.description-quick-stats
 
@@ -480,16 +493,20 @@ ul.neighborhood-profile-links{
 
   .neighborhood-profile{
 
-
     padding-top:0;
+
+
 
     .entry-content#full-width-content{
 
 
       width:100% !important;
       max-width: 1000px !important;
-      //padding-top:1em;
       margin: 0 auto;
+
+      h1.entry-title{
+        font-size:6em !important;
+      }
 
       .container{
 
@@ -512,8 +529,6 @@ ul.neighborhood-profile-links{
           padding-top: .5em;
 
           display:flex;
-          //flex-wrap: wrap;
-
 
           .box{
 
@@ -551,8 +566,7 @@ ul.neighborhood-profile-links{
         }
 
         section.home-info{
-          // border-top: 2px solid $primary;
-          // background-color:white;
+
         }
 
         section.description-quick-stats{
@@ -561,15 +575,11 @@ ul.neighborhood-profile-links{
 
 
           .description{
-            // padding-right: 0;
-            //flex-basis: 150%;
             border-top: 0;
 
             p{
               font-size: 21px;
-              // border:1px dotted red;
               padding-right: 1.5em;
-              //text-align: justify;
             }
 
             p:first-child:first-letter {
@@ -584,32 +594,100 @@ ul.neighborhood-profile-links{
 
           }
 
-          .col-sm.quick-stats{
 
-            flex-grow: 1;
-            padding: none !important;
+          .quick-stats{
+            //border:1px solid red;
+            background-color: lighten($gray, 10%);
+            padding:none !important;
             padding-left:0;
             padding-right:0;
 
-            h4 {
-              font-size: 1.4em;
+            h4.q-stats{
+              margin-bottom:.5em;
+              background-color: $accent;
+              padding:.25em;
+              text-align: center;
+              color: white;
+              font-family: $slab;
+              letter-spacing: .025rem;
+              font-size:1.2em;
+            }
+
+            h4.neighborhood{
+              margin-bottom:.25em;
+              //text-transform: uppercase;
+              font-family: $copy;
+              font-weight: bold;
+              color: #210f10;
+              font-size:1.5em;
+            }
+
+            .content{
+              font-family: Arial, sans-serif;
+              padding:1em;
+              padding-top:0;
               text-align: center;
             }
 
-
-
             p{
-              font-size:1em;
-              text-align: center;
+              font-family: $copy;
+              font-style: oblique;
+              font-size:.9em;
+              padding-bottom:.5em;
+              margin-bottom:0;
+            }
+
+            p:not(:last-of-type){
+              border-bottom:1px solid $gray;
+            }
+
+            p:not(:first-of-type) {
+              span.label{
+                  border-top:1px solid white;
+                  //border-top:1px solid $gray;
+                  padding-top:3px;
+                }
             }
 
             span.label{
+              // padding-top:1em;
+              font-family: Arial, sans-serif;
+              font-style: normal;
               display:block;
               font-weight: bold;
-              color: $primary;
+              color: $accent !important;
+              letter-spacing: -1px;
             }
 
-          }//quick-stats
+          }//end quick-stats
+
+
+          // .quick-stats{
+          //
+          //   //flex-grow: 1;
+          //   padding: none !important;
+          //   padding-left:0;
+          //   padding-right:0;
+          //
+          //   h4 {
+          //     font-size: 1.4em;
+          //     text-align: center;
+          //   }
+          //
+          //
+          //
+          //   p{
+          //     font-size:1em;
+          //     text-align: center;
+          //   }
+          //
+          //   span.label{
+          //     display:block;
+          //     font-weight: bold;
+          //     color: $primary;
+          //   }
+          //
+          // }
 
         }//end section.description-quick-stats
 

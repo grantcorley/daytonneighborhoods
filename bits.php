@@ -1,6 +1,53 @@
 <!-- bits and pices... use as needed ... -->
 
 
+
+<article class="neighborhood_profile">
+
+	<?php
+	$args = array(
+		'orderby'        => 'rand',
+		'posts_per_page' => '1',
+		'category_name' => 'neighborhood-profile',
+	);
+
+	$query = new WP_Query( $args );
+	$query->the_post();
+	get_template_part( 'template-parts/content_neighborhoodprofile', get_post_type() );
+	?>
+</article>
+
+
+
+<!-- here's how to list ALL the neighborhoods in one place (in a post) -->
+<?php
+if ( is_single() ) {
+
+	$the_query = new WP_Query( array(
+							'category_name' => 'neighborhood-profile',
+							'orderby' => 'title',
+							'order'   => 'ASC',
+						));
+
+	//if ( have_posts() ) {
+	if ( $the_query->have_posts() ) {
+		?>
+
+		<h3 class="explore">Explore Dayton's Neighborhoods</h3>
+		<ul class="neighborhood-profile-links"><?php
+
+		while ( $the_query->have_posts() ) {
+			$the_query->the_post();
+			the_title( '<li class="entry-title"><a href="' . esc_url( get_permalink() ) . '">', '</a></li>' );
+		}//end while
+			?></ul><?php
+	}//end if
+
+}//end is_single
+?>
+
+
+
 <!-- here's the original NP Description/Stats scaffolding -->
 
 <section class="description-quick-stats">

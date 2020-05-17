@@ -38,8 +38,8 @@
 			if ( ! is_search() ) {
 
 				if ( has_post_thumbnail() ){
-					?><a class="img-link" href="<?php echo esc_url( get_permalink( ) ); ?>"><?php
-					get_template_part( 'template-parts/featured-image' );
+					?><a class="img-link"  href="<?php echo esc_url( get_permalink( ) ); ?>"><?php
+							get_template_part( 'template-parts/featured-image' );
 					?></a><?php
 				}
 

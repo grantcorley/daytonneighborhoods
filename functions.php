@@ -16,12 +16,7 @@ function my_theme_enqueue_styles() {
     );
     wp_enqueue_style('Roboto', 'https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
     wp_enqueue_style('Slab', 'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap');
-    //wp_enqueue_script( 'custom_javascript', get_stylesheet_directory_uri() . '/scripts.js', array(), '1.1');
 
-    //$my_js_ver  = date("ymd-Gis", filemtime( plugin_dir_path( __FILE__ ) . '/scripts.js' ));
-    //wp_enqueue_script( 'custom_javascript', get_stylesheet_directory_uri() . '/scripts.js', array(), $my_js_ver);
-
-    //$my_js_ver  = date("ymd-Gis", filemtime( plugin_dir_path( __FILE__ ) . '/scripts.js' ));
     wp_enqueue_script( 'DaytonNeighborhoodsJS', get_stylesheet_directory_uri() . '/scripts.js', array('jquery'), '3.2.2', true);
 
 }
@@ -49,13 +44,7 @@ function setup_child_theme() {
 
 }
 
-// function console_log( $data ){
-//   echo '<script>';
-//   echo 'console.log('. json_encode( $data ) .')';
-//   echo '</script>';
-// }
 
-//
 
 //Category searches show results alphabetically, not by date
 add_action( 'pre_get_posts', 'wpd_tax_alpha' );

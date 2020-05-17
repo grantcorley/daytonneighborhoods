@@ -177,69 +177,81 @@
 
 				<!-- ======= -->
 
-				<section class="description-quick-stats container">
+				<?php
+						//only show the Description & Quick Stats section if a Description has been filled out
+						$neighborhood_description =  get_field('neighborhood_description');
+						if($neighborhood_description != "" ){ ?>
+
+
+				<section class="container description-quick-stats">
+
 						<div class="row">
 
-								<div class="col-sm description">
+								<div class="col-lg-8 description">
 										<p><?php the_field('neighborhood_description');?></p>
 								</div>
 
-								<div class="col-sm quick-stats">
-									<h4 class="q-stats">Quick Stats</h4>
+								<div class="col-lg-4 quick-stats">
 
-									<div class="content">
+											<h4 class="q-stats">Quick Stats</h4>
 
-										<h4><?php the_field('neighborhood');?></h4>
+											<div class="content">
 
-										<!--Show Zip Code(s) if exists-->
-										<?php
-												$zip_codes =  get_field('zip_codes');
-												if($zip_codes != "" ){?>
-														<p><span class="label">Zip Code(s):</span>
-															<?php the_field('zip_codes');?></p>
-										<?php } ?>
+												<h4 class="neighborhood"><?php the_field('neighborhood');?></h4>
 
-
-									<!--Show Neighborhood(s) if exists-->
-									<?php
-											$neighborhoods =  get_field('neighborhoods');
-											if($neighborhoods != "" ){?>
-													<p><span class="label">Neighborhoods(s):</span>
-													<?php the_field('neighborhoods');?></p>
-									<?php } ?>
+												<!--Show Zip Code(s) if exists-->
+												<?php
+														$zip_codes =  get_field('zip_codes');
+														if($zip_codes != "" ){?>
+																<p><span class="label">Zip Code(s)</span>
+																	<?php the_field('zip_codes');?></p>
+												<?php } ?>
 
 
-									<!--Show Historic District(s) if exists-->
-									<?php
-											$historic_districts =  get_field('historic_districts');
-											if($historic_districts != "" ){?>
-													<p><span class="label">Historic District(s):</span>
-													<?php the_field('historic_districts');?></p>
-									<?php } ?>
+											<!--Show Neighborhood(s) if exists-->
+											<?php
+													$neighborhoods =  get_field('neighborhoods');
+													if($neighborhoods != "" ){?>
+															<p><span class="label">Neighborhood(s)</span>
+															<?php the_field('neighborhoods');?></p>
+											<?php } ?>
 
 
+											<!--Show Historic District(s) if exists-->
+											<?php
+													$historic_districts =  get_field('historic_districts');
+													if($historic_districts != "" ){?>
+															<p><span class="label">Historic District(s)</span>
+															<?php the_field('historic_districts');?></p>
+											<?php } ?>
 
-									<!--Show Housing Units Per Acre if exists-->
-									<?php
-											$units_per_acre =  get_field('housing_units_acre');
-											if($units_per_acre != "" ){?>
-												<p><span class="label">Housing Units Per Acre:</span>
-												<?php the_field('housing_units_acre');?></p>
-									<?php } ?>
+
+											<!--Show Housing Units Per Acre if exists-->
+											<?php
+													$units_per_acre =  get_field('housing_units_acre');
+													if($units_per_acre != "" ){?>
+														<p><span class="label">Housing Units/Acre</span>
+														<?php the_field('housing_units_acre');?></p>
+											<?php } ?>
 
 
-									<!--Show Known For if exists-->
-									<?php
-											$known_for =  get_field('known_for');
-											if($known_for != "" ){?>
-												<p><span class="label">Known For:</span>
-												<?php the_field('known_for');?></p>
-									<?php } ?>
+											<!--Show Known For if exists-->
+											<?php
+													$known_for =  get_field('known_for');
+													if($known_for != "" ){?>
+														<p><span class="label">Known For</span>
+														<?php the_field('known_for');?></p>
+											<?php } ?>
 
-								</div> <!-- end content -->
-								</div>
+										</div> <!-- end content -->
+
+							</div><!-- end col -->
+
 						</div> <!--end row-->
+
 				</section>
+
+					<?php } ?>
 
 				<!-- ======= -->
 
@@ -269,8 +281,6 @@
 						<?php } ?>
 
 
-						<!-- =========== -->
-
 						<?php
 								$photo_06 =  get_field('photo_06');
 								if($photo_06 != "" ){ ?>
@@ -279,17 +289,18 @@
 									</div>
 						<?php } ?>
 
-						<!-- =========== -->
 
 					</div>
 
 
 					<div class="row map">
+							<div class="col-sm">
 						<?php
 								$map =  get_field('map');
 								if($map != "" ){ ?>
 										<img src="<?php echo get_stylesheet_directory_uri(); ?><?php the_field('map');?>" class="img-fluid" alt="<?php the_field('map_description');?>">
 								<?php } ?>
+							</div>
 					</div><!--end map row-->
 
 
@@ -387,49 +398,7 @@
 
 	<?php
 
-	if ( is_single() ) {
-
-			// get_template_part( 'template-parts/navigation' );
-		//get_template_part( 'template-parts/navigation-neighborhoodProfile' );
-		//get_template_part( 'template-parts/navigation-neighborhoodProfile', get_post_type() );
-
-		//<?php
-
-		// $the_query = new WP_Query( array( 'category_name' => 'city-living-essentials' ) );
-
-		$the_query = new WP_Query( array(
-								'category_name' => 'neighborhood-profile',
-								'orderby' => 'title',
-								'order'   => 'ASC',
-							));
-
-		//if ( have_posts() ) {
-		if ( $the_query->have_posts() ) {
-			//query_posts('posts_per_page=3');
-
-			?>
-
-			<h3 class="explore">Explore Dayton's Neighborhoods</h3>
-			<ul class="neighborhood-profile-links"><?php
-
-			while ( $the_query->have_posts() ) {
-				$the_query->the_post();
-				//get_template_part( 'template-parts/content', get_post_type() );
-				//the_excerpt();
-				//get_template_part('template-parts/post-name-link');
-				//get_template_part( 'template-parts/post-name-link' );
-				//the_title( '<h4 class="entry-title">', '</h4>' );
-				the_title( '<li class="entry-title"><a href="' . esc_url( get_permalink() ) . '">', '</a></li>' );
-			}//end while
-
-				?></ul><?php
-
-		}//end if
-		//? >
-
-
-
-	}//end is_single
+ 	//ALL neighborhood links used to be here... now moved to homepage and bits.php
 
 
 	?>

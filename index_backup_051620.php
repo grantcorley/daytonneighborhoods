@@ -247,51 +247,25 @@ get_header();
 
 
 <!-- FEATURED POST: NEIGHBORHOOD PROFILE -->
+<article class="neighborhood_profile">
+	<?php
+				$args = array(
+					'orderby' => 'rand',
+					'category_name' => 'neighborhood-profile',
+					'posts_per_page' => '1',
+				);
+
+				$query = new WP_Query( $args );
+				$query->the_post();
+				get_template_part( 'template-parts/content_neighborhoodprofile', get_post_type() );
+				set_transient( 'temp_cached_data', $query, 12 * HOUR_IN_SECONDS );
+				wp_reset_postdata();
+	?>
+</article>
+
+
 <!-- FEATURES SECTION -> Fall below the Featured Neighborhood -->
 <!-- 2-up at large screen sizes -->
-<div class="featured-neighborhoods container">
-
-	<h3>Featured Neighborhoods</h3>
-
-	<!-- <div class="container"> -->
-  <div class="row">
-    <article class="col-sm neighborhood01">
-				<a><img></a>
-				<a><h4></h4></a>
-    </article>
-    <article class="col-sm neighborhood02">
-				<a><img></a>
-				<a><h4></h4></a>
-    </article>
-    <article class="col-sm neighborhood03">
-				<a><img></a>
-				<a><h4></h4></a>
-    </article>
-  </div>
-
-
-	<div class="row">
-    <article class="col-sm neighborhood04">
-				<a><img></a>
-				<a><h4></h4></a>
-    </article>
-    <article class="col-sm neighborhood05">
-				<a><img></a>
-				<a><h4></h4></a>
-    </article>
-    <article class="col-sm neighborhood06">
-				<a><img></a>
-				<a><h4></h4></a>
-    </article>
-  </div>
-
-
-
-</div> <!--end featured-neighborhoods -->
-
-
-
-
 
 
 <?php
@@ -299,39 +273,6 @@ get_header();
 	?>
 
 	<!-- < ?php get_template_part( 'template-parts/pagination' ); ?> -->
-
-
-	<?php
-
-
-
-		$the_query = new WP_Query( array(
-								'category_name' => 'neighborhood-profile',
-								'orderby' => 'title',
-								'order'   => 'ASC',
-							));
-
-		//if ( have_posts() ) {
-		if ( $the_query->have_posts() ) {
-			?>
-
-			<h3 class="explore">Explore Dayton's Neighborhoods</h3>
-			<ul class="neighborhood-profile-links"><?php
-
-			while ( $the_query->have_posts() ) {
-				$the_query->the_post();
-				the_title( '<li class="entry-title"><a href="' . esc_url( get_permalink() ) . '">', '</a></li>' );
-			}//end while
-				?></ul><?php
-		}//end if
-
-
-
-
-	?>
-
-
-
 
 </main><!-- #site-content -->
 

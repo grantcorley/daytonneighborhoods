@@ -6,7 +6,7 @@ body{
 
     main#site-content{
       background-color: white;
-      padding-bottom: 12.5em;
+      padding-bottom: 3.6em;
       min-height: 1000px;
    }
 
@@ -104,7 +104,11 @@ input.search-submit{
 }
 
 .inside-post figure.featured-media > .featured-media-inner{
-  background-color:#e4d3be;
+  // background-color:#e4d3be;
+  //background-color: lightslategray;
+  //background-color: lightsteelblue;
+  background-color: slategray;
+  background-image: url('images/pattern.gif');
 }
 
 

@@ -76,7 +76,8 @@ body.tribe-events-page-template
     }
 
     .main-img.news{
-      background-image: url("images/grafton.jpg");
+      // background-image: url("images/grafton.jpg");
+      background-image: url("images/museum.jpg");
     }
 
     .main-img.events{
@@ -84,7 +85,7 @@ body.tribe-events-page-template
     }
 
     .main-img.podcast{
-      background-image: url("images/twinTowersMural.jpg");
+      background-image: url("images/innerEastMural.jpg");
     }
 
     .main-img.contact{
@@ -184,9 +185,7 @@ body.tribe-events-page-template
             //display:flex;
 
             .entry-content{
-              // border:10px solid yellow;
-              //display:flex;
-              //flex-direction: column;
+
               width:100%;
               max-width: 100% !important;
 
@@ -450,16 +449,16 @@ body.tribe-events-page-template
             max-width:100%;
             width:100% !important;
             // background-color: lighten($primary, 35%);
-            background-color: lighten($gray, 10%);
+            background-color: lighten($gray, 12%);
             padding-top:1em;
 
                   article.post.category-neighborhood-profile{
 
-                    box-shadow: 3px 3px 3px rgba(0,0,0,.1);
+                    //box-shadow: 3px 3px 3px rgba(0,0,0,.1);
                     background-color:white;
-                    border: 1px solid $gray;
+                    // border: 1px solid $gray;
                     display:block;
-                    border-radius: 6px;
+                    //border-radius: 2px;
                     max-width:30%;
                     padding:.5em;
                     padding-bottom:1.6em;;
@@ -738,9 +737,9 @@ body.tribe-events-page-template
 
                   article.post.category-neighborhood-profile{
 
-                    border: 1px solid $gray;
+                    // border: 1px solid $gray;
                     display:block;
-                    border-radius: 6px;
+                    //border-radius: 2px;
                     max-width:30%;
                     padding:.5em;
                     padding-bottom:1.6em;;
