@@ -23,11 +23,13 @@
 
 		<?php wp_head(); ?>
 
+		<meta name="description" content="Information and resources for buying and renting in Dayton, OH">
+
 		<!-- social media links -->
 		<meta property="og:title" content="Dayton Neighborhoods">
 		<meta property="og:description" content="Tools and resources for making your home in Dayton OH">
 		<meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-social.jpg">
-		<meta property="og:url" content="http://www.daytonneighborhoods.org">
+		<meta property="og:url" content="https://liveindayton.org">
 		<meta name="twitter:card" content="summary_large_image">
 
 		<!--  non-essential, but recommended -->

@@ -1,0 +1,98 @@
+/* tribe-events.scss */
+
+
+//hide export button at bottom of page
+#post-0 > div.post-inner.thin > div > div > div > div.tribe-events-c-ical.tribe-common-b2.tribe-common-b3--min-medium{
+  display: none;
+}
+
+
+main#tribe-events-pg-template{
+
+  //----------------------
+  //GET RID OF THE WEIRD SPACING ON THE EVENT CONTENT SECTION:
+  div.tribe-events-single-section.tribe-events-event-meta.primary.tribe-clearfix > div{
+    width:100% !important;
+  }
+  //-----------------------
+
+  p.tribe-events-back{
+    font-family: $slab;
+    text-transform: uppercase;
+
+    a{
+
+      font-weight: bold;
+
+      &:link, &:visited{
+        color: $accent;
+      }
+
+      &:hover, &:active{
+        color: $primary !important;
+        text-decoration: underline;
+
+      }
+
+    }
+
+  }
+
+  h1.tribe-events-single-event-title{
+    font-family: $headline;
+    font-weight: bold;
+    color: $primary;
+
+  }
+
+  div.tribe-events-schedule{
+
+    margin-top:.5em;
+    margin-bottom:0;
+
+    h2{
+      margin-top:0;
+    }
+
+  }
+
+  #tribe-events-footer{
+
+    nav{
+      ul{
+        li.tribe-events-nav-previous,
+        li.tribe-events-nav-next
+        {
+            a{
+              font-family: $slab;
+            }
+        }
+      }
+    }
+
+  }//end #tribe-events-footer
+
+
+}
+
+
+//MEDIA QUEARY: 768px
+@media (min-width: 768px) {
+
+main#tribe-events-pg-template{
+  // border:4px solid yellow;
+  width:70% !important;
+  margin:0 auto;
+}
+
+}
+
+
+//MEDIA QUEARY: 992px
+@media (min-width: 992px) {
+
+  main#tribe-events-pg-template{
+    // border:4px solid red;
+    width:50% !important;
+  }
+}

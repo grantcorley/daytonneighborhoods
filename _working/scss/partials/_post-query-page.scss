@@ -26,7 +26,6 @@ body.tribe-events-page-template
       overflow:hidden;
       perspective: 2px;
       position: relative;
-      //background-image: url("images/WestwoodMural_1980x1000.jpg");
       background-repeat: no-repeat;
       background-size:cover;
       background-position: center;
@@ -56,7 +55,6 @@ body.tribe-events-page-template
 
 
     .main-img.neighborhood-profiles{
-      // background-image: url("images/BelmontHomes.jpg");
       background-image: url("images/treeLinedStreet.jpg");
     }
 
@@ -65,18 +63,14 @@ body.tribe-events-page-template
     }
 
     .main-img.buy-and-rent{
-      // background-image: url("images/belmontHome_featuredImg.jpg");
       background-image: url("images/walnutHills_homes.jpg");
-      //background-image: url("images/DVTriange_house.jpg");
     }
 
     .main-img.incentives{
-      // background-image: url("images/onThePorch.jpg");
       background-image: url("images/playground.jpg");
     }
 
     .main-img.news{
-      // background-image: url("images/grafton.jpg");
       background-image: url("images/museum.jpg");
     }
 

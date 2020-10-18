@@ -23,8 +23,7 @@ function processLink(hl){
 //(function () {//start IIFE
 
 
-
-  document.addEventListener('DOMContentLoaded', function(event) {
+document.addEventListener('DOMContentLoaded', function(event) {
 
     var body = document.body;
 
@@ -38,7 +37,8 @@ function processLink(hl){
         processLink(hl);
     }
 
-  }); //end addEventListener
+}); //end addEventListener
+
 
 
 
@@ -47,7 +47,6 @@ function processLink(hl){
   if(isHomePage){
     getFeaturedNeighborhoods();
   }
-
 
   function Neighborhood(name, resource) {
     this.name = name;
@@ -68,6 +67,7 @@ function getFeaturedNeighborhoods(){
     var fairview = new Neighborhood("Fairview", "fairview");
     var five_oaks = new Neighborhood("Five Oaks", "five-oaks");
     var graftonHill = new Neighborhood("Grafton Hill", "grafton-hill");
+    var hillcrest = new Neighborhood("Hillcrest", "hillcrest");
     var historic_inner_east = new Neighborhood("Historic Inner East", "historic-inner-east");
     var lakeview = new Neighborhood("Lakeview", "lakeview");
     var madden_hill = new Neighborhood("Madden Hill", "madden-hill");
@@ -90,10 +90,10 @@ function getFeaturedNeighborhoods(){
 
     var neighborhoods = [
           belmont, college_hill, dayton_view_triangle, deWeese, fairlane, fairview, five_oaks,
-          graftonHill, historic_inner_east, lakeview, madden_hill, miami_chapel, mount_vernon,
-          north_riverdale, northern_hills, old_north_dayton,
-          patterson_park, philadelphia_woods, pineview, riverdale, santa_clara, twin_towers, university_row,
-          walnut_hills, westwood, wrightDunbar
+          graftonHill, hillcrest, historic_inner_east, lakeview, madden_hill, miami_chapel,
+          mount_vernon, north_riverdale, northern_hills, old_north_dayton,
+          patterson_park, philadelphia_woods, pineview, riverdale, santa_clara, twin_towers,
+          university_row, walnut_hills, westwood, wrightDunbar
         ]
 
 
