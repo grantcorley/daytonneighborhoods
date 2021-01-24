@@ -125,12 +125,16 @@
 
         .description{
 
-          border-top: 2px dotted lighten($primary, 30%);
+         //border-top: 2px dotted lighten($primary, 30%);
 
           p{
             font-size: 18px;
             padding-top: .5em;
-            padding-bottom: 1em;
+            padding-bottom: .35em;
+          }
+
+          p:last-child{
+            padding-bottom: 2em;
           }
 
         }
@@ -496,7 +500,6 @@ h3.explore { //Explore Dayton's Neighborhoods
     padding-top:0;
 
 
-
     .entry-content#full-width-content{
 
 
@@ -510,12 +513,12 @@ h3.explore { //Explore Dayton's Neighborhoods
 
       .container{
 
-      width:100% !important;
-      max-width: none !important;
+        width:100% !important;
+        max-width: none !important;
 
-      h3{
-        margin-top:0;
-      }
+        h3{
+          margin-top:0;
+        }
 
         section{ //for all sections
           padding-top:0;
@@ -596,11 +599,10 @@ h3.explore { //Explore Dayton's Neighborhoods
 
 
           .quick-stats{
-            //border:1px solid red;
-            background-color: lighten($gray, 10%);
-            padding:none !important;
-            padding-left:0;
-            padding-right:0;
+              background-color: lighten($gray, 10%);
+              padding:none !important;
+              padding-left:0;
+              padding-right:0;
 
             h4.q-stats{
               margin-bottom:.5em;
@@ -615,7 +617,6 @@ h3.explore { //Explore Dayton's Neighborhoods
 
             h4.neighborhood{
               margin-bottom:.25em;
-              //text-transform: uppercase;
               font-family: $copy;
               font-weight: bold;
               color: #210f10;
@@ -644,13 +645,11 @@ h3.explore { //Explore Dayton's Neighborhoods
             p:not(:first-of-type) {
               span.label{
                   border-top:1px solid white;
-                  //border-top:1px solid $gray;
                   padding-top:3px;
                 }
             }
 
             span.label{
-              // padding-top:1em;
               font-family: Arial, sans-serif;
               font-style: normal;
               display:block;
@@ -662,39 +661,12 @@ h3.explore { //Explore Dayton's Neighborhoods
           }//end quick-stats
 
 
-          // .quick-stats{
-          //
-          //   //flex-grow: 1;
-          //   padding: none !important;
-          //   padding-left:0;
-          //   padding-right:0;
-          //
-          //   h4 {
-          //     font-size: 1.4em;
-          //     text-align: center;
-          //   }
-          //
-          //
-          //
-          //   p{
-          //     font-size:1em;
-          //     text-align: center;
-          //   }
-          //
-          //   span.label{
-          //     display:block;
-          //     font-weight: bold;
-          //     color: $primary;
-          //   }
-          //
-          // }
-
         }//end section.description-quick-stats
 
 
         section.neighborhood-assoc-info{
 
-          padding-top: 1em;
+          padding-top: 2em;
 
           h4 {
             font-size: 1.1em;

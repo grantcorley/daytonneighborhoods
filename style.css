@@ -8374,12 +8374,12 @@ main.homepage .features article {
       .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats {
         display: block;
         margin-top: .85em; }
-        .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .description {
-          border-top: 2px dotted #b6b0d2; }
-          .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .description p {
-            font-size: 18px;
-            padding-top: .5em;
-            padding-bottom: 1em; }
+        .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .description p {
+          font-size: 18px;
+          padding-top: .5em;
+          padding-bottom: .35em; }
+        .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .description p:last-child {
+          padding-bottom: 2em; }
         .neighborhood-profile .entry-content#full-width-content .container section.description-quick-stats .quick-stats {
           background-color: #e6e5e5;
           padding: none !important;
@@ -8676,7 +8676,7 @@ h3.explore {
               color: #cc0000 !important;
               letter-spacing: -1px; }
         .neighborhood-profile .entry-content#full-width-content .container section.neighborhood-assoc-info {
-          padding-top: 1em; }
+          padding-top: 2em; }
           .neighborhood-profile .entry-content#full-width-content .container section.neighborhood-assoc-info h4 {
             font-size: 1.1em; }
           .neighborhood-profile .entry-content#full-width-content .container section.neighborhood-assoc-info p {
@@ -9048,46 +9048,65 @@ body.tribe-events-page-template {
       padding-bottom: 1em;
       max-width: 1200px !important;
       margin-bottom: .25em; }
-    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post,
-    body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post {
-      border-bottom: 1px solid #dbdbde;
-      padding-bottom: 4em; }
-      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin,
-      body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin {
-        margin-top: 0;
-        padding-top: 0em !important;
-        margin: 0 auto; }
-        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content,
-        body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content {
-          max-width: 600px;
+    body.singular main#site-content article.page .post-inner.thin.top-level .entry-content .articles,
+    body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content .articles {
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      body.singular main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post,
+      body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post {
+        border-bottom: 1px solid #dbdbde;
+        padding-bottom: 4em;
+        border: 1px solid #cccccc;
+        border-top: 4px solid #cc0000;
+        max-width: 500px;
+        width: 500px;
+        padding: 1em;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+        margin-right: 1em; }
+        body.singular main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin,
+        body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin {
+          margin-top: 0;
+          padding-top: 0em !important;
           margin: 0 auto; }
-          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header,
-          body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header {
-            margin-left: 0; }
-            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories,
-            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
-              display: none; }
-            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title,
-            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
-              text-align: left;
-              margin-top: 0;
-              margin-bottom: 0;
-              font-weight: bold;
-              font-size: 2em;
-              font-family: "Roboto", sans-serif;
-              font-weight: bold; }
-              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a,
-              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
-                color: #605594; }
-                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited,
-                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
+          body.singular main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content,
+          body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content {
+            max-width: 600px;
+            margin: 0 auto; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content .featured-media-inner,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content .featured-media-inner {
+              width: 100%;
+              left: 0; }
+            body.singular main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header,
+            body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header {
+              margin-left: 0; }
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories,
+              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner .entry-categories {
+                display: none; }
+              body.singular main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title,
+              body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title {
+                text-align: left;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: bold;
+                font-size: 2em;
+                font-family: "Roboto", sans-serif;
+                font-weight: bold; }
+                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a,
+                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a {
                   color: #605594; }
-                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover,
-                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
-                  color: #8980b6; }
-                body.singular main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active,
-                body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
-                  color: #8980b6; }
+                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited,
+                  body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:visited {
+                    color: #605594; }
+                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover,
+                  body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:hover {
+                    color: #8980b6; }
+                  body.singular main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active,
+                  body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content .articles article.post .post-inner.thin .entry-content header#entry-header .entry-header-inner h2.entry-title a:active {
+                    color: #8980b6; }
     body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts,
     body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts {
       margin: auto;
@@ -9103,7 +9122,8 @@ body.tribe-events-page-template {
         max-width: 30%;
         padding: .5em;
         padding-bottom: 1.6em;
-        margin: .5em; }
+        margin: .5em;
+        border-radius: .75rem; }
         body.singular main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin,
         body.tribe-events-page-template main#site-content article.page .post-inner.thin.top-level .entry-content #the-posts article.post.category-neighborhood-profile .post-inner.thin {
           width: 100%;

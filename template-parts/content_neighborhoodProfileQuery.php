@@ -65,13 +65,16 @@
 
 			<!-- HERE -->
 			<!--is the below part even necessary??-->
-		<?php
+			<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
-				the_excerpt();
-			} else {
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
-			}
+				//the_excerpt();
+			} 
+			// else {
+			// 	the_content( __( 'Continue reading', 'twentytwenty' ) );
+			// }
 			?>
+
+			
 
 
 		</div><!--end article-name-description-->
@@ -93,7 +96,7 @@
 
 		edit_post_link();
 
-		the_content(); //pulls in the main content in the post
+		//the_content(); //pulls in the main content in the post
 		//the_post();
 
 		// Single bottom post meta.

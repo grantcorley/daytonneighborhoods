@@ -215,7 +215,7 @@ get_header();
 
 <!-- callouts -->
 
-<div class="container homepage-callouts">
+<div class="container homepage-callouts scrollfade">
   <div class="row">
 			<div class="callout col-sm box-1">
       <h2><a href="<?php echo esc_url( home_url( '/buying-renting/' ) ); ?>">Buy & Rent</a></h2>

@@ -165,18 +165,13 @@ body.tribe-events-page-template
 
         article.post.category-neighborhood-profile{
 
-          // background-color:lighten(purple, 25%);
-            //background-color:red;
 
           border-bottom:none;
-          //background-color:white;
 
           .post-inner.thin{
             width:100%;
             max-width:100%;
-            // border:1px dotted orange;
-
-            //display:flex;
+            
 
             .entry-content{
 
@@ -185,37 +180,29 @@ body.tribe-events-page-template
 
               a.img-link{
 
-                //border:1px solid red;
-
                 left:0;
-                // margin-bottom: 0;
-                // margin-left:0;
                 margin: .5em auto 0 auto;
                 display: block;
                 width:50%;
                 flex-grow: 1;
 
               figure.featured-media{
-                //order:3px solid green;
                 left:0;
                 margin-bottom: 0;
                 margin-left:0;
                 display: inline-block;
-                // width:50%;
-                // flex-grow: 1;
+
 
                 .featured-media-inner{
 
                     left:0;
                     width: 100%;
                     height: auto;
-                    //display:inline-block;
 
                     img{
                       width: 100%;
                       height: auto;
-                      //min-width:500px;
-                      //display:inline-block;
+                     
                     }
 
                 }//featured-media-inner
@@ -225,7 +212,6 @@ body.tribe-events-page-template
             }//a
 
               .article-name-description{
-                // border:1px solid orange;
                 padding-left:.25em;
                 display:flex;
                 flex-direction: column;
@@ -234,7 +220,6 @@ body.tribe-events-page-template
                     header#entry-header{
 
                             .entry-header-inner{
-                              // border:2px dotted yellow;
                               text-align: left;
 
                               h2{
@@ -593,6 +578,7 @@ body.tribe-events-page-template
 
     article.page{  //(top-level article)
 
+
       //-------------------------------------
       .header-over-image{
           position: relative;
@@ -615,7 +601,6 @@ body.tribe-events-page-template
               line-height: 1em;
               font-weight: bold;
               font-family: $headline;
-              // text-transform: uppercase;
               text-shadow: none;
               background-color: rgba(96,85,148, .3);
               border-top:1px solid rgba(255, 255, 255, .3);
@@ -640,6 +625,7 @@ body.tribe-events-page-template
 
           .entry-content{
 
+
               h2.intro-text{
                 color: $accent;
                 font-family: $copy;
@@ -651,10 +637,29 @@ body.tribe-events-page-template
                 margin-bottom:.25em;
               }
 
+              .articles{
+
+                // border:1px solid green;
+                max-width: 100%;
+                width:100%;
+                display:flex;
+               flex-wrap: wrap;
+               justify-content: center;
+
               article.post{
                 border-bottom:1px solid #dbdbde;
                 padding-bottom:4em;
+                border:1px solid $gray;
+                border-top:4px solid $accent;
+                max-width: 500px;
+                width:500px;
+                padding:1em;
+                
+                padding-bottom: 2em;
+                margin-bottom:2em;
+                margin-right: 1em;
 
+                
               .post-inner.thin{
                 margin-top:0;
                 padding-top:0em !important;
@@ -663,9 +668,14 @@ body.tribe-events-page-template
 
 
                 .entry-content{
-                  //border:2px solid orange;
+                  // border:2px solid orange;
                   max-width: 600px;
                   margin: 0 auto;
+
+                  .featured-media-inner{
+                    width:100%;
+                    left:0;
+                  }
 
                   header#entry-header{
 
@@ -706,7 +716,7 @@ body.tribe-events-page-template
                     }
                   }//end header#entry-header
 
-
+                  }//end articles
 
                 }//end .entry-content
 
@@ -738,6 +748,7 @@ body.tribe-events-page-template
                     padding:.5em;
                     padding-bottom:1.6em;;
                     margin:.5em;
+                    border-radius: .75rem;
 
                     .post-inner.thin{
                       width:100%;

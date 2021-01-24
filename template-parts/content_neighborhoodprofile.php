@@ -179,7 +179,8 @@
 
 				<?php
 						//only show the Description & Quick Stats section if a Description has been filled out
-						$neighborhood_description =  get_field('neighborhood_description');
+						$neighborhood_description = get_field('neighborhood_description');
+						//$neighborhood_description = the_content();
 						if($neighborhood_description != "" ){ ?>
 
 
@@ -188,7 +189,14 @@
 						<div class="row">
 
 								<div class="col-lg-8 description">
-										<p><?php the_field('neighborhood_description');?></p>
+										<!-- <p><strong>Success!</strong></p>  --> 
+											<?php 
+											//the_field('neighborhood_description');
+											//$neighborhood_description;
+											the_content();
+											?>
+											
+										
 								</div>
 
 								<div class="col-lg-4 quick-stats">

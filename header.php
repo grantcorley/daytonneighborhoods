@@ -19,7 +19,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
-		<link rel="shortcut icon"  type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.svg">
+		
+		<!--THIS one apparently works-->
+		<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png">
+		 <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+
+		 <!-- this one did not -->
+		<link rel="icon"  type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.svg">
+
+
 
 		<?php wp_head(); ?>
 

@@ -39,28 +39,29 @@ get_header();
 
 			<!--============//? >===============-->
 
-			<?php
+			<div class="articles">
+					<?php
 
-			// $the_query = new WP_Query( array( 'category_name' => 'city-living-essentials' ) );
+					// $the_query = new WP_Query( array( 'category_name' => 'city-living-essentials' ) );
 
-			$the_query = new WP_Query( array(
-									'category_name' => 'city-living-essentials',
-									'orderby' => 'title',
-    							'order'   => 'ASC',
-								));
+					$the_query = new WP_Query( array(
+											'category_name' => 'city-living-essentials',
+											'orderby' => 'title',
+		    							'order'   => 'ASC',
+										));
 
-			//if ( have_posts() ) {
-			if ( $the_query->have_posts() ) {
-				//query_posts('posts_per_page=3');
+					//if ( have_posts() ) {
+					if ( $the_query->have_posts() ) {
+						//query_posts('posts_per_page=3');
 
-				while ( $the_query->have_posts() ) {
-					$the_query->the_post();
-					get_template_part( 'template-parts/content', get_post_type() );
-					//the_excerpt();
-				}
-			}
-			?>
-
+						while ( $the_query->have_posts() ) {
+							$the_query->the_post();
+							get_template_part( 'template-parts/content', get_post_type() );
+							//the_excerpt();
+						}
+					}
+					?>
+			</div> <!--end articles-->
 
 			<!--============//? >===============-->
 

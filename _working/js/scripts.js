@@ -1,6 +1,6 @@
 //scripts.js
 
-//console.log('----- scripts.js is running --------');
+// console.log('----- scripts.js is running --------');
 
 //add <a> tags dyamically to hyperlink fields
 function processLink(hl){
@@ -17,7 +17,10 @@ function processLink(hl){
 
     wrapper.setAttribute("href", theURL);
 
+    
+
 }
+
 
 
 //(function () {//start IIFE
@@ -32,10 +35,11 @@ document.addEventListener('DOMContentLoaded', function(event) {
     var i = 0;
 
     for (i = 0; i < hyperlinks.length; i++){
-        console.log("hyperlink!!!");
+        // console.log("hyperlink!!!");
         var hl = hyperlinks[i];
         processLink(hl);
     }
+
 
 }); //end addEventListener
 
@@ -86,6 +90,7 @@ function getFeaturedNeighborhoods(){
     var walnut_hills = new Neighborhood("Walnut Hills", "walnut-hills");
     var westwood = new Neighborhood("Westwood", "westwood");
     var wrightDunbar = new Neighborhood("Wright-Dunbar", "wright-dunbar");
+    var wolfCreek = new Neighborhood("Wolf Creek", "wolf-creek");
 
 
     var neighborhoods = [
@@ -93,7 +98,7 @@ function getFeaturedNeighborhoods(){
           graftonHill, hillcrest, historic_inner_east, lakeview, madden_hill, miami_chapel,
           mount_vernon, north_riverdale, northern_hills, old_north_dayton,
           patterson_park, philadelphia_woods, pineview, riverdale, santa_clara, twin_towers,
-          university_row, walnut_hills, westwood, wrightDunbar
+          university_row, walnut_hills, westwood, wrightDunbar, wolfCreek
         ]
 
 

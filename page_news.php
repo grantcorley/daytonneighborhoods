@@ -36,6 +36,8 @@ get_header();
 
 			<!--============//? >===============-->
 
+			<div class="articles">
+
 			<?php
 
 			// $the_query = new WP_Query( array( 'category_name' => 'city-living-essentials' ) );
@@ -58,6 +60,7 @@ get_header();
 			}
 			?>
 
+			</div>
 
 			<!--============//? >===============-->
 
