@@ -59,7 +59,8 @@
 							<!-- SHOW THE WALK SCORE IF IT EXISTS -->
 							<div class="box"><!-- ============== -->
 								<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_pedestrian.svg" alt="walk score icon">
-								<h4>Walk Score *</h4>
+<!-- 								<i class="fas fa-walking fa-5x"></i>
+ -->								<h4>Walk Score *</h4>
 									<p class="icon-stat"><?php the_field('walk_score');?> / 100</p>
 							</div><!-- ============== -->
 						<?php } ?>
@@ -70,7 +71,8 @@
 							if($bike_score != "" ){?>
 								<!-- SHOW THE BIKE SCORE IF IT EXISTS -->
 								<div class="box"><!-- ============== -->
-									<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_bicycle.svg" alt="bike score icon">
+								<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_bicycle.svg" alt="bike score icon">
+								<!-- <i class="fal fa-bicycle fa-5x"></i> -->
 									<h4>Bike Score *</h4>
 										<p class="icon-stat"><?php the_field('bike_score');?> / 100</p>
 								</div><!-- ============== -->
@@ -83,7 +85,9 @@
 								if($transit_score != "" ){?>
 									<!-- SHOW THE TRANSIT SCORE IF IT EXISTS -->
 									<div class="box"><!-- ============== -->
-										<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_transit.svg" alt="transit score icon">
+									 <img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/np_icon_transit.svg" alt="transit score icon"> 
+										<!-- <i class="fas fa-bus fa-5x"></i> -->
+										<!-- <i class="fad fa-bus fa-5x"></i> -->
 										<h4>Transit Score *</h4>
 											<p class="icon-stat"><?php the_field('transit_score');?> / 100</p>
 									</div><!-- ============== -->
@@ -190,11 +194,14 @@
 
 								<div class="col-lg-8 description">
 										<!-- <p><strong>Success!</strong></p>  --> 
+											<article>
 											<?php 
 											//the_field('neighborhood_description');
 											//$neighborhood_description;
-											the_content();
+												the_content();
+											
 											?>
+											</article>
 											
 										
 								</div>
@@ -344,11 +351,11 @@
 														<?php the_field('phone_number');?><br/>
 												<?php } ?>
 
-												<!--show Phone Number if exists-->
+												<!--show Email if exists-->
 												<?php
 														$contact_email =  get_field('contact_email');
 														if($contact_email != "" ){ ?>
-														<?php the_field('contact_email');?><br/>
+															<span class="mailto"><?php the_field('contact_email');?></span><br/>
 												<?php } ?>
 
 											</p>

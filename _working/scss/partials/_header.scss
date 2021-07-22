@@ -4,6 +4,12 @@ nav.primary-menu-wrapper{
   display:none;
 }
 
+
+button.sub-menu-toggle{
+  border-left:none !important;
+}
+
+
 header#site-header{
   border-bottom:2px solid $accent;
   box-shadow: 3px 3px 3px rgba(0,0,0,.1);
@@ -12,6 +18,13 @@ header#site-header{
         padding: 1rem 0 1rem 0;
   }
 
+}
+
+
+
+//make sure the 'carrot' and drop effect is kept on submenus at display size
+body:not(.overlay-header) .primary-menu ul {
+    background-color: $primary !important;
 }
 
 .primary-menu ul.sub-menu::before{
@@ -30,7 +43,7 @@ header#site-header{
 
 
 
-//MOBILE DISPLAYS
+//MOBILE DISPLAYS --------------------------
 .main-logo{
   width:220px;
   height:70px;
@@ -56,14 +69,14 @@ header#site-header{
         color: #605594;
       }
       &:hover {
+        color: lighten($primary, 20%);
         text-decoration: none;
       }
 
       &:active {
-      // color: #e76113; //orange
-      color: $mouseover_color;
-      text-decoration: none !important;
-      background-color: $primary;
+        color: lighten($primary, 30%);
+        background-color:white;
+
       }
 
 
@@ -85,16 +98,32 @@ header#site-header{
 
           border-color:none;
           border-left-width:0;
-          border-color: lighten($primary, 20%);
+          // border-color: lighten($primary, 20%);
 
 
           .ancestor-wrapper{
 
             a{
               font-size: 2rem;
-              background-color: lighten($primary, 10%);
-              color:white;
+              // background-color: lighten($primary, 10%);
+              color:$primary;
               padding-left:4rem;
+
+
+              &:visited{
+                color:$primary;
+                
+              }
+
+                &:hover{
+                  // background-color:white;
+                  color: lighten($primary, 20%);
+                }
+
+                &:active{
+                  color: lighten($primary, 30%);
+                }
+
 
             }
 
@@ -112,21 +141,25 @@ header#site-header{
 
 
           ul.sub-menu.active{
-            border: 2px solid red !important;
-             background-color:$primary;
+            // border: 2px solid red !important;
+            //  background-color:$primary;
+            background-color:white;
              top: calc(100% + 1rem);
 
             li{
 
               a{
-                  color:white;
+                  color:$primary;
 
                 &:visited{}
 
-                &:hover,
-                &:active{
+                &:hover{
                   background-color:white;
-                  color: $secondary;
+                  color: lighten($primary, 20%);
+                }
+
+                &:active{
+                  color: lighten($primary, 30%);
                 }
 
               }//end a
@@ -141,7 +174,7 @@ header#site-header{
 
         li.menu-item.menu-item-has-children {
 
-            border:2px solid green;
+            // border:2px solid green;
 
         }
 
@@ -158,30 +191,38 @@ header#site-header{
 
 
 
+    .modal-menu.li{
+      border:none !important;
+    }
+
 
 
 
     //FULL-SIZE MODAL MENU
     nav.expanded-menu{
 
+      // border:4px solid green;
+
       ul.modal-menu > li.menu-item > .ancestor-wrapper > a{
         //border:1px dotted gray;
         color: #605594;
         margin: 1em 0;
-        padding: .5em 1em;
+        // padding: .5em 1em;
+        padding: 0em 0em;
+        
 
       &:visited{
         color: #605594;
       }
       &:hover {
         text-decoration: none;
-        color: $accent;
+        color: lighten($primary, 20%);
       }
 
       &:active {
-      color: $mouseover_color;
-      text-decoration: none !important;
-      background-color: $primary;
+        text-decoration: none !important;
+        color: lighten($primary, 30%);      
+        background-color:white;
       }
 
 
@@ -216,9 +257,14 @@ header#site-header{
               //color:white;
               padding-left:4rem;
               color: $primary;
+              // background-color: red;
 
               &:hover{
-                color: $accent;
+                color: lighten($primary, 20%);
+              }
+
+              &:active{
+                color: lighten($primary, 30%);
               }
 
             }
@@ -242,14 +288,17 @@ header#site-header{
           // }
 
           ul.sub-menu.active{
-            border: 2px solid red !important;
-             background-color:$primary;
+            //border: 2px solid red !important;
+            background-color:$primary;
+            // background-color:white;
              top: calc(100% + 1rem);
             //background-color: $accent;
 
             li.menu-item{
 
-              border:none !important;
+              // border:none !important;
+              border:1px solid red;
+              // background-color:red;
 
               .ancestor-wrapper{
 
@@ -257,15 +306,19 @@ header#site-header{
 
               a{
 
-                  //border:none;
+                  border:1px solid red;
                   color:white;
 
                 &:visited{}
 
-                &:hover,
+                &:hover{
+
+                 // background-color:red;
+                  color: lighten($primary, 20%);
+                }
+
                 &:active{
-                  background-color:white;
-                  color: $secondary;
+                  color: lighten($primary, 30%);
                 }
 
               }//end a
@@ -392,15 +445,12 @@ header#site-header{
           color: #605594;
         }
         &:hover {
-            color: white !important;
-            text-decoration: none;
-            background-color: lighten($primary, 10%);
+            color: lighten($primary, 20%);
+
         }
 
         &:active {
-            color: $mouseover_color;
-            text-decoration: none !important;
-            background-color: $primary;
+            color: lighten($primary, 30%);
         }
 
 
@@ -418,20 +468,27 @@ header#site-header{
             // }
 
             ul.sub-menu{
-               background-color:$primary;
+              //  background-color:$primary;
                top: calc(100% + 1rem);
 
               li{
 
                 a{
+                    // color: $primary;
                     color:white;
 
                   &:visited{}
 
-                  &:hover,
+                  &:hover{
+
+                    // background-color:red;
+                    color: lighten($primary, 20%);
+
+                  }
+
                   &:active{
-                    background-color:white;
-                    color: $secondary;
+                    // background-color:white;
+                    color: lighten($primary, 30%);
                   }
 
                 }//end a
@@ -469,6 +526,7 @@ header#site-header{
 
 .header-navigation-wrapper{
 
+
     nav.primary-menu-wrapper{
       ul.primary-menu{
 
@@ -476,16 +534,18 @@ header#site-header{
 
           a {
               color: #605594;
+
             &:visited{
               color: #605594;
             }
+
             &:hover {
-              color: $mouseover_color;
+              color: lighten($primary, 20%);
               text-decoration: none;
             }
             &:active {
-            color: $mouseover_color;
-            text-decoration: none !important;
+              color: lighten($primary, 30%);
+              text-decoration: none !important;
             }
           }
 
@@ -494,7 +554,22 @@ header#site-header{
             li{
 
               a{
-                  color:white;
+                  color:lighten($primary, 40%);
+
+                  &:visited{
+                    color:lighten($primary, 40%);
+                  }
+
+                  &:hover {
+                      color: white;
+                      text-decoration: none;
+                  }
+                  &:active {
+                      color: white;
+                      text-decoration: none !important;
+                  }
+
+
               }
 
             }

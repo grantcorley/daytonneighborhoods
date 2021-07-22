@@ -17,7 +17,13 @@ function my_theme_enqueue_styles() {
     wp_enqueue_style('Roboto', 'https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
     wp_enqueue_style('Slab', 'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap');
 
+     // wp_enqueue_script( 'FontAwesomeJS', "https://kit.fontawesome.com/7893f8c309.js", array('jquery'), '3.2.2', true);
+
     wp_enqueue_script( 'DaytonNeighborhoodsJS', get_stylesheet_directory_uri() . '/scripts.js', array('jquery'), '3.2.2', true);
+
+
+
+    // <script src="" crossorigin="anonymous"></script>
 
 }
 

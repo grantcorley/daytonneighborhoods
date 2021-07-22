@@ -17,18 +17,11 @@ get_header();
 
 
 
-<article class="page">
-
-<!-- ========================== -->
+<article class="page map">
 
 
-<div id="map">
-
-	<img src="<?php echo get_stylesheet_directory_uri();?>/images/map_Dayton.jpg" alt="Map of Dayton, OH">
-	<h2>The neighborhoods of Dayton</h2>
-
-</div>
-
+	<iframe id="dayton-map" src="https://daytonohio.maps.arcgis.com/home/webmap/viewer.html?webmap=4dbfbef1a1b545fd87e0423faecd2609" title="Map of the Neighborhoods of Dayton, OH"></iframe>
+	<h2><a href="https://daytonohio.maps.arcgis.com/home/webmap/viewer.html?webmap=4dbfbef1a1b545fd87e0423faecd2609" target="_blank">See this map in a full-sized window</a></h2>
 
 </article>
 

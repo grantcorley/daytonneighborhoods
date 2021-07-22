@@ -68,6 +68,32 @@ ul.neighborhood-profile-links{
   }
 }
 
+iframe#dayton-map{
+  width:100%;
+  height:720px;
+  //border:2px solid green;
+
+  //tablet query for map iframe 
+  @media screen and (min-width: 768px) {
+  height: 1024px;
+  } 
+  
+  //tablet query for laptop 
+  @media screen and (min-width: 1366px) {
+      height: 768px;
+  } 
+
+   //tablet query for laptop 
+   @media screen and (min-width: 1920px) {
+    height: 1080px;
+} 
+
+}
+
+article.page.map h2{
+  text-align: center;
+  margin-top:1em;
+}
 
 
 @media screen and (min-width: 768px) {

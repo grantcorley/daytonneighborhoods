@@ -1,43 +1,64 @@
 //scripts.js
 
-// console.log('----- scripts.js is running --------');
-
 //add <a> tags dyamically to hyperlink fields
-function processLink(hl){
+function processLink(hyperlink, thetype){    
 
-    var textString = hl.textContent;
+    var textString = hyperlink.textContent;
+
+    console.log('processLink(' + textString +  ','  + thetype + ')');
 
     // create wrapper container
     var wrapper = document.createElement('a');
 
     // insert wrapper before el in the DOM tree
-    hl.parentNode.insertBefore(wrapper, hl);
-    wrapper.appendChild(hl);
-    var theURL = ("http://www." + textString);
+    hyperlink.parentNode.insertBefore(wrapper, hyperlink);
+    wrapper.appendChild(hyperlink);
+    
+    // var theURL = ("http://www." + textString);
+
+    var theURL;
+
+    if(thetype === 'hyperlink'){
+      theURL = textString.split(" ").join("");
+    }
+
+    else if(thetype === 'mailto'){
+      theURL = 'mailto:' + textString.split(" ").join("")
+    }
+
+
+    var theTarget = ("_blank");
 
     wrapper.setAttribute("href", theURL);
-
-    
+    wrapper.setAttribute("target", theTarget);
 
 }
 
 
 
-//(function () {//start IIFE
 
+
+
+//(function () {//start IIFE
 
 document.addEventListener('DOMContentLoaded', function(event) {
 
     var body = document.body;
 
+    //check for text entries that need to be turned into hyperlinks
     var hyperlinks = document.querySelectorAll('.hyperlink');
 
-    var i = 0;
-
     for (i = 0; i < hyperlinks.length; i++){
-        // console.log("hyperlink!!!");
         var hl = hyperlinks[i];
-        processLink(hl);
+       processLink(hl, 'hyperlink'); 
+    }
+
+    //check for text entries that need to be turned into mailtos
+    var mailtos = document.querySelectorAll('.mailto');
+
+    for (m = 0; m < mailtos.length; m++){
+        var themailto = mailtos[m];
+       processLink(themailto, 'mailto'); 
     }
 
 
@@ -65,40 +86,89 @@ function getFeaturedNeighborhoods(){
     var burkhardt = new Neighborhood("Burkhardt", "burkhardt");
     var carillon = new Neighborhood("Carillon", "carillon");
     var college_hill = new Neighborhood("College Hill", "college-hill");
+    var cornell_heights = new Neighborhood("Cornell Heights", "cornell-heights");
     var dayton_view_triangle = new Neighborhood("Dayton View Triangle", "dayton-view-triangle");
     var deWeese = new Neighborhood("DeWeese", "deWeese");
+    var downtown = new Neighborhood("Downtown", "downtown");
+    var eastern_hills = new Neighborhood("Eastern Hills", "eastern-hills");
+    var eastmont = new Neighborhood("Eastmont", "eastmont");
+    var edgemont = new Neighborhood("Edgemont", "edgemont");
     var fairlane = new Neighborhood("Fairlane", "fairlane");
     var fairview = new Neighborhood("Fairview", "fairview");
     var five_oaks = new Neighborhood("Five Oaks", "five-oaks");
+    var forest_ridge = new Neighborhood("Forest Ridge - Quail Hollow", "forest-ridge");
+    var gateway = new Neighborhood("Gateway", "gateway");
+    var germantown_meadows = new Neighborhood("Germantown Meadows", "germantown-meadows");
     var graftonHill = new Neighborhood("Grafton Hill", "grafton-hill");
+    var greenwich_village = new Neighborhood("Greenwich Village", "greenwich-village");
+    var hearthstone = new Neighborhood("Hearthstone", "hearthstone")
+    var highview_hills = new Neighborhood("Highview Hills", "highview-hills")
     var hillcrest = new Neighborhood("Hillcrest", "hillcrest");
     var historic_inner_east = new Neighborhood("Historic Inner East", "historic-inner-east");
+    var kittyhawk = new Neighborhood("Kittyhawk", "kittyhawk");
     var lakeview = new Neighborhood("Lakeview", "lakeview");
-    var madden_hill = new Neighborhood("Madden Hill", "madden-hill");
-    var mount_vernon = new Neighborhood("Mount Vernon", "mount-vernon");
+    var linden_heights = new Neighborhood("Linden Heights", "linden-heights");
+    var little_richmond = new Neighborhood("Little Richmond", "little-richmond");
+    var macfarlane = new Neighborhood("MacFarlane", "macfarlane");
+    var madden_hills = new Neighborhood("Madden Hills", "madden-hills");
+    var mccook_field = new Neighborhood("McCook Field", "mccook-field");
+    var mcpherson = new Neighborhood("McPherson", "mcpherson");
     var miami_chapel = new Neighborhood("Miami Chapel", "miami-chapel");
+    var mount_vernon = new Neighborhood("Mount Vernon", "mount-vernon");
     var north_riverdale = new Neighborhood("North Riverdale", "north-riverdale");
     var northern_hills = new Neighborhood("Northern Hills", "northern-hills");
+
+
+
+
+    var northridge_estates = new Neighborhood("Northridge Estates", "northridge-estates"); 
+
+    var old_dayton_view = new Neighborhood("Old Dayton View", "old-dayton-view");
+
     var old_north_dayton = new Neighborhood("Old North Dayton", "old-north-dayton");
+    var oregon = new Neighborhood("Oregon", "oregon");
     var patterson_park = new Neighborhood("Patterson Park", "patterson-park");
+    var pheasant_hill = new Neighborhood("Pheasant Hill", "pheasant-hill");  
     var philadelphia_woods = new Neighborhood("Philadelphia Woods", "philadelphia-woods");
     var pineview = new Neighborhood("Pineview", "pineview");
+    var princeton_heights = new Neighborhood("Princeton Heights", "princeton-heights");
+    var residence_park = new Neighborhood("Residence Park", "residence-park");
     var riverdale = new Neighborhood("Riverdale", "riverdale");
-    var santa_clara = new Neighborhood("Santa Clara", "santa-clara");
+    var roosevelt = new Neighborhood("Roosevelt", "roosevelt");
+    var santa_clara = new Neighborhood("Santa Clara", "santa-clara");  
+    var shroyer_park = new Neighborhood("Shroyer Park", "shroyer-park");
+    //var south_park = new Neighborhood("South Park", "south-park");  
+    var southern_dayton_view = new Neighborhood("Southern Dayton View", "southern-dayton-view"); 
+    var springfield = new Neighborhood("Springfield", "springfield");
+    var stoney_ridge = new Neighborhood("Stoney Ridge", "stoney-ridge");
     var twin_towers = new Neighborhood("Twin Towers", "twin-towers");
+    var university_park = new Neighborhood("University Park", "university-park");
     var university_row = new Neighborhood("University Row", "university-row");
     var walnut_hills = new Neighborhood("Walnut Hills", "walnut-hills");
+    var webster_station = new Neighborhood("Webster Station", "webster-station");
+    var wesleyan_hill = new Neighborhood("Wesleyan Hill", "wesleyan-hill");
     var westwood = new Neighborhood("Westwood", "westwood");
-    var wrightDunbar = new Neighborhood("Wright-Dunbar", "wright-dunbar");
-    var wolfCreek = new Neighborhood("Wolf Creek", "wolf-creek");
+    var wolf_creek = new Neighborhood("Wolf Creek", "wolf-creek");
+    var wright_dunbar = new Neighborhood("Wright-Dunbar", "wright-dunbar");
+    var wright_view = new Neighborhood("Wright View", "wright-view"); 
+      
+     
+
 
 
     var neighborhoods = [
-          belmont, college_hill, dayton_view_triangle, deWeese, fairlane, fairview, five_oaks,
-          graftonHill, hillcrest, historic_inner_east, lakeview, madden_hill, miami_chapel,
-          mount_vernon, north_riverdale, northern_hills, old_north_dayton,
-          patterson_park, philadelphia_woods, pineview, riverdale, santa_clara, twin_towers,
-          university_row, walnut_hills, westwood, wrightDunbar, wolfCreek
+
+          arlington_heights, belmont, burkhardt, carillon, college_hill, cornell_heights, dayton_view_triangle, 
+          deWeese, downtown, eastern_hills, eastmont, edgemont, fairlane,
+          fairview, five_oaks, forest_ridge, gateway, germantown_meadows, greenwich_village,
+          graftonHill, hearthstone, highview_hills, hillcrest, historic_inner_east, kittyhawk, 
+          lakeview, linden_heights, little_richmond, macfarlane, madden_hills, 
+          mccook_field, mcpherson, miami_chapel, mount_vernon, north_riverdale, northern_hills, northridge_estates, old_dayton_view, 
+          old_north_dayton, oregon, patterson_park, pheasant_hill, philadelphia_woods, pineview, princeton_heights,
+          residence_park, riverdale, roosevelt, santa_clara, shroyer_park, southern_dayton_view,
+          //south_park,
+          springfield, stoney_ridge, twin_towers, university_park, university_row, walnut_hills,
+          webster_station, wesleyan_hill, westwood, wolf_creek, wright_dunbar, wright_view
         ]
 
 
@@ -109,7 +179,6 @@ function getFeaturedNeighborhoods(){
         for(var j=1; j <= 6; j++){
 
           var randomNumber = Math.floor(Math.random() * neighborhoods.length);
-          //console.log("the random number is " + randomNumber);
 
           var randomNeighborhood = neighborhoods[randomNumber];
           featuredNeighborhoods.push(randomNeighborhood);
@@ -236,9 +305,9 @@ function getImgPath(imgName){
 }
 
 
-function processLink(param){
-  console.log("processLink(" + param + ")");
-}
+// function processLink(param){
+//   console.log("processLink(" + param + ")");
+// }
 
 
 // var neighborhoods = [

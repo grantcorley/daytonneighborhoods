@@ -16,8 +16,13 @@ body{
 
    //links should in general turn purple on mouseover
    a{
+
+    &:link, &:visited{
+      color: $primary;
+    }
+
      &:hover, &:active{
-       color: $primary;
+       color: lighten($primary, 15%);
      }
    }
 
